@@ -55,6 +55,7 @@ android_app {
         "TvSettingsAPI",
         "VendorSupport-preference",
         "vendor.lineage.trust-V1.0-java",
+        "framework-lmodroid.static",
 
     ],
 }
@@ -103,6 +104,7 @@ android_app {
         "TvSettingsAPI",
         "VendorSupport-preference",
         "vendor.lineage.trust-V1.0-java",
+        "framework-lmodroid.static",
 
     ],
     jacoco: {
