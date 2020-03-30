@@ -47,6 +47,8 @@ android_library {
         "TvSettingsAPI",
         "androidx.lifecycle_lifecycle-runtime-ktx",
         "androidx.core_core-ktx",
+        "VendorSupport-preference",
+        "framework-lmodroid.static",
     ],
 }
 
