@@ -17,4 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, LMODroid version -->
     <string name="rom_version_title">LMODroid version</string>
+
+    <!-- Adb root access -->
+    <string name="enable_adb_root">Rooted debugging</string>
+    <string name="enable_adb_root_summary">Allow running Android debugging as root</string>
 </resources>
