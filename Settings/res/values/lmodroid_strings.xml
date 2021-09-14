@@ -17,4 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, LMODroid version -->
     <string name="rom_version_title">LMODroid version</string>
+
+    <!-- Buttons screen -->
+    <string name="system_buttons">Buttons</string>
 </resources>
