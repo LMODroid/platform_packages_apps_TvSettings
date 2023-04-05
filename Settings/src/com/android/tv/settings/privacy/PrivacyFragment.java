@@ -21,6 +21,7 @@ import static com.android.tv.settings.overlay.FlavorUtils.FLAVOR_X;
 import static com.android.tv.settings.util.InstrumentationUtils.logEntrySelected;
 
 import android.app.tvsettings.TvSettingsEnums;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -29,18 +30,22 @@ import androidx.annotation.Nullable;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
+import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.tv.settings.R;
-import com.android.tv.settings.SettingsPreferenceFragment;
+import com.android.tv.settings.PreferenceControllerFragment;
 import com.android.tv.settings.overlay.FlavorUtils;
 import com.android.tv.settings.util.SliceUtils;
 import com.android.tv.twopanelsettings.slices.CustomContentDescriptionPreference;
 import com.android.tv.twopanelsettings.slices.SlicePreference;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * The Privacy policies screen in Settings.
  */
 @Keep
-public class PrivacyFragment extends SettingsPreferenceFragment {
+public class PrivacyFragment extends PreferenceControllerFragment {
     private static final String KEY_ACCOUNT_SETTINGS_CATEGORY = "accountSettings";
     private static final String KEY_USAGE = "usageAndDiag";
     private static final String KEY_ADS = "ads";
@@ -51,9 +56,11 @@ public class PrivacyFragment extends SettingsPreferenceFragment {
     private static final String KEY_MIC = "microphone";
     private static final String KEY_CAMERA = "camera";
     private static final String KEY_UPDATE = "update";
+    private static final String KEY_TRUST_RESTRICT_USB = "trust_restrict_usb";
     private static final String TOP_LEVEL_SLICE_URI = "top_level_settings_slice_uri";
 
-    private int getPreferenceScreenResId() {
+    @Override
+    protected int getPreferenceScreenResId() {
         switch (FlavorUtils.getFlavor(getContext())) {
             case FLAVOR_X:
             case FLAVOR_VENDOR:
@@ -65,7 +72,7 @@ public class PrivacyFragment extends SettingsPreferenceFragment {
 
     @Override
     public void onCreatePreferences(Bundle bundle, String s) {
-        setPreferencesFromResource(getPreferenceScreenResId(), null);
+        super.onCreatePreferences(bundle, s);
         PreferenceCategory accountPrefCategory = findPreference(KEY_ACCOUNT_SETTINGS_CATEGORY);
         Preference assistantSlicePreference = findPreference(KEY_ASSISTANT);
         Preference purchasesSlicePreference = findPreference(KEY_PURCHASES);
@@ -124,6 +131,13 @@ public class PrivacyFragment extends SettingsPreferenceFragment {
             updateSlicePreference.setVisible(
                     isUpdateSlicePreferenceEnabled(updateSlicePreference));
         }
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> onCreatePreferenceControllers(Context context) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>(1);
+        controllers.add(new TrustRestrictUsbPreferenceController(context, KEY_TRUST_RESTRICT_USB));
+        return controllers;
     }
 
     private boolean isOverlaySecuritySlicePreferenceEnabled(
