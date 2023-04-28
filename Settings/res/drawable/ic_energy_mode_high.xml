@@ -15,11 +15,12 @@
   ~ limitations under the License.
   -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="48dp"
-    android:height="48dp"
-    android:viewportWidth="48"
-    android:viewportHeight="48">
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
     <path
-        android:fillColor="@color/preference_icon_color"
-        android:pathData="M33.85,16Q38.25,21.1 39.95,26.075Q41.65,31.05 41.9,35.05Q42.25,39.7 41.2,43.95Q40.7,44 39.6,44Q32.05,44 25.575,40.875Q19.1,37.75 14.15,32Q9.75,26.9 8.05,21.925Q6.35,16.95 6.1,12.95Q5.75,8.3 6.8,4.05Q7.3,4 8.4,4Q15.95,4 22.425,7.125Q28.9,10.25 33.85,16ZM37.9,39.95Q38.45,34.45 36.575,28.8Q34.7,23.15 30.8,18.6Q26.75,13.9 21.525,11.175Q16.3,8.45 10.1,8.05Z"/>
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M10.4386 22H9.32786L10.4386 14.2222H6.55113C5.90693 14.2222 5.91804 13.8667 6.12907 13.4889C6.3401 13.1111 6.18461 13.4 6.20682 13.3556C7.63961 10.8222 9.79435 7.04444 12.6599 2H13.7706L12.6599 9.77778H16.5474C17.0916 9.77778 17.1693 10.1444 17.0694 10.3444L16.9916 10.5111C12.6155 18.1667 10.4386 22 10.4386 22Z"/>
 </vector>

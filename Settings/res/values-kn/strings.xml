@@ -41,7 +41,7 @@
     <string name="hotwording_summary" msgid="2170375928302175449">"ಯಾವುದೇ ಸಮಯದಲ್ಲಿ Google Assistant ಜೊತೆಗೆ ಮಾತನಾಡಿ"</string>
     <string name="header_category_device" msgid="3023893663454705969">"ಸಾಧನ"</string>
     <string name="header_category_preferences" msgid="3738388885555798797">"ಪ್ರಾಶಸ್ತ್ಯಗಳು"</string>
-    <string name="header_category_accessories" msgid="6479803330480847199">"ರಿಮೋಟ್ &amp; ಪರಿಕರಗಳು"</string>
+    <string name="header_category_accessories" msgid="6479803330480847199">"ರಿಮೋಟ್ ಮತ್ತು ಆ್ಯಕ್ಸೆಸರಿಗಳು"</string>
     <string name="header_category_personal" msgid="7880053929985150368">"ವೈಯಕ್ತಿಕ"</string>
     <string name="connect_to_network" msgid="4133686359319492392">"ನೆಟ್‌ವರ್ಕ್‌ಗೆ ಸಂಪರ್ಕಿಸಿ"</string>
     <string name="add_an_account" msgid="2601275122685226096">"ಖಾತೆಯನ್ನು ಸೇರಿಸಿ"</string>
@@ -54,7 +54,7 @@
     <string name="applications_category_title" msgid="7112019490898586223">"ಅಪ್ಲಿಕೇಶನ್‌ಗಳು"</string>
     <string name="device_pref_category_title" msgid="8292572846154873762">"ಸಾಧನದ ಪ್ರಾಶಸ್ತ್ಯಗಳು"</string>
     <string name="accessibility_category_title" msgid="1552664829936369592">"ಆ್ಯಕ್ಸೆಸ್ಸಿಬಿಲಿಟಿ"</string>
-    <string name="remotes_and_accessories_category_title" msgid="4795119810430255047">"ರಿಮೋಟ್‌ಗಳು ಮತ್ತು ಪರಿಕರಗಳು"</string>
+    <string name="remotes_and_accessories_category_title" msgid="4795119810430255047">"ರಿಮೋಟ್‌ಗಳು ಮತ್ತು ಆ್ಯಕ್ಸೆಸರಿಗಳು"</string>
     <string name="display_and_sound_category_title" msgid="9203309625380755860">"ಡಿಸ್‌ಪ್ಲೇ ಮತ್ತು ಧ್ವನಿ"</string>
     <string name="help_and_feedback_category_title" msgid="7036505833991003031">"ಸಹಾಯ ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆ"</string>
     <string name="privacy_category_title" msgid="8552430590908463601">"ಗೌಪ್ಯತೆ"</string>
@@ -166,33 +166,23 @@
     <string name="preferred_dynamic_range_force_dialog_title" msgid="6865110024863661702">"ನೀವು HDR ಔಟ್‌ಪುಟ್ ಅನ್ನು ಒತ್ತಾಯಿಸಲು ಬಯಸುತ್ತೀರಾ?"</string>
     <string name="preferred_dynamic_range_force_dialog_desc" msgid="7758323258282201656">"ಡಿಫಾಲ್ಟ್ ಆಗಿ <xliff:g id="HDR_TYPE">%s</xliff:g> ಗೆ ಪರಿವರ್ತಿಸಲು ಒತ್ತಾಯಿಸಲಾಗುತ್ತದೆ."</string>
     <string name="preferred_dynamic_range_force_dialog_desc_4k30_issue" msgid="4938418395391206131">"ನಿಮ್ಮ ಡಿಸ್‌ಪ್ಲೇ 1080p 60 Hz ರೆಸಲ್ಯೂಶನ್‌ನಲ್ಲಿ ರನ್ ಆಗುತ್ತದೆ. 4k 60Hz ರೆಸಲ್ಯೂಶನ್‌ನಲ್ಲಿ ರನ್ ಆಗುವಾಗ ಈ ಆಯ್ಕೆಯು ನಿಮ್ಮ ಡಿಸ್‌ಪ್ಲೇ ಜೊತೆಗೆ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ."</string>
-    <!-- no translation found for dynamic_range_selection_force_dv_title (8070148109262327094) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_dv_summary (1052851029985095562) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_title (1221688206945051384) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_summary (7784573527636502784) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_title (3976190987768712696) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_summary (5371949016689544001) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_title (1305556000063625735) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_summary (918038386222537401) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_title (1063579223517652945) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_summary (2874771365465898941) -->
-    <skip />
+    <string name="selection_dolby_vision_not_supported_sidebar" msgid="8994591316574824115">"ಪ್ರಸ್ತುತ ರೆಸಲ್ಯೂಷನ್‌ನಲ್ಲಿ Dolby Vision ಬೆಂಬಲಿತವಾಗಿಲ್ಲ. ನೀವು Dolby Vision ಅನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ, ನಿಮ್ಮ ಡಿಸ್‌ಪ್ಲೇನ ರೆಸಲ್ಯೂಷನ್ ಅನ್ನು 1080p 60Hz ಗೆ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ"</string>
+    <string name="manual_dolby_vision_format_on_4k60_title" msgid="4172263676512376500">"ರೆಸಲ್ಯೂಷನ್ ಅನ್ನು 1080p 60Hz ಗೆ ಬದಲಾಯಿಸಬೇಕೇ?"</string>
+    <string name="dynamic_range_selection_force_dv_title" msgid="8070148109262327094">"ಯಾವಾಗಲೂ Dolby Vision ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸಿ"</string>
+    <string name="dynamic_range_selection_force_dv_summary" msgid="1052851029985095562">"ಸುಧಾರಿತ ಡಿಸ್‌ಪ್ಲೇ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿರುವ HDR ಫಾರ್ಮ್ಯಾಟ್‌ಗಳಲ್ಲಿ Dolby Vision ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದ್ದರೆ, Dolby ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸುವುದರಿಂದ ಅದು ಮರು-ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ."</string>
+    <string name="dynamic_range_selection_force_hdr10_title" msgid="1221688206945051384">"ಯಾವಾಗಲೂ HDR10 ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸಿ"</string>
+    <string name="dynamic_range_selection_force_hdr10_summary" msgid="7784573527636502784">"ಸುಧಾರಿತ ಡಿಸ್‌ಪ್ಲೇ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿರುವ HDR ಫಾರ್ಮ್ಯಾಟ್‌ಗಳಲ್ಲಿ HDR10 ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದ್ದರೆ, HDR10 ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸುವುದರಿಂದ ಅದು ಮರು-ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ."</string>
+    <string name="dynamic_range_selection_force_hlg_title" msgid="3976190987768712696">"ಯಾವಾಗಲೂ HLG ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸಿ"</string>
+    <string name="dynamic_range_selection_force_hlg_summary" msgid="5371949016689544001">"ಸುಧಾರಿತ ಡಿಸ್‌ಪ್ಲೇ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿರುವ HDR ಫಾರ್ಮ್ಯಾಟ್‌ಗಳಲ್ಲಿ HLG ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದ್ದರೆ, HLG ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸುವುದರಿಂದ ಅದು ಮರು-ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ."</string>
+    <string name="dynamic_range_selection_force_hdr10plus_title" msgid="1305556000063625735">"ಯಾವಾಗಲೂ HDR10+ ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸಿ"</string>
+    <string name="dynamic_range_selection_force_hdr10plus_summary" msgid="918038386222537401">"ಸುಧಾರಿತ ಡಿಸ್‌ಪ್ಲೇ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿರುವ HDR ಫಾರ್ಮ್ಯಾಟ್‌ಗಳಲ್ಲಿ HDR10+ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದ್ದರೆ, HDR10+ ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸುವುದರಿಂದ ಅದು ಮರು-ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ."</string>
+    <string name="dynamic_range_selection_force_sdr_title" msgid="1063579223517652945">"ಯಾವಾಗಲೂ SDR ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸಿ"</string>
+    <string name="dynamic_range_selection_force_sdr_summary" msgid="2874771365465898941">"SDR ಗೆ ಬಲವಂತವಾಗಿ ಪರಿವರ್ತಿಸುವುದರಿಂದ, ಸುಧಾರಿತ ಡಿಸ್‌ಪ್ಲೇ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿನ HDR ಫಾರ್ಮ್ಯಾಟ್‌ಗಳಲ್ಲಿರುವ ಎಲ್ಲಾ ಫಾರ್ಮ್ಯಾಟ್‌ಗಳು ನಿಷ್ಕ್ರಿಯಗೊಳ್ಳುತ್ತವೆ."</string>
     <string name="match_content_frame_rate_title" msgid="153291168560947689">"ಕಂಟೆಂಟ್‌ ಫ್ರೇಮ್ ರೇಟ್ ಅನ್ನು ಮ್ಯಾಚ್‌ ಮಾಡಿ"</string>
-    <!-- no translation found for match_content_frame_rate_seamless (5577846750811067585) -->
-    <skip />
+    <string name="match_content_frame_rate_seamless" msgid="5577846750811067585">"ಸೀಮ್‌ಲೆಸ್ ಮಾತ್ರ"</string>
     <string name="match_content_frame_rate_seamless_summary" msgid="2737466163964133210">"ಆ್ಯಪ್ ಅದನ್ನು ವಿನಂತಿಸಿದರೆ, ನಿಮ್ಮ ಟಿವಿ ತಡೆರಹಿತ ಪರಿವರ್ತನೆ ಮಾಡಲು ಸಾಧ್ಯವಾದರೆ ಮಾತ್ರ, ನಿಮ್ಮ ಸಾಧನವು ಅದರ ಔಟ್‌ಪುಟ್ ಅನ್ನು ನೀವು ವೀಕ್ಷಿಸುತ್ತಿರುವ ವಿಷಯದ ಮೂಲ ಫ್ರೇಮ್ ರೇಟ್‌ಗೆ ಮಾತ್ರ ಹೊಂದಿಸುತ್ತದೆ."</string>
     <string name="match_content_frame_rate_seamless_not_supported_summary" msgid="98559950465123792">"ನಿಮ್ಮ ಕನೆಕ್ಟ್ ಮಾಡಿದ ಡಿಸ್‌ಪ್ಲೇ ತಡೆರಹಿತ ರಿಫ್ರೆಶ್ ರೇಟ್ ಪರಿವರ್ತನೆಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ನೀವು ಅದನ್ನು ಬೆಂಬಲಿಸುವ ಡಿಸ್‌ಪ್ಲೇಗೆ ಬದಲಾಯಿಸದ ಹೊರತು ಈ ಆಯ್ಕೆಯು ಯಾವುದೇ ಪರಿಣಾಮವನ್ನು ಬೀರುವುದಿಲ್ಲ."</string>
-    <!-- no translation found for match_content_frame_rate_non_seamless (2702658727234710031) -->
-    <skip />
+    <string name="match_content_frame_rate_non_seamless" msgid="2702658727234710031">"ಯಾವಾಗಲೂ"</string>
     <string name="match_content_frame_rate_non_seamless_summary" msgid="6831699459487130055">"ಆ್ಯಪ್ ಅದನ್ನು ವಿನಂತಿಸಿದರೆ, ನಿಮ್ಮ ಸಾಧನವು ಅದರ ಔಟ್‌ಪುಟ್ ಅನ್ನು ನೀವು ವೀಕ್ಷಿಸುತ್ತಿರುವ ಕಂಟೆಂಟ್‌ನ ಮೂಲ ಫ್ರೇಮ್ ರೇಟ್‌ಗೆ ಮ್ಯಾಚ್‌ ಮಾಡುತ್ತದೆ. ವೀಡಿಯೊ ಪ್ಲೇಬ್ಯಾಕ್‌ನಿಂದ ನಿರ್ಗಮಿಸುವಾಗ ಅಥವಾ ಪ್ರವೇಶಿಸುವಾಗ ಇದು ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಒಂದು ಸೆಕೆಂಡ್‌ವರೆಗೆ ನಿಷ್ಕ್ರಿಯವಾಗಲು ಕಾರಣವಾಗಬಹುದು."</string>
     <string name="match_content_frame_rate_never" msgid="1678354793095148423">"ಎಂದಿಗೂ ಇಲ್ಲ"</string>
     <string name="match_content_frame_rate_never_summary" msgid="742977618080396095">"ಆ್ಯಪ್ ಅದನ್ನು ವಿನಂತಿಸಿದರೂ ಸಹ, ನಿಮ್ಮ ಸಾಧನವು ಅದರ ಔಟ್‌ಪುಟ್ ಅನ್ನು ನೀವು ವೀಕ್ಷಿಸುತ್ತಿರುವ ವಿಷಯದ ಮೂಲ ಫ್ರೇಮ್ ರೇಟ್‌ಗೆ ಹೊಂದಿಸಲು ಎಂದಿಗೂ ಪ್ರಯತ್ನಿಸುವುದಿಲ್ಲ."</string>
@@ -232,7 +222,7 @@
     <string name="resolution_selection_dialog_cancel" msgid="3683616572317946129">"ರದ್ದುಗೊಳಿಸಿ"</string>
     <string name="resolution_selection_dialog_ok" msgid="3123351228545013492">"ಸರಿ"</string>
     <string name="resolution_selection_hz" msgid="4425902505388495637">"Hz"</string>
-    <string name="resolution_display_mode" msgid="1862830706980223728">"<xliff:g id="RESOLUTION">%1$s</xliff:g> ( <xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
+    <string name="resolution_display_mode" msgid="6633857172598855480">"<xliff:g id="RESOLUTION">%1$s</xliff:g> (<xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
     <string name="device_storage_clear_cache_title" msgid="14370154552302965">"ಸಂಗ್ರಹ ಡೇಟಾವನ್ನು ತೆರುವುಗೊಳಿಸುವುದೇ?"</string>
     <string name="device_storage_clear_cache_message" msgid="4352802738505831032">"ಎಲ್ಲ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಿಗೆ ಸಂಗ್ರಹ ಡೇಟಾವನ್ನು ಇದು ತೆರುವುಗೊಳಿಸುತ್ತದೆ."</string>
     <string name="default_audio_output_settings_title" msgid="5441937324539531999"></string>
@@ -265,12 +255,12 @@
     <string name="bluetooth_cancel" msgid="4415185529332987034">"ರದ್ದುಮಾಡಿ"</string>
     <string name="bluetooth_device_connected_toast" msgid="1896195197089204806">"%1$s ಅನ್ನು ಕನೆಕ್ಟ್ ಮಾಡಲಾಗಿದೆ"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="7459239447363156499">"%1$s ಅನ್ನು ಡಿಸ್‌ಕನೆಕ್ಟ್ ಮಾಡಲಾಗಿದೆ"</string>
-    <string name="connected_devices_slice_pref_title" msgid="6761921505544005991">"ರಿಮೋಟ್‌ಗಳು ಮತ್ತು ಪರಿಕರಗಳು"</string>
+    <string name="connected_devices_slice_pref_title" msgid="6761921505544005991">"ರಿಮೋಟ್‌ಗಳು ಮತ್ತು ಆ್ಯಕ್ಸೆಸರಿಗಳು"</string>
     <string name="bluetooth_toggle_title" msgid="3808904783456336104">"ಬ್ಲೂಟೂತ್"</string>
     <string name="bluetooth_toggle_confirmation_dialog_title" msgid="3906746631391295717">"ಬ್ಲೂಟೂತ್ ಆಫ್ ಮಾಡಿ"</string>
     <string name="bluetooth_toggle_confirmation_dialog_summary" msgid="9017044450625172698">"ಬ್ಲೂಟೂತ್ ಆಫ್ ಆಗಿರುವಾಗ, ನಿಮ್ಮ ರಿಮೋಟ್‌ನಿಂದ Google Assistant ಅನ್ನು ಪ್ರವೇಶಿಸಲು ನಿಮಗೆ ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."</string>
     <string name="bluetooth_pair_accessory" msgid="5508750142754420984">"ಪರಿಕರವನ್ನು ಜೋಡಿಸಿ"</string>
-    <string name="bluetooth_known_devices_category" msgid="6895470515631452961">"ಪರಿಕರಗಳು"</string>
+    <string name="bluetooth_known_devices_category" msgid="6895470515631452961">"ಆ್ಯಕ್ಸೆಸರಿಗಳು"</string>
     <string name="bluetooth_official_remote_category" msgid="5817814488268307170">"ರಿಮೋಟ್ ನಿಯಂತ್ರಣ"</string>
     <string name="bluetooth_official_remote_entry_title" msgid="6699700335229570038">"ರಿಮೋಟ್ ನಿಯಂತ್ರಣದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
     <string name="bluetooth_ir_entry_title" msgid="6927284710576530479">"ರಿಮೋಟ್ ಬಟನ್‌ಗಳನ್ನು ಸೆಟಪ್ ಮಾಡಿ"</string>
@@ -316,10 +306,10 @@
     <string name="enterprise_privacy_settings" msgid="8226765895133003202">"ನಿರ್ವಹಿಸುವ ಸಾಧನದ ಮಾಹಿತಿ"</string>
     <string name="enterprise_privacy_settings_summary_generic" msgid="5719549523275019419">"ನಿಮ್ಮ ಸಂಸ್ಥೆಯು ನಿರ್ವಹಿಸುವ ಬದಲಾವಣೆಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
     <string name="enterprise_privacy_settings_summary_with_name" msgid="2866704039759872293">"<xliff:g id="ORGANIZATION_NAME">%s</xliff:g> ನಿರ್ವಹಿಸುವ ಬದಲಾವಣೆಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
-    <string name="enterprise_privacy_header" msgid="9221881402582661521">"ನಿಮ್ಮ ಕೆಲಸದ ಡೇಟಾಗೆ ಪ್ರವೇಶ ಒದಗಿಸಲು, ನಿಮ್ಮ ಸಂಸ್ಥೆಯು ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು ಮತ್ತು ಸಾಫ್ಟ್‌ವೇರ್ ಸ್ಥಾಪಿಸಬಹುದು.\n\nಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ, ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ನಿರ್ವಾಹಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."</string>
+    <string name="enterprise_privacy_header" msgid="9221881402582661521">"ನಿಮ್ಮ ಕೆಲಸದ ಡೇಟಾಗೆ ಆ್ಯಕ್ಸೆಸ್ ಒದಗಿಸಲು, ನಿಮ್ಮ ಸಂಸ್ಥೆಯು ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು ಮತ್ತು ಸಾಫ್ಟ್‌ವೇರ್ ಸ್ಥಾಪಿಸಬಹುದು.\n\nಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ, ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ನಿರ್ವಾಹಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."</string>
     <string name="enterprise_privacy_exposure_category" msgid="1555735251238636669">"ನಿಮ್ಮ ಸಂಸ್ಥೆಯು ನೋಡಬಹುದಾದ ಮಾಹಿತಿಯ ವಿಧಗಳು"</string>
     <string name="enterprise_privacy_exposure_changes_category" msgid="7750498604032318318">"ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ನಿರ್ವಾಹಕರು ಮಾಡಿರುವ ಬದಲಾವಣೆಗಳು"</string>
-    <string name="enterprise_privacy_device_access_category" msgid="7397106369136259850">"ಈ ಸಾಧನಕ್ಕೆ ನಿಮ್ಮ ಪ್ರವೇಶ"</string>
+    <string name="enterprise_privacy_device_access_category" msgid="7397106369136259850">"ಈ ಸಾಧನಕ್ಕೆ ನಿಮ್ಮ ಆ್ಯಕ್ಸೆಸ್"</string>
     <string name="enterprise_privacy_enterprise_data" msgid="8135491104894522008">"ಇಮೇಲ್‌ ಮತ್ತು ಕ್ಯಾಲೆಂಡರ್‌‌ನಂತಹ ನಿಮ್ಮ ಕೆಲಸದ ಖಾತೆಯ ಜೊತೆಗೆ ಸಂಯೋಜಿತವಾಗಿರುವ ಡೇಟಾ"</string>
     <string name="enterprise_privacy_installed_packages" msgid="5012554762299490994">"ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿರುವ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಪಟ್ಟಿ"</string>
     <string name="enterprise_privacy_usage_stats" msgid="7062422823174345793">"ಪ್ರತಿ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ವ್ಯಯಿಸಿದ ಸಮಯ ಮತ್ತು ದಿನಾಂಕ"</string>
@@ -639,12 +629,12 @@
     <string name="microphone" msgid="7893752847683941214">"ಮೈಕ್ರೊಫೋನ್"</string>
     <string name="mic_toggle_title" msgid="7193417007060235665">"ಮೈಕ್ರೊಫೋನ್ ಪ್ರವೇಶದ ಅನುಮತಿ"</string>
     <string name="mic_remote_toggle_title" msgid="7153283895012570080">"ನಿಮ್ಮ ರಿಮೋಟ್‌ನಲ್ಲಿ ಮೈಕ್ರೊಫೋನ್ ಆ್ಯಕ್ಸೆಸ್"</string>
-    <string name="open_mic_permissions" msgid="8121871594807641073">"ಮೈಕ್ರೊಫೋನ್‌ಗೆ ಆ್ಯಪ್‌ನ ಪ್ರವೇಶ"</string>
+    <string name="open_mic_permissions" msgid="8121871594807641073">"ಮೈಕ್ರೊಫೋನ್‌ಗೆ ಆ್ಯಪ್‌ನ ಆ್ಯಕ್ಸೆಸ್"</string>
     <string name="microphone_physical_privacy_enabled_title" msgid="6135130916399886772">"ಮೈಕ್ರೊಫೋನ್ ಪ್ರವೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"</string>
     <string name="microphone_physical_privacy_enabled_text" msgid="401238365312924088">"ನಿರ್ಬಂಧವನ್ನು ತೆಗೆದುಹಾಕಲು, ಮೈಕ್ರೊಫೋನ್‌ಗೆ ಪ್ರವೇಶವನ್ನು ಅನುಮತಿಸುವುದಕ್ಕಾಗಿ ನಿಮ್ಮ ಸಾಧನದ ಗೌಪ್ಯತೆ ಸ್ವಿಚ್ ಅನ್ನು ಮೈಕ್ರೊಫೋನ್ ಆನ್ ಸ್ಥಾನಕ್ಕೆ ಸರಿಸಿ."</string>
     <string name="camera" msgid="1226671478936288283">"ಕ್ಯಾಮರಾ"</string>
     <string name="camera_toggle_title" msgid="5566469574224956142">"ಕ್ಯಾಮರಾ ಪ್ರವೇಶದ ಅನುಮತಿ"</string>
-    <string name="open_camera_permissions" msgid="301360297337141591">"ಕ್ಯಾಮರಾ‌ಗೆ ಆ್ಯಪ್‌ನ ಪ್ರವೇಶ"</string>
+    <string name="open_camera_permissions" msgid="301360297337141591">"ಕ್ಯಾಮರಾ‌ಗೆ ಆ್ಯಪ್‌ನ ಆ್ಯಕ್ಸೆಸ್"</string>
     <string name="camera_physical_privacy_enabled_title" msgid="1944155695921165511">"ಕ್ಯಾಮರಾ ಪ್ರವೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"</string>
     <string name="camera_physical_privacy_enabled_text" msgid="6692088634676282779">"ನಿರ್ಬಂಧವನ್ನು ತೆಗೆದುಹಾಕಲು, ಕ್ಯಾಮರಾಗೆ ಪ್ರವೇಶವನ್ನು ಅನುಮತಿಸುವುದಕ್ಕಾಗಿ ನಿಮ್ಮ ಸಾಧನದ ಗೌಪ್ಯತೆ ಸ್ವಿಚ್ ಅನ್ನು ಕ್ಯಾಮರಾ ಆನ್ ಸ್ಥಾನಕ್ಕೆ ಸರಿಸಿ."</string>
     <string name="mic_toggle_info_title" msgid="1086545614315873599">"ಮೈಕ್ರೊಫೋನ್‌ ಪ್ರವೇಶದ ಅನುಮತಿ: <xliff:g id="SENSOR_STATE">%s</xliff:g>"</string>
@@ -709,7 +699,7 @@
     <string name="accessibility_shortcut" msgid="5856158637840030531">"ಪ್ರವೇಶ ಶಾರ್ಟ್‌ಕಟ್‌"</string>
     <string name="accessibility_shortcut_enable" msgid="6603542432267329986">"ಆ್ಯಕ್ಸೆಸಿಬಿಲಿಟಿ ಶಾರ್ಟ್‌ಕಟ್‌ ಸಕ್ರಿಯಗೊಳಿಸಿ"</string>
     <string name="accessibility_shortcut_service" msgid="2053250146891420311">"ಶಾರ್ಟ್‌ಕಟ್ ಸೇವೆ"</string>
-    <string name="accessibility_shortcut_description" msgid="2050424178481510046">"ಶಾರ್ಟ್‌ಕಟ್ ಆನ್ ಆಗಿರುವಾಗ, 3 ಸೆಕೆಂಡ್‌ಗಳ ಕಾಲ ಹಿಂದಿನ ಮತ್ತು ಕೆಳಗಿನ ಬಟನ್‌ಗಳನ್ನು ಒತ್ತುವುದು ಪ್ರವೇಶ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಆರಂಭಿಸುತ್ತದೆ."</string>
+    <string name="accessibility_shortcut_description" msgid="2050424178481510046">"ಶಾರ್ಟ್‌ಕಟ್ ಆನ್ ಆಗಿರುವಾಗ, 3 ಸೆಕೆಂಡ್‌ಗಳ ಕಾಲ ಹಿಂದಿನ ಮತ್ತು ಕೆಳಗಿನ ಬಟನ್‌ಗಳನ್ನು ಒತ್ತುವುದು ಆ್ಯಕ್ಸೆಸ್ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಆರಂಭಿಸುತ್ತದೆ."</string>
     <string name="accessibility_captions" msgid="3411554568812306549">"ಶೀರ್ಷಿಕೆಗಳು"</string>
     <string name="accessibility_captions_description" msgid="3827820027578548160">"ವೀಡಿಯೊದಲ್ಲಿ ಮುಚ್ಚಿದ ಶೀರ್ಷಿಕೆ ಪಠ್ಯದ ಓವರ್‌ಲೇಗಾಗಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
     <string name="captions_display" msgid="2598662495450633375">"ಪ್ರದರ್ಶನ"</string>
@@ -1023,7 +1013,7 @@
     <string name="manage_keyboards" msgid="7983890675377321912">"ಕೀಬೋರ್ಡ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ"</string>
     <string name="app_permission_summary_allowed" msgid="5359622119044147500">"ಅನುಮತಿಸಲಾಗಿದೆ"</string>
     <string name="app_permission_summary_not_allowed" msgid="5131611341738385303">"ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ"</string>
-    <string name="usage_access" msgid="8402350645248312782">"ಬಳಕೆ ಪ್ರವೇಶ"</string>
+    <string name="usage_access" msgid="8402350645248312782">"ಬಳಕೆ ಆ್ಯಕ್ಸೆಸ್"</string>
     <string name="usage_access_description" msgid="3276026988575551587">"ಬಳಕೆ ಪ್ರವೇಶವು ನೀವು ಇತರ ಯಾವ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಬಳಸುತ್ತಿರುವಿರಿ ಮತ್ತು ಎಷ್ಟು ಬಾರಿ ಎಂಬುದನ್ನು ಅಲ್ಲದೆ ನಿಮ್ಮ ವಾಹಕ, ಭಾಷೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಹಾಗೂ ಇತರ ವಿವರಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಅನುಮತಿಸುತ್ತದೆ."</string>
     <string name="high_power_apps" msgid="5841073958519976562">"ಬ್ಯಾಟರಿ ಆಪ್ಟಿಮೈಸೇಷನ್‌"</string>
     <string name="high_power_apps_description" msgid="8651692364795060525">"ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಬ್ಯಾಟರಿ ಬಳಕೆಯನ್ನು ಆಪ್ಟಿಮೈಸ್‌ ಮಾಡಿ"</string>
@@ -1031,15 +1021,15 @@
     <string name="high_power_on" msgid="3120162683093360951">"ಆಪ್ಟಿಮೈಸ್ ಮಾಡಲಾಗಿಲ್ಲ"</string>
     <string name="high_power_off" msgid="3588854600942236231">"ಬ್ಯಾಟರಿ ಬಳಕೆಯನ್ನು ಆಪ್ಟಿಮೈಸ್‌ ಮಾಡಲಾಗುತ್ತಿದೆ"</string>
     <string name="high_power_system" msgid="6263052626979462255">"ಬ್ಯಾಟರಿ ಆಪ್ಟಿಮೈಸೇಷನ್‌ ಲಭ್ಯವಿಲ್ಲ"</string>
-    <string name="manage_notification_access_title" msgid="8659254371564990084">"ಅಧಿಸೂಚನೆ ಪ್ರವೇಶ"</string>
+    <string name="manage_notification_access_title" msgid="8659254371564990084">"ಅಧಿಸೂಚನೆ ಆ್ಯಕ್ಸೆಸ್"</string>
     <string name="no_notification_listeners" msgid="5119406452675724448">"ಯಾವುದೇ ಸ್ಥಾಪಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಅಧಿಸೂಚನೆ ಪ್ರವೇಶವನ್ನು ವಿನಂತಿಸಿಲ್ಲ."</string>
     <string name="notification_listener_security_warning_summary" msgid="8602907284276088658">"ಸಂಪರ್ಕ ಹೆಸರುಗಳು ಮತ್ತು ನೀವು ಸ್ವೀಕರಿಸುವ ಸಂದೇಶಗಳ ಪಠ್ಯದಂತಹ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ಸೇರಿದಂತೆ ಈ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಿಗೆ ಎಲ್ಲ ಅಧಿಸೂಚನೆಗಳನ್ನು ಓದಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ಇವುಗಳಿಗೆ ಅಧಿಸೂಚನೆಗಳನ್ನು ವಜಾ ಮಾಡಲು ಅಥವಾ ಅವುಗಳು ಹೊಂದಿರುವಂತಹ ಕ್ರಿಯೆ ಬಟನ್‌ಗಳನ್ನು ಟ್ರಿಗ್ಗರ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ."</string>
     <string name="default_notification_access_package_summary" msgid="1354775994781420222">"ಸಿಸ್ಟಂಗೆ ಅಗತ್ಯವಿದೆ"</string>
-    <string name="directory_access" msgid="7338555825237012006">"ಡೈರೆಕ್ಟರಿ ಪ್ರವೇಶ"</string>
+    <string name="directory_access" msgid="7338555825237012006">"ಡೈರೆಕ್ಟರಿ ಆ್ಯಕ್ಸೆಸ್"</string>
     <string name="directory_access_description" msgid="3630855858552422012">"ಕೆಲವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ಈ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಿಗೆ ಅನುಮತಿ ಇದೆ."</string>
     <string name="directory_on_volume" msgid="5628089584970521703">"<xliff:g id="VOLUME">%1$s</xliff:g> (<xliff:g id="DIRECTORY">%2$s</xliff:g>)"</string>
     <string name="system_alert_window_settings" msgid="5790572489650085051">"ಇತರ ಅಪ್ಲಿಕೇಶನ್ ಮೇಲೆ ಡಿಸ್‌ಪ್ಲೇ"</string>
-    <string name="permit_draw_overlay" msgid="5312730681030266735">"‍ಇತರ ಅಪ್ಲಿಕೇಶನ್ ಮೇಲೆ ಡಿಸ್‌ಪ್ಲೇ ಮಾಡಲು ಅನುಮತಿಸಿ"</string>
+    <string name="permit_draw_overlay" msgid="5312730681030266735">"‍ಇತರ ಆ್ಯಪ್ ಮೇಲೆ ಡಿಸ್‌ಪ್ಲೇ ಮಾಡಲು ಅನುಮತಿಸಿ"</string>
     <string name="allow_overlay_description" msgid="5152329837278240259">"ನೀವು ಬಳಸುತ್ತಿರುವ ಇತರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಮೇಲೆ ಪ್ರದರ್ಶಿಸಲು ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಅನುಮತಿ ನೀಡಿ. ನೀವು ಆ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಬಳಸುವುದರ ಮೇಲೆ ಇದು ಪರಿಣಾಮ ಬೀರಬಹುದು ಅಥವಾ ಅವು ಕಾಣಿಸುವ ಅಥವಾ ವರ್ತಿಸುವ ರೀತಿಯನ್ನು ಬದಲಾಯಿಸಬಹುದು."</string>
     <string name="write_system_settings" msgid="4284654265954461890">"ಸಿಸ್ಟಂ ಸೆಟ್ಟಿಂಗ್‍ಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ"</string>
     <string name="write_settings_title" msgid="2361816483383105754">"ಸಿಸ್ಟಂ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮಾರ್ಪಡಿಸಬಹುದು"</string>
@@ -1057,7 +1047,7 @@
     <string name="turn_screen_on_title" msgid="5293798529284629011">"ಸ್ಕ್ರೀನ್ ಅನ್ನು ಆನ್ ಮಾಡಿ"</string>
     <string name="allow_turn_screen_on" msgid="4903401106871656521">"ಸ್ಕ್ರೀನ್ ಅನ್ನು ಆನ್ ಮಾಡಲು ಅನುಮತಿಸಿ"</string>
     <string name="allow_turn_screen_on_description" msgid="7521761625343889415">"ಸ್ಕ್ರೀನ್ ಅನ್ನು ಆನ್ ಮಾಡಲು ಆ್ಯಪ್‌ಗೆ ಅನುಮತಿಸಿ. ಅನುಮತಿಸಿದರೆ, ನಿಮ್ಮ ಅಗತ್ಯವಿಲ್ಲದಿದ್ದಾಗಲೂ ಆ್ಯಪ್ ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಆನ್ ಮಾಡಬಹುದು."</string>
-    <string name="special_access" msgid="21806055758289916">"ವಿಶೇಷ ಅಪ್ಲಿಕೇಶನ್ ಪ್ರವೇಶ"</string>
+    <string name="special_access" msgid="21806055758289916">"ವಿಶೇಷ ಅಪ್ಲಿಕೇಶನ್ ಆ್ಯಕ್ಸೆಸ್"</string>
     <string name="string_concat" msgid="5213870180216051497">"<xliff:g id="PART1">%1$s</xliff:g>, <xliff:g id="PART2">%2$s</xliff:g>"</string>
     <string name="audio_category" msgid="6143623109624947993">"ಆಡಿಯೋ"</string>
     <string name="record_audio" msgid="5035689290259575229">"ಆಡಿಯೋ ರೆಕಾರ್ಡ್‌ ಮಾಡಿ"</string>
@@ -1089,9 +1079,9 @@
     <string name="disabled_by_policy_title_suspend_packages" msgid="6500185610058872758">"ಈ ಅಪ್ಲಿಕೇಶನ್ ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ"</string>
     <string name="default_admin_support_msg" msgid="7913455019068370350">"ನಿಮಗೆ ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿದ್ದರೆ, ನಿಮ್ಮ IT ನಿರ್ವಾಹಕರನ್ನು ಸಂಪರ್ಕಿಸಿ"</string>
     <string name="admin_support_more_info" msgid="9053232166115098434">"ಇನ್ನಷ್ಟು ವಿವರಗಳು"</string>
-    <string name="admin_profile_owner_message" msgid="5729169873349157622">"ನಿಮ್ಮ ನಿರ್ವಾಹಕರು ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಅನುಮತಿಗಳು, ಕಾರ್ಪೊರೇಟ್‌ ಪ್ರವೇಶ, ನೆಟ್‌ವರ್ಕ್‌ ಚಟುವಟಿಕೆ ಮತ್ತು ಸಾಧನದ ಸ್ಥಳ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಂತೆ ನಿಮ್ಮ ಕೆಲಸದ ಪ್ರೊಫೈಲ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು."</string>
-    <string name="admin_profile_owner_user_message" msgid="6431405126322617268">"ನಿಮ್ಮ ನಿರ್ವಾಹಕರು ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಅನುಮತಿಗಳು, ಕಾರ್ಪೊರೇಟ್‌ ಪ್ರವೇಶ, ನೆಟ್‌‌ವರ್ಕ್‌ ಚಟುವಟಿಕೆ ಮತ್ತು ಸಾಧನದ ಸ್ಥಳ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಂತೆ ಈ ಬಳಕೆದಾರರಿಗೆ ಸಂಬಂಧಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು."</string>
-    <string name="admin_device_owner_message" msgid="1935507216776040907">"ನಿಮ್ಮ ನಿರ್ವಾಹಕರು ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಅನುಮತಿಗಳು, ಕಾರ್ಪೊರೇಟ್‌ ಪ್ರವೇಶ, ನೆಟ್‌ವರ್ಕ್‌ ಚಟುವಟಿಕೆ ಮತ್ತು ಸಾಧನದ ಸ್ಥಳ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಂತೆ ಈ ಸಾಧನಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು."</string>
+    <string name="admin_profile_owner_message" msgid="5729169873349157622">"ನಿಮ್ಮ ನಿರ್ವಾಹಕರು ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಅನುಮತಿಗಳು, ಕಾರ್ಪೊರೇಟ್‌ ಆ್ಯಕ್ಸೆಸ್, ನೆಟ್‌ವರ್ಕ್‌ ಚಟುವಟಿಕೆ ಮತ್ತು ಸಾಧನದ ಸ್ಥಳ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಂತೆ ನಿಮ್ಮ ಕೆಲಸದ ಪ್ರೊಫೈಲ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಆ್ಯಪ್‌ಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು."</string>
+    <string name="admin_profile_owner_user_message" msgid="6431405126322617268">"ನಿಮ್ಮ ನಿರ್ವಾಹಕರು ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಅನುಮತಿಗಳು, ಕಾರ್ಪೊರೇಟ್‌ ಆ್ಯಕ್ಸೆಸ್, ನೆಟ್‌‌ವರ್ಕ್‌ ಚಟುವಟಿಕೆ ಮತ್ತು ಸಾಧನದ ಸ್ಥಳ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಂತೆ ಈ ಬಳಕೆದಾರರಿಗೆ ಸಂಬಂಧಿಸಿದ ಆ್ಯಪ್‌ಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು."</string>
+    <string name="admin_device_owner_message" msgid="1935507216776040907">"ನಿಮ್ಮ ನಿರ್ವಾಹಕರು ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಅನುಮತಿಗಳು, ಕಾರ್ಪೊರೇಟ್‌ ಆ್ಯಕ್ಸೆಸ್, ನೆಟ್‌ವರ್ಕ್‌ ಚಟುವಟಿಕೆ ಮತ್ತು ಸಾಧನದ ಸ್ಥಳ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಂತೆ ಈ ಸಾಧನಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಆ್ಯಪ್‌ಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು."</string>
     <string name="remove_managed_profile_label" msgid="8950011141359605612">"ಉದ್ಯೋಗ ಪ್ರೊಫೈಲ್‌ ತೆಗೆದುಹಾಕಿ"</string>
     <string name="active_device_admin_msg" msgid="185537304726228624">"ಸಾಧನ ನಿರ್ವಹಣೆ ಅಪ್ಲಿಕೇಶನ್"</string>
     <string name="remove_device_admin" msgid="2623866073546295104">"ಈ ಸಾಧನ ನಿರ್ವಹಣಾ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"</string>

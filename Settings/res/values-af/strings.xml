@@ -166,33 +166,23 @@
     <string name="preferred_dynamic_range_force_dialog_title" msgid="6865110024863661702">"Wil jy die HDR-uitvoer verpligtend maak?"</string>
     <string name="preferred_dynamic_range_force_dialog_desc" msgid="7758323258282201656">"Omskakeling na <xliff:g id="HDR_TYPE">%s</xliff:g> sal by verstek verplig word."</string>
     <string name="preferred_dynamic_range_force_dialog_desc_4k30_issue" msgid="4938418395391206131">"Jou skerm sal ’n resolusie van 1080 p teen 60 Hz gebruik. Hierdie opsie is nie met jou skerm versoenbaar terwyl dit ’n resolusie van 4k teen 60 Hz gebruik nie."</string>
-    <!-- no translation found for dynamic_range_selection_force_dv_title (8070148109262327094) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_dv_summary (1052851029985095562) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_title (1221688206945051384) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_summary (7784573527636502784) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_title (3976190987768712696) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_summary (5371949016689544001) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_title (1305556000063625735) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_summary (918038386222537401) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_title (1063579223517652945) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_summary (2874771365465898941) -->
-    <skip />
+    <string name="selection_dolby_vision_not_supported_sidebar" msgid="8994591316574824115">"Dolby Vision word nie teen die huidige resolusie gesteun nie. Jou skerm se resolusie sal na 1080 p 60 Hz verander word as jy Dolby Vision handmatig aktiveer"</string>
+    <string name="manual_dolby_vision_format_on_4k60_title" msgid="4172263676512376500">"Verander resolusie na 1080 p 60 Hz?"</string>
+    <string name="dynamic_range_selection_force_dv_title" msgid="8070148109262327094">"Verplig altyd omskakeling na Dolby Vision"</string>
+    <string name="dynamic_range_selection_force_dv_summary" msgid="1052851029985095562">"As Dolby Vision in HDR-formate in die gevorderde vertooninstellings gedeaktiveer is, sal dit geheraktiveer word as omskakeling na Dolby Vision verplig word."</string>
+    <string name="dynamic_range_selection_force_hdr10_title" msgid="1221688206945051384">"Verplig altyd omskakeling na HDR10"</string>
+    <string name="dynamic_range_selection_force_hdr10_summary" msgid="7784573527636502784">"As HDR10 in HDR-formate in die gevorderde vertooninstellings gedeaktiveer is, sal dit geheraktiveer word as omskakeling na HDR10 verplig word."</string>
+    <string name="dynamic_range_selection_force_hlg_title" msgid="3976190987768712696">"Verplig altyd omskakeling na HLG"</string>
+    <string name="dynamic_range_selection_force_hlg_summary" msgid="5371949016689544001">"As HLG in HDR-formate in die gevorderde vertooninstellings gedeaktiveer is, sal dit geheraktiveer word as omskakeling na HLG verplig word."</string>
+    <string name="dynamic_range_selection_force_hdr10plus_title" msgid="1305556000063625735">"Verplig altyd omskakeling na HDR10+"</string>
+    <string name="dynamic_range_selection_force_hdr10plus_summary" msgid="918038386222537401">"As HDR10+ in HDR-formate in die gevorderde vertooninstellings gedeaktiveer is, sal dit geheraktiveer word as omskakeling na HDR10+ verplig word."</string>
+    <string name="dynamic_range_selection_force_sdr_title" msgid="1063579223517652945">"Verplig altyd omskakeling na SDR"</string>
+    <string name="dynamic_range_selection_force_sdr_summary" msgid="2874771365465898941">"As omskakeling na SDR verplig word, sal alle formate in die HDR-formate in gevorderde vertooninstellings gedeaktiveer word."</string>
     <string name="match_content_frame_rate_title" msgid="153291168560947689">"Ewenaar inhoudraamtempo"</string>
-    <!-- no translation found for match_content_frame_rate_seamless (5577846750811067585) -->
-    <skip />
+    <string name="match_content_frame_rate_seamless" msgid="5577846750811067585">"Slegs onopmerklik"</string>
     <string name="match_content_frame_rate_seamless_summary" msgid="2737466163964133210">"Wanneer die app dit versoek, sal jou toestel sy uitset laat pas by die oorspronklike raamtempo van die inhoud wat jy kyk, NET as jou TV \'n soomlose oorgang kan uitvoer."</string>
     <string name="match_content_frame_rate_seamless_not_supported_summary" msgid="98559950465123792">"Jou gekoppelde skerm steun nie probleemvrye herlaaitempo-oorgange nie. Hierdie opsie sal geen uitwerking hê nie, tensy jy ’n ander skerm gebruik wat dit wel steun."</string>
-    <!-- no translation found for match_content_frame_rate_non_seamless (2702658727234710031) -->
-    <skip />
+    <string name="match_content_frame_rate_non_seamless" msgid="2702658727234710031">"Altyd"</string>
     <string name="match_content_frame_rate_non_seamless_summary" msgid="6831699459487130055">"As die app dit versoek, sal jou toestel sy uitset laat pas by die oorspronklike raamtempo van die inhoud wat jy kyk. Dit kan veroorsaak dat jou skerm vir \'n oomblik donker raak wanneer dit by \'n videoterugspeel uit- of ingaan."</string>
     <string name="match_content_frame_rate_never" msgid="1678354793095148423">"Nooit"</string>
     <string name="match_content_frame_rate_never_summary" msgid="742977618080396095">"Selfs wanneer die app dit versoek, sal jou toestel nooit probeer om sy uitset te laat pas by die oorspronklike raamtempo van die inhoud wat jy kyk nie."</string>
@@ -232,7 +222,7 @@
     <string name="resolution_selection_dialog_cancel" msgid="3683616572317946129">"Kanselleer"</string>
     <string name="resolution_selection_dialog_ok" msgid="3123351228545013492">"OK"</string>
     <string name="resolution_selection_hz" msgid="4425902505388495637">"Hz"</string>
-    <string name="resolution_display_mode" msgid="1862830706980223728">"<xliff:g id="RESOLUTION">%1$s</xliff:g> ( <xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
+    <string name="resolution_display_mode" msgid="6633857172598855480">"<xliff:g id="RESOLUTION">%1$s</xliff:g> (<xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
     <string name="device_storage_clear_cache_title" msgid="14370154552302965">"Moet gekaste data uitgevee word?"</string>
     <string name="device_storage_clear_cache_message" msgid="4352802738505831032">"Sal gekaste data vir alle programme uitvee."</string>
     <string name="default_audio_output_settings_title" msgid="5441937324539531999"></string>
@@ -310,7 +300,7 @@
     <string name="no_device_admins" msgid="4628974717150185625">"Geen toesteladministrateurprogramme beskikbaar nie"</string>
     <string name="security_enable_widgets_disabled_summary" msgid="7678529948487939871">"Gedeaktiveer deur administrateur"</string>
     <string name="disabled_by_administrator_summary" msgid="3420979957115426764">"Nie beskikbaar nie"</string>
-    <string name="manage_device_admin" msgid="5714217234035017983">"Toesteladministrasieprogramme"</string>
+    <string name="manage_device_admin" msgid="5714217234035017983">"Toesteladministrasie-apps"</string>
     <string name="number_of_device_admins_none" msgid="2734299122299837459">"Geen aktiewe programme nie"</string>
     <string name="unlock_set_unlock_disabled_summary" msgid="108190334043671416">"Gedeaktiveer deur administrateur, enkripsiebeleid of eiebewysberging"</string>
     <string name="enterprise_privacy_settings" msgid="8226765895133003202">"Inligting oor bestuurde toestel"</string>

@@ -166,33 +166,23 @@
     <string name="preferred_dynamic_range_force_dialog_title" msgid="6865110024863661702">"Ingin memaksa output HDR?"</string>
     <string name="preferred_dynamic_range_force_dialog_desc" msgid="7758323258282201656">"Secara default, konversi akan dipaksa ke <xliff:g id="HDR_TYPE">%s</xliff:g>."</string>
     <string name="preferred_dynamic_range_force_dialog_desc_4k30_issue" msgid="4938418395391206131">"Layar Anda akan berjalan pada resolusi 1080p 60 Hz. Opsi ini tidak kompatibel dengan layar Anda saat berjalan pada resolusi 4k 60 Hz."</string>
-    <!-- no translation found for dynamic_range_selection_force_dv_title (8070148109262327094) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_dv_summary (1052851029985095562) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_title (1221688206945051384) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_summary (7784573527636502784) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_title (3976190987768712696) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_summary (5371949016689544001) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_title (1305556000063625735) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_summary (918038386222537401) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_title (1063579223517652945) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_summary (2874771365465898941) -->
-    <skip />
+    <string name="selection_dolby_vision_not_supported_sidebar" msgid="8994591316574824115">"Dolby Vision tidak didukung pada resolusi saat ini. Jika Anda mengaktifkan Dolby Vision secara manual, resolusi layar akan diubah menjadi 1080p 60Hz"</string>
+    <string name="manual_dolby_vision_format_on_4k60_title" msgid="4172263676512376500">"Ubah resolusi menjadi 1080p 60Hz?"</string>
+    <string name="dynamic_range_selection_force_dv_title" msgid="8070148109262327094">"Selalu paksa konversi ke Dolby Vision"</string>
+    <string name="dynamic_range_selection_force_dv_summary" msgid="1052851029985095562">"Jika Dolby Vision dinonaktifkan dalam Format HDR di Setelan Tampilan Lanjutan, memaksa konversi ke Dolby Vision akan mengaktifkannya lagi."</string>
+    <string name="dynamic_range_selection_force_hdr10_title" msgid="1221688206945051384">"Selalu paksa konversi ke HDR10"</string>
+    <string name="dynamic_range_selection_force_hdr10_summary" msgid="7784573527636502784">"Jika HDR10 dinonaktifkan dalam Format HDR di Setelan Tampilan Lanjutan, memaksa konversi ke HDR10 akan mengaktifkannya lagi."</string>
+    <string name="dynamic_range_selection_force_hlg_title" msgid="3976190987768712696">"Selalu paksa konversi ke HLG"</string>
+    <string name="dynamic_range_selection_force_hlg_summary" msgid="5371949016689544001">"Jika HLG dinonaktifkan dalam Format HDR di Setelan Tampilan Lanjutan, memaksa konversi ke HLG akan mengaktifkannya lagi."</string>
+    <string name="dynamic_range_selection_force_hdr10plus_title" msgid="1305556000063625735">"Selalu paksa konversi ke HDR10+"</string>
+    <string name="dynamic_range_selection_force_hdr10plus_summary" msgid="918038386222537401">"Jika HDR10+ dinonaktifkan dalam Format HDR di Setelan Tampilan Lanjutan, memaksa konversi ke HDR10+ akan mengaktifkannya lagi."</string>
+    <string name="dynamic_range_selection_force_sdr_title" msgid="1063579223517652945">"Selalu paksa konversi ke SDR"</string>
+    <string name="dynamic_range_selection_force_sdr_summary" msgid="2874771365465898941">"Memaksa konversi ke SDR akan menonaktifkan semua format dalam Format HDR di Setelan Tampilan Lanjutan."</string>
     <string name="match_content_frame_rate_title" msgid="153291168560947689">"Sesuaikan kecepatan frame konten"</string>
-    <!-- no translation found for match_content_frame_rate_seamless (5577846750811067585) -->
-    <skip />
+    <string name="match_content_frame_rate_seamless" msgid="5577846750811067585">"Transisi yang Lancar"</string>
     <string name="match_content_frame_rate_seamless_summary" msgid="2737466163964133210">"Jika aplikasi memintanya, perangkat akan mencocokkan outputnya ke kecepatan frame asli konten yang sedang Anda tonton, HANYA jika TV dapat melakukan transisi yang lancar."</string>
     <string name="match_content_frame_rate_seamless_not_supported_summary" msgid="98559950465123792">"Layar yang terhubung tidak mendukung transisi kecepatan refresh yang lancar. Opsi ini tidak akan berpengaruh kecuali jika Anda menggunakan layar yang mendukungnya."</string>
-    <!-- no translation found for match_content_frame_rate_non_seamless (2702658727234710031) -->
-    <skip />
+    <string name="match_content_frame_rate_non_seamless" msgid="2702658727234710031">"Selalu"</string>
     <string name="match_content_frame_rate_non_seamless_summary" msgid="6831699459487130055">"Jika aplikasi memintanya, perangkat akan menyesuaikan outputnya agar cocok dengan kecepatan frame asli dari konten yang sedang Anda tonton. Hal ini dapat membuat layar kosong sebentar saat Anda keluar dari atau masuk ke pemutaran video."</string>
     <string name="match_content_frame_rate_never" msgid="1678354793095148423">"Jangan pernah"</string>
     <string name="match_content_frame_rate_never_summary" msgid="742977618080396095">"Meskipun aplikasi memintanya, perangkat tidak akan mencoba mencocokkan outputnya ke kecepatan frame asli konten yang sedang Anda tonton."</string>
@@ -232,7 +222,7 @@
     <string name="resolution_selection_dialog_cancel" msgid="3683616572317946129">"Batal"</string>
     <string name="resolution_selection_dialog_ok" msgid="3123351228545013492">"Oke"</string>
     <string name="resolution_selection_hz" msgid="4425902505388495637">"Hz"</string>
-    <string name="resolution_display_mode" msgid="1862830706980223728">"<xliff:g id="RESOLUTION">%1$s</xliff:g> (<xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
+    <string name="resolution_display_mode" msgid="6633857172598855480">"<xliff:g id="RESOLUTION">%1$s</xliff:g> (<xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
     <string name="device_storage_clear_cache_title" msgid="14370154552302965">"Hapus data dalam cache?"</string>
     <string name="device_storage_clear_cache_message" msgid="4352802738505831032">"Ini akan menghapus data cache untuk semua apl."</string>
     <string name="default_audio_output_settings_title" msgid="5441937324539531999"></string>
@@ -748,7 +738,7 @@
     <string name="color_yellow" msgid="3519470952904560404">"Kuning"</string>
     <string name="color_magenta" msgid="2377854703399624607">"Merah keunguan"</string>
     <string name="accessibility_toggle_audio_description_preference_title" msgid="933923296129403548">"Deskripsi audio"</string>
-    <string name="accessibility_audio_description_summary" msgid="2027813223650517036">"Dengarkan deskripsi tentang hal yang sedang terjadi di layar pada film dan acara TV yang didukung"</string>
+    <string name="accessibility_audio_description_summary" msgid="2027813223650517036">"Dengarkan deskripsi tentang hal yang sedang terjadi di layar pada film dan acara TV yang mendukung deskripsi audio"</string>
     <string name="system_accessibility_status" msgid="8504842254080682515">"Aktifkan"</string>
     <string name="system_accessibility_config" msgid="4820879735377962851">"Konfigurasi"</string>
     <string name="system_accessibility_service_on_confirm_title" msgid="4547924421106540376">"Gunakan <xliff:g id="SERVICE">%1$s</xliff:g>?"</string>
@@ -1054,7 +1044,7 @@
     <string name="picture_in_picture_empty_text" msgid="4370198922852736600">"Tidak ada aplikasi terinstal yang mendukung Picture-in-picture"</string>
     <string name="picture_in_picture_app_detail_summary" msgid="3296649114939705896">"Mengizinkan aplikasi membuat jendela picture-in-picture saat aplikasi terbuka atau setelah Anda membiarkannya terbuka (misalnya, untuk melanjutkan aktivitas menonton video). Jendela ini ditampilkan di atas aplikasi lain yang sedang digunakan."</string>
     <string name="alarms_and_reminders_description" msgid="4063972350154624500">"Izinkan aplikasi menyetel alarm dan menjadwalkan tindakan berjangka waktu. Hal ini memungkinkan aplikasi berjalan di latar belakang, yang dapat menggunakan lebih banyak daya.\n\nJika izin ini nonaktif, alarm dan acara berbasis waktu yang dijadwalkan oleh aplikasi tidak akan berfungsi."</string>
-    <string name="turn_screen_on_title" msgid="5293798529284629011">"Aktifkan layar"</string>
+    <string name="turn_screen_on_title" msgid="5293798529284629011">"Mengaktifkan layar"</string>
     <string name="allow_turn_screen_on" msgid="4903401106871656521">"Izinkan pengaktifan layar"</string>
     <string name="allow_turn_screen_on_description" msgid="7521761625343889415">"Mengizinkan aplikasi mengaktifkan layar. Jika diizinkan, aplikasi dapat mengaktifkan layar kapan saja tanpa izin eksplisit dari Anda."</string>
     <string name="special_access" msgid="21806055758289916">"Akses aplikasi khusus"</string>

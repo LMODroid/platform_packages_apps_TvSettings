@@ -14,12 +14,14 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
+
 <layer-list
     xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:drawable="@drawable/compound_icon_background" />
-    <item android:left="@dimen/preference_icon_offset"
+    <item android:id="@+id/background" android:drawable="@drawable/compound_icon_background" />
+    <item android:id="@+id/foreground"
+        android:left="@dimen/preference_icon_offset"
         android:right="@dimen/preference_icon_offset"
         android:top="@dimen/preference_icon_offset"
         android:bottom="@dimen/preference_icon_offset"
-        android:drawable="@drawable/ic_settings_energy_mode_high_base"/>
+        android:drawable="@android:color/transparent"/>
 </layer-list>

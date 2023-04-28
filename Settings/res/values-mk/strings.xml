@@ -100,7 +100,7 @@
     <string name="all_apps_installed" msgid="8217778476185598971">"Инсталирани апликации"</string>
     <string name="all_apps_other" msgid="4420174882983813158">"Системски апликации"</string>
     <string name="all_apps_disabled" msgid="2776041242863791053">"Оневозможени апликации"</string>
-    <string name="device_daydream" msgid="2631191946958113220">"Заштитник на екран"</string>
+    <string name="device_daydream" msgid="2631191946958113220">"Штедач на екран"</string>
     <string name="device_display" msgid="244634591698925025">"Приказ"</string>
     <string name="device_display_sound" msgid="7399153506435649193">"Екран и звук"</string>
     <string name="device_sound" msgid="8616320533559404963">"Звук"</string>
@@ -141,7 +141,7 @@
     <string name="surround_sound_unsupported_title" msgid="2302820271700954900">"НЕПОДДРЖАНИ ФОРМАТИ"</string>
     <string name="surround_sound_format_info" msgid="5671866505653542934">"ИНФОРМАЦИИ ЗА ФОРМАТОТ"</string>
     <string name="surround_sound_show_formats" msgid="1929849219042916469">"Прикажи ги форматите"</string>
-    <string name="surround_sound_hide_formats" msgid="7770931097236868238">"Сокриј ги форматите"</string>
+    <string name="surround_sound_hide_formats" msgid="7770931097236868238">"Скриј ги форматите"</string>
     <string name="surround_sound_enabled_formats" msgid="5159269040069877148">"ОВОЗМОЖЕНИ ФОРМАТИ"</string>
     <string name="surround_sound_disabled_formats" msgid="2250466936859455802">"ОНЕВОЗМОЖЕНИ ФОРМАТИ"</string>
     <string name="surround_sound_disabled_format_info_clicked" msgid="463393349034930031">"За да овозможите, променете го изборот на форматот на „Рачно“."</string>
@@ -166,33 +166,23 @@
     <string name="preferred_dynamic_range_force_dialog_title" msgid="6865110024863661702">"Дали сакате да го наметнете HDR-излезот?"</string>
     <string name="preferred_dynamic_range_force_dialog_desc" msgid="7758323258282201656">"Стандардно, ќе се наметне конверзија во <xliff:g id="HDR_TYPE">%s</xliff:g>."</string>
     <string name="preferred_dynamic_range_force_dialog_desc_4k30_issue" msgid="4938418395391206131">"Екранот ќе работи со резолуција од 1080p 60Hz. Оваа опција не е компатибилна со вашиот екран кога работи со резолуција од 4k 60Hz."</string>
-    <!-- no translation found for dynamic_range_selection_force_dv_title (8070148109262327094) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_dv_summary (1052851029985095562) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_title (1221688206945051384) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_summary (7784573527636502784) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_title (3976190987768712696) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_summary (5371949016689544001) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_title (1305556000063625735) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_summary (918038386222537401) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_title (1063579223517652945) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_summary (2874771365465898941) -->
-    <skip />
+    <string name="selection_dolby_vision_not_supported_sidebar" msgid="8994591316574824115">"Тековната резолуција не го поддржува Dolby Vision. Ако го вклучите Dolby Vision рачно, резолуцијата на екранот ќе се промени на 1080p 60 Hz"</string>
+    <string name="manual_dolby_vision_format_on_4k60_title" msgid="4172263676512376500">"Дали да се промени резолуцијата на 1080p 60 Hz?"</string>
+    <string name="dynamic_range_selection_force_dv_title" msgid="8070148109262327094">"Секогаш наметнувај конверзија во Dolby Vision"</string>
+    <string name="dynamic_range_selection_force_dv_summary" msgid="1052851029985095562">"Ако Dolby Vision е оневозможен во HDR формати во Напредни поставки за екранот, наметнувањето конверзија во Dolby Vision повторно ќе го овозможи."</string>
+    <string name="dynamic_range_selection_force_hdr10_title" msgid="1221688206945051384">"Секогаш наметнувај конверзија во HDR10"</string>
+    <string name="dynamic_range_selection_force_hdr10_summary" msgid="7784573527636502784">"Ако HDR10 е оневозможен во HDR формати во Напредни поставки за екранот, наметнувањето конверзија во HDR10 повторно ќе го овозможи."</string>
+    <string name="dynamic_range_selection_force_hlg_title" msgid="3976190987768712696">"Секогаш наметнувај конверзија во HLG"</string>
+    <string name="dynamic_range_selection_force_hlg_summary" msgid="5371949016689544001">"Ако HLG е оневозможен во HDR формати во Напредни поставки за екран, наметнувањето конверзија во HLG повторно ќе го овозможи."</string>
+    <string name="dynamic_range_selection_force_hdr10plus_title" msgid="1305556000063625735">"Секогаш наметнувај конверзија во HDR10+"</string>
+    <string name="dynamic_range_selection_force_hdr10plus_summary" msgid="918038386222537401">"Ако HDR10+ е оневозможен во HDR формати во Напредни поставки за екранот, наметнувањето конверзија во HDR10+ повторно ќе го овозможи."</string>
+    <string name="dynamic_range_selection_force_sdr_title" msgid="1063579223517652945">"Секогаш наметнувај конверзија во SDR"</string>
+    <string name="dynamic_range_selection_force_sdr_summary" msgid="2874771365465898941">"Наметнувањето конверзија во SDR ќе ги оневозможи сите формати во HDR формати во Напредни поставки за екран."</string>
     <string name="match_content_frame_rate_title" msgid="153291168560947689">"Усогласи со стапка на слики за содржини"</string>
-    <!-- no translation found for match_content_frame_rate_seamless (5577846750811067585) -->
-    <skip />
+    <string name="match_content_frame_rate_seamless" msgid="5577846750811067585">"Само беспрекорно"</string>
     <string name="match_content_frame_rate_seamless_summary" msgid="2737466163964133210">"Ако апликацијата го побара тоа, вашиот уред ќе го усогласи својот излез со оригиналната стапка на слики на содржините што ги гледате, САМО ако вашиот ТВ може да изврши беспрекорен премин."</string>
     <string name="match_content_frame_rate_seamless_not_supported_summary" msgid="98559950465123792">"Поврзаните екрани не поддржуваат непречени промени на стапки на освежување. Опцијава нема да има ефект освен ако промените на екран што ја поддржува."</string>
-    <!-- no translation found for match_content_frame_rate_non_seamless (2702658727234710031) -->
-    <skip />
+    <string name="match_content_frame_rate_non_seamless" msgid="2702658727234710031">"Секогаш"</string>
     <string name="match_content_frame_rate_non_seamless_summary" msgid="6831699459487130055">"Ако апликацијата го побара тоа, вашиот уред ќе го усогласи својот излез со оригиналната стапка на слики на содржините што ги гледате. Ова може да предизвика затемнување на екранот за миг при излегувањето или влегувањето во видеорепродукцијата."</string>
     <string name="match_content_frame_rate_never" msgid="1678354793095148423">"Никогаш"</string>
     <string name="match_content_frame_rate_never_summary" msgid="742977618080396095">"Дури и ако апликацијата го побара тоа, вашиот уред никогаш нема да се обиде да го усогласи својот излез со оригиналната стапка на слики на содржините што ги гледате."</string>
@@ -218,7 +208,7 @@
     <string name="hdr_format_selection_manual_summary" msgid="7886959642083639353">"Кога е избрано, рачно може да ги оневозможите HDR-форматите што синџирот на уреди ги поддржува, а предизвикуваат проблеми со репродукцијата. Не може присилно да се овозможат HDR-форматите што вашиот синџир на уреди не ги поддржува. Апликациите може да изберат формат што не е со највисок квалитет."</string>
     <string name="hdr_format_info" msgid="5652559220799426076">"ИНФОРМАЦИИ ЗА ФОРМАТОТ"</string>
     <string name="hdr_show_formats" msgid="171065892975445851">"Прикажи ги форматите"</string>
-    <string name="hdr_hide_formats" msgid="8561568998525727230">"Сокриј ги форматите"</string>
+    <string name="hdr_hide_formats" msgid="8561568998525727230">"Скриј ги форматите"</string>
     <string name="hdr_enabled_formats" msgid="8527870623949982774">"ОВОЗМОЖЕНИ ФОРМАТИ"</string>
     <string name="hdr_disabled_formats" msgid="4758522849421497896">"ОНЕВОЗМОЖЕНИ ФОРМАТИ"</string>
     <string name="hdr_enabled_format_info_clicked" msgid="1466675962665861040">"За да оневозможите, променете го изборот на форматот на „Рачно“."</string>
@@ -232,7 +222,7 @@
     <string name="resolution_selection_dialog_cancel" msgid="3683616572317946129">"Откажи"</string>
     <string name="resolution_selection_dialog_ok" msgid="3123351228545013492">"Во ред"</string>
     <string name="resolution_selection_hz" msgid="4425902505388495637">"Hz"</string>
-    <string name="resolution_display_mode" msgid="1862830706980223728">"<xliff:g id="RESOLUTION">%1$s</xliff:g> (<xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
+    <string name="resolution_display_mode" msgid="6633857172598855480">"<xliff:g id="RESOLUTION">%1$s</xliff:g> (<xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
     <string name="device_storage_clear_cache_title" msgid="14370154552302965">"Исчисти кеширани податоци?"</string>
     <string name="device_storage_clear_cache_message" msgid="4352802738505831032">"Ова ќе исчисти кеширани податоци за сите аплик."</string>
     <string name="default_audio_output_settings_title" msgid="5441937324539531999"></string>
@@ -310,7 +300,7 @@
     <string name="no_device_admins" msgid="4628974717150185625">"Не се достапни апликации за администраторот на уредот"</string>
     <string name="security_enable_widgets_disabled_summary" msgid="7678529948487939871">"Оневозможено од администраторот"</string>
     <string name="disabled_by_administrator_summary" msgid="3420979957115426764">"Не е достапно"</string>
-    <string name="manage_device_admin" msgid="5714217234035017983">"Апликации за администраторот"</string>
+    <string name="manage_device_admin" msgid="5714217234035017983">"Администраторски апликации"</string>
     <string name="number_of_device_admins_none" msgid="2734299122299837459">"Нема активни апликации"</string>
     <string name="unlock_set_unlock_disabled_summary" msgid="108190334043671416">"Оневозм. од админ., шифрир. или складир. акредит."</string>
     <string name="enterprise_privacy_settings" msgid="8226765895133003202">"Информации за управуваниот уред"</string>
@@ -881,7 +871,7 @@
     <string name="inputs_aux" msgid="5331442342029867329">"Aux"</string>
     <string name="inputs_custom_name" msgid="2649826613531559538">"Приспособено име"</string>
     <string name="inputs_custom_name_description_fmt" msgid="2879134265596928298">"Внесете име за влезот <xliff:g id="INPUT">%1$s</xliff:g>."</string>
-    <string name="inputs_hide" msgid="9223355763198742416">"Сокриј"</string>
+    <string name="inputs_hide" msgid="9223355763198742416">"Скриј"</string>
     <string name="inputs_show" msgid="2937435050499142756">"Прикажи го овој влез"</string>
     <string name="input_header_names" msgid="5903234218909970550">"Име"</string>
     <string name="inputs_hdmi_control" msgid="650355636965841054">"Контрола на HDMI"</string>
@@ -957,7 +947,7 @@
     <string name="settings_on" msgid="7734010120323404333">"Вклучено"</string>
     <string name="settings_off" msgid="4060451657850476369">"Исклучено"</string>
     <string name="device_daydreams_none" msgid="3405655350757277348">"Исклучи го екранот"</string>
-    <string name="device_daydreams_select" msgid="7203264446482623438">"Заштитник на екран"</string>
+    <string name="device_daydreams_select" msgid="7203264446482623438">"Штедач на екран"</string>
     <string name="device_daydreams_test" msgid="7828275397550076567">"Започни сега"</string>
     <string name="device_daydreams_sleep" msgid="6847770718407377357">"Кога да започне"</string>
     <string name="device_daydreams_sleep_description" msgid="6237610484915504587">"Заштитникот на екран започнува по овој период на неактивност. Ако не е избран заштитник на екран, екранот се исклучува."</string>
@@ -1097,7 +1087,7 @@
     <string name="remove_device_admin" msgid="2623866073546295104">"Деактивирај ја апликацијата за администраторот на уредот"</string>
     <string name="uninstall_device_admin" msgid="6301368408620948266">"Деинсталирај ја апликацијата"</string>
     <string name="remove_and_uninstall_device_admin" msgid="1504351551194915633">"Деактивирај и деинсталирај"</string>
-    <string name="select_device_admin_msg" msgid="8475934459999710332">"Апликации за администраторот"</string>
+    <string name="select_device_admin_msg" msgid="8475934459999710332">"Администраторски апликации"</string>
     <string name="add_device_admin_msg" msgid="5390773166682603421">"Да се активира аплик. за администратор?"</string>
     <string name="add_device_admin" msgid="5078281377915844544">"Активирај ја апликацијата за администраторот на уредот"</string>
     <string name="device_admin_warning" msgid="7399916080685200660">"Со активирање на апликацијата за администраторот ќе се дозволи апликацијата <xliff:g id="APP_NAME">%1$s</xliff:g> да ги извршува следниве операции:"</string>

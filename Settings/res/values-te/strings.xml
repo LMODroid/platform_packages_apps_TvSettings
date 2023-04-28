@@ -166,33 +166,23 @@
     <string name="preferred_dynamic_range_force_dialog_title" msgid="6865110024863661702">"మీరు HDR అవుట్‌పుట్‌ను నిర్బంధంగా చేయాలనుకుంటున్నారా?"</string>
     <string name="preferred_dynamic_range_force_dialog_desc" msgid="7758323258282201656">"ఆటోమేటిక్‌గా మార్పిడి నిర్బంధంగా <xliff:g id="HDR_TYPE">%s</xliff:g>కి అవుతుంది."</string>
     <string name="preferred_dynamic_range_force_dialog_desc_4k30_issue" msgid="4938418395391206131">"మీ డిస్‌ప్లే 1080p 60Hz రిజల్యూషన్‌తో రన్ అవుతుంది.‌ 4k 60Hz రిజల్యూషన్‌లో రన్ అవుతున్నప్పుడు ఈ ఎంపిక మీ డిస్‌ప్లేకి అనుకూలంగా ఉండదు."</string>
-    <!-- no translation found for dynamic_range_selection_force_dv_title (8070148109262327094) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_dv_summary (1052851029985095562) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_title (1221688206945051384) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10_summary (7784573527636502784) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_title (3976190987768712696) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hlg_summary (5371949016689544001) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_title (1305556000063625735) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_hdr10plus_summary (918038386222537401) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_title (1063579223517652945) -->
-    <skip />
-    <!-- no translation found for dynamic_range_selection_force_sdr_summary (2874771365465898941) -->
-    <skip />
+    <string name="selection_dolby_vision_not_supported_sidebar" msgid="8994591316574824115">"ప్రస్తుత రిజల్యూషన్‌లో Dolby Visionకు సపోర్ట్ లేదు. మీరు Dolby Visionను మాన్యువల్‌గా ఎనేబుల్ చేస్తే, మీ డిస్‌ప్లే రిజల్యూషన్ 1080p 60Hzకు మార్చబడుతుంది"</string>
+    <string name="manual_dolby_vision_format_on_4k60_title" msgid="4172263676512376500">"రిజల్యూషన్‌ను 1080p 60Hzకు మార్చాలా?"</string>
+    <string name="dynamic_range_selection_force_dv_title" msgid="8070148109262327094">"ఎల్లప్పుడూ Dolby Visionకు నిర్బంధంగా మార్పిడి చేయండి"</string>
+    <string name="dynamic_range_selection_force_dv_summary" msgid="1052851029985095562">"అధునాతన డిస్‌ప్లే సెట్టింగ్‌లలో HDR ఫార్మాట్‌లలోని Dolby Vision డిసేబుల్ చేయబడితే, దానిని Dolby Visionకు నిర్బంధ మార్పిడి చేయడం వలన అది మళ్లీ ఎనేబుల్ చేయబడుతుంది."</string>
+    <string name="dynamic_range_selection_force_hdr10_title" msgid="1221688206945051384">"ఎల్లప్పుడూ HDR10కు నిర్బంధంగా మార్పిడి చేయండి"</string>
+    <string name="dynamic_range_selection_force_hdr10_summary" msgid="7784573527636502784">"అధునాతన డిస్‌ప్లే సెట్టింగ్‌లలో HDR ఫార్మాట్‌లలోని HDR10 డిసేబుల్ చేయబడితే, దానిని HDR10కు నిర్బంధ మార్పిడి చేయడం వలన అది మళ్లీ ఎనేబుల్ చేయబడుతుంది."</string>
+    <string name="dynamic_range_selection_force_hlg_title" msgid="3976190987768712696">"ఎల్లప్పుడూ HDRకు నిర్బంధంగా మార్పిడి చేయండి"</string>
+    <string name="dynamic_range_selection_force_hlg_summary" msgid="5371949016689544001">"అధునాతన డిస్‌ప్లే సెట్టింగ్‌లలో HDR ఫార్మాట్‌లలోని HDR డిసేబుల్ చేయబడితే, దానిని HDR నిర్బంధ మార్పిడి చేయడం వలన అది మళ్లీ ఎనేబుల్ చేయబడుతుంది."</string>
+    <string name="dynamic_range_selection_force_hdr10plus_title" msgid="1305556000063625735">"ఎల్లప్పుడూ HDR10+కు నిర్బంధంగా మార్పిడి చేయండి"</string>
+    <string name="dynamic_range_selection_force_hdr10plus_summary" msgid="918038386222537401">"అధునాతన డిస్‌ప్లే సెట్టింగ్‌లలో HDR ఫార్మాట్‌లలోని HDR10+ డిసేబుల్ చేయబడితే, దానిని HDR10+కు నిర్బంధ మార్పిడి చేయడం వలన అది మళ్లీ ఎనేబుల్ చేయబడుతుంది."</string>
+    <string name="dynamic_range_selection_force_sdr_title" msgid="1063579223517652945">"ఎల్లప్పుడూ SDRకు నిర్బంధంగా మార్పిడి చేయండి"</string>
+    <string name="dynamic_range_selection_force_sdr_summary" msgid="2874771365465898941">"SDRకి నిర్బంధ మార్పిడి చేయడం వలన అధునాతన డిస్‌ప్లే సెట్టింగ్‌లలో HDR ఫార్మాట్‌లలోని అన్ని ఫార్మాట్‌లు డిజేబుల్ చేయబడతాయి."</string>
     <string name="match_content_frame_rate_title" msgid="153291168560947689">"కంటెంట్ ఫ్రేమ్ రేట్‌‌ను మ్యాచ్ చేయడం"</string>
-    <!-- no translation found for match_content_frame_rate_seamless (5577846750811067585) -->
-    <skip />
+    <string name="match_content_frame_rate_seamless" msgid="5577846750811067585">"అంతరాయం లేని ట్రాన్సిషన్ మాత్రమే"</string>
     <string name="match_content_frame_rate_seamless_summary" msgid="2737466163964133210">"యాప్ ఒకవేళ దాని కోసం రిక్వెస్ట్ చేసినా, మీ టీవీ సీమ్‌లెస్ ట్రాన్సిషన్‌ను అమలు చేయగలిగినప్పుడు మాత్రమే, మీరు చూస్తున్న కంటెంట్ యొక్క ఒరిజినల్ ఫ్రేమ్ రేట్‌తో మీ పరికరం దాని అవుట్‌పుట్‌ను మ్యాచ్ చేస్తుంది."</string>
     <string name="match_content_frame_rate_seamless_not_supported_summary" msgid="98559950465123792">"కనెక్ట్ చేయబడిన మీ డిస్‌ప్లే ఆటంకాలు లేని రిఫ్రెష్ రేటు మార్పిడులను సపోర్ట్ చేయదు. దానిని సపోర్ట్ చేసే డిస్‌ప్లేకు మీరు మారితే మినహా ఈ ఆప్షన్ ఎటువంటి ప్రభావాన్ని చూపదు."</string>
-    <!-- no translation found for match_content_frame_rate_non_seamless (2702658727234710031) -->
-    <skip />
+    <string name="match_content_frame_rate_non_seamless" msgid="2702658727234710031">"ఎల్లప్పుడూ"</string>
     <string name="match_content_frame_rate_non_seamless_summary" msgid="6831699459487130055">"యాప్ దానిని రిక్వెస్ట్ చేస్తే, మీ పరికరం దాని అవుట్‌పుట్‌ను మీరు చూస్తున్న కంటెంట్‌కు సంబంధించిన ఒరిజినల్ ఫ్రేమ్ రేట్‌తో మ్యాచ్ చేస్తుంది. వీడియో ప్లేబ్యాక్ నుండి నిష్క్రమించేటప్పుడు లేదా ప్రవేశించేటప్పుడు మీ స్క్రీన్ ఒక సెకను బ్లాంక్ కావచ్చు."</string>
     <string name="match_content_frame_rate_never" msgid="1678354793095148423">"ఎప్పుడూ వద్దు"</string>
     <string name="match_content_frame_rate_never_summary" msgid="742977618080396095">"యాప్ దానిని రిక్వెస్ట్ చేసినప్పటికీ, మీ పరికరం దాని అవుట్‌పుట్‌ను మీరు చూస్తున్న కంటెంట్‌కు సంబంధించిన ఒరిజినల్ ఫ్రేమ్ రేట్‌తో మ్యాచ్ చేయడానికి ట్రై చేయదు."</string>
@@ -232,7 +222,7 @@
     <string name="resolution_selection_dialog_cancel" msgid="3683616572317946129">"రద్దు చేయండి"</string>
     <string name="resolution_selection_dialog_ok" msgid="3123351228545013492">"సరే"</string>
     <string name="resolution_selection_hz" msgid="4425902505388495637">"Hz"</string>
-    <string name="resolution_display_mode" msgid="1862830706980223728">"<xliff:g id="RESOLUTION">%1$s</xliff:g> ( <xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
+    <string name="resolution_display_mode" msgid="6633857172598855480">"<xliff:g id="RESOLUTION">%1$s</xliff:g> (<xliff:g id="REFRESH_RATE">%2$s</xliff:g> Hz)"</string>
     <string name="device_storage_clear_cache_title" msgid="14370154552302965">"కాష్ చేసిన డేటాను తీసివేయాలా?"</string>
     <string name="device_storage_clear_cache_message" msgid="4352802738505831032">"ఇది అన్ని అను. కాష్ చేసిన డేటాను తీసివేస్తుంది."</string>
     <string name="default_audio_output_settings_title" msgid="5441937324539531999"></string>
@@ -275,13 +265,13 @@
     <string name="bluetooth_official_remote_entry_title" msgid="6699700335229570038">"రిమోట్ కంట్రోల్ సెట్టింగ్‌లు"</string>
     <string name="bluetooth_ir_entry_title" msgid="6927284710576530479">"రిమోట్ బటన్‌లను సెటప్ చేయండి"</string>
     <string name="bluetooth_ir_entry_subtitle" msgid="4606207128353416151">"వాల్యూమ్, పవర్, టీవీలలో ఇన్‌పుట్, రిసీవర్‌లు అలాగే సౌండ్‌బార్‌లను కంట్రోల్ చేయండి"</string>
-    <string name="bluetooth_connect_action_title" msgid="7715342395313781643">"కనెక్ట్ చేయి"</string>
+    <string name="bluetooth_connect_action_title" msgid="7715342395313781643">"కనెక్ట్ చేయండి"</string>
     <string name="bluetooth_connect_confirm" msgid="4769958536295137386">"%1$sకు కనెక్ట్ అవ్వండి"</string>
     <string name="bluetooth_disconnect_action_title" msgid="1135513009197728480">"డిస్‌కనెక్ట్ చేయి"</string>
     <string name="bluetooth_disconnect_confirm" msgid="1445977623973613581">"%1$s నుండి డిస్‌కనెక్ట్ చేయండి"</string>
-    <string name="bluetooth_rename_action_title" msgid="4200419902722729907">"పేరు మార్చు"</string>
+    <string name="bluetooth_rename_action_title" msgid="4200419902722729907">"పేరు మార్చండి"</string>
     <string name="bluetooth_rename" msgid="7791922876280337194">"కనెక్ట్ చేసిన మీ పరికరం పేరు మార్చండి"</string>
-    <string name="bluetooth_forget_action_title" msgid="2351140076684719196">"విస్మరించు"</string>
+    <string name="bluetooth_forget_action_title" msgid="2351140076684719196">"విస్మరించండి"</string>
     <string name="bluetooth_forget_confirm" msgid="5175414848391021666">"%1$sను విస్మరించండి"</string>
     <string name="bluetooth_serial_number_label" msgid="6639294603220209971">"బ్లూటూత్ అడ్రస్"</string>
     <string name="bluetooth_connected_status" msgid="8629393539370085418">"కనెక్ట్ చేయబడింది"</string>
@@ -483,7 +473,7 @@
     <string name="wifi_action_view_available_networks" msgid="609561604257828342">"అందుబాటులో ఉన్న నెట్‌వర్క్‌లను చూడండి"</string>
     <string name="wifi_connecting" msgid="4234341255109283018">"<xliff:g id="SSID">%1$s</xliff:g>కి కనెక్ట్ చేస్తోంది"</string>
     <string name="wifi_saving" msgid="320653339670641708">"<xliff:g id="SSID">%1$s</xliff:g> కాన్ఫిగరేషన్‌ను సేవ్ చేస్తోంది"</string>
-    <string name="wifi_connect" msgid="2206086690065242121">"కనెక్ట్ చేయి"</string>
+    <string name="wifi_connect" msgid="2206086690065242121">"కనెక్ట్ చేయండి"</string>
     <string name="wifi_forget_network" msgid="4634016112624305571">"నెట్‌వర్క్‌ను విస్మరించు"</string>
     <string name="wifi_forget_network_description" msgid="4146715475962713899">"ఇది సేవ్ చేసిన పాస్‌వర్డ్‌తో సహా ఈ నెట్‌వర్క్‌కి కనెక్ట్ చేయడా. ఉపయో. సమాచారాన్ని క్లియర్ చేస్తుంది"</string>
     <string name="wifi_scan_qr_code_description" msgid="6620444691131671132">" మీ మొబైల్ ఫోన్‌లో QR కోడ్‌ను స్కాన్ చేయడం ద్వారా Wi-Fiకి కనెక్ట్ అవండి, సూచనను ఫాలో చేయండి.\n \n Android ఫోన్ "<b>"లో"</b>" సెట్టింగ్‌లు -&gt; నెట్‌వర్క్ &amp; ఇంటర్నెట్ -&gt; Wi-Fiకి వెళ్లండి -&gt; Wi-Fi -&gt; అధునాతనంను ఎంచుకోండి -&gt; పరికరాన్ని జోడించి, ఆపై QR కోడ్‌ను స్కాన్ చేయండి."</string>
