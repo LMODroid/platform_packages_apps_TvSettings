@@ -21,25 +21,25 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.hardware.usb.IUsbManager;
 import android.hardware.usb.UsbManager;
-import com.android.settings.core.BasePreferenceController;
+import com.android.settingslib.core.AbstractPreferenceController;
 
 import vendor.lineage.trust.V1_0.IUsbRestrict;
 
 import java.util.NoSuchElementException;
 
-public class TrustRestrictUsbPreferenceController extends BasePreferenceController {
-
-    public static final String KEY = "trust_restrict_usb";
+public class TrustRestrictUsbPreferenceController extends AbstractPreferenceController {
 
     private Context mContext;
+    private String mKey;
 
     private IUsbRestrict mUsbRestrictor = null;
     private boolean mIsUsb1_3 = false;
 
     public TrustRestrictUsbPreferenceController(Context context, String key) {
-        super(context, key);
+        super(context);
 
         mContext = context;
+        mKey = key;
 
         try {
             mUsbRestrictor = IUsbRestrict.getService();
@@ -59,14 +59,13 @@ public class TrustRestrictUsbPreferenceController extends BasePreferenceControll
         }
     }
 
-    public TrustRestrictUsbPreferenceController(Context context) {
-        this(context, KEY);
+    @Override
+    public String getPreferenceKey() {
+        return mKey;
     }
 
     @Override
-    public int getAvailabilityStatus() {
-        boolean exists = (mIsUsb1_3 || mUsbRestrictor != null);
-        return (exists ? AVAILABLE : UNSUPPORTED_ON_DEVICE);
+    public boolean isAvailable() {
+        return (mIsUsb1_3 || mUsbRestrictor != null);
     }
-
 }
