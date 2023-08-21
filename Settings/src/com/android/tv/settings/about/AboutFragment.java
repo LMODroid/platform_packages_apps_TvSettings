@@ -96,6 +96,8 @@ public class AboutFragment extends SettingsPreferenceFragment {
     private static final String KEY_TUTORIALS = "tutorials";
     private static final String KEY_RESET = "reset";
     private static final String KEY_RESET_OPTIONS = "reset_options";
+    private static final String KEY_ROM_VERSION = "rom_version";
+    private static final String PROPERTY_ROM_VERSION = "ro.lmodroid.version";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -256,6 +258,13 @@ public class AboutFragment extends SettingsPreferenceFragment {
         // Remove regulatory information if none present.
         final Preference regulatoryPref = findPreference(KEY_REGULATORY_INFO);
         PreferenceUtils.resolveSystemActivityOrRemove(getActivity(), screen, regulatoryPref, 0);
+
+        final Preference romVersionPref = findPreference(KEY_ROM_VERSION);
+        if (TextUtils.isEmpty(SystemProperties.get(PROPERTY_ROM_VERSION))) {
+            removePreference(romVersionPref);
+        } else {
+            romVersionPref.setSummary(getSystemPropertySummary(PROPERTY_ROM_VERSION));
+        }
 
         updateTutorials();
     }

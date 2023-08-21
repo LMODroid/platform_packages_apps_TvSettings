@@ -101,8 +101,7 @@
          android:key="lmodroid_version"
          android:title="@string/rom_version_title"
          android:summary="@string/summary_placeholder"
-         settings:enableCopying="true"
-         settings:controller="com.android.tv.settings.about.ROMVersionPreferenceController"/>
+         settings:enableCopying="true"/>
 
     <!-- Device Baseband version -->
     <Preference android:key="baseband_version"
