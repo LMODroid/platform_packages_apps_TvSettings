@@ -30,6 +30,12 @@
 
     <!-- Buttons screen -->
     <string name="system_buttons">Buttons</string>
+    <!-- Power button press and hold action behavior. [CHAR LIMIT=60] -->
+    <string name="power_button_long_press_action_title">Power button long press action</string>
+    <!-- Power button long press action to access the Power Menu. [CHAR LIMIT=60] -->
+    <string name="power_button_long_press_for_power_menu_action">Access Power menu</string>
+    <!-- Power button long press action to open Assistant. [CHAR LIMIT=60] -->
+    <string name="power_button_long_press_for_assistant_action">Open Assistant</string>
 
     <!-- Option to enable CEC volume control [CHAR LIMIT=30] -->
     <string name="inputs_volume_control_enabled">CEC Volume Control</string>
