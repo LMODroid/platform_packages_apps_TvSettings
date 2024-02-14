@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2023 The LibreMobileOS Foundation
+     Copyright (C) 2023-2025 The LibreMobileOS Foundation
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -53,6 +53,12 @@
 
     <!-- Buttons screen -->
     <string name="system_buttons">Buttons</string>
+    <!-- Power button press and hold action behavior. [CHAR LIMIT=60] -->
+    <string name="power_button_long_press_action_title">Power button long press action</string>
+    <!-- Power button long press action to access the Power Menu. [CHAR LIMIT=60] -->
+    <string name="power_button_long_press_for_power_menu_action">Access Power menu</string>
+    <!-- Power button long press action to open Assistant. [CHAR LIMIT=60] -->
+    <string name="power_button_long_press_for_assistant_action">Open Assistant</string>
 
     <!-- Button to shutdown the device [CHAR LIMIT=40] -->
     <string name="shutdown_button_label">Shutdown</string>
