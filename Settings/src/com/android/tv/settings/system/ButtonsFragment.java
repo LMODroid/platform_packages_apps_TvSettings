@@ -20,9 +20,12 @@ import android.app.tvsettings.TvSettingsEnums;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.Settings;
 
 import androidx.annotation.Keep;
 import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.TwoStatePreference;
 
 import com.android.internal.app.AssistUtils;
 import com.android.tv.settings.R;
@@ -30,11 +33,15 @@ import com.android.tv.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
+import com.libremobileos.providers.LMOSettings;
+
 /**
  * The button settings screen in TV settings.
  */
 @Keep
-public class ButtonsFragment extends SettingsPreferenceFragment {
+public class ButtonsFragment extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener {
+    private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
     private static final String KEY_POWER_BUTTON_LONG_PRESS_ACTION =
             "power_button_long_press_action";
 
@@ -53,6 +60,9 @@ public class ButtonsFragment extends SettingsPreferenceFragment {
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         Context context = getContext();
         setPreferencesFromResource(R.xml.buttons, null);
+
+        TwoStatePreference advancedReboot = findPreference(KEY_ADVANCED_REBOOT);
+        advancedReboot.setOnPreferenceChangeListener(this);
 
         mAssistUtils = new AssistUtils(context);
 
@@ -74,6 +84,15 @@ public class ButtonsFragment extends SettingsPreferenceFragment {
         } else {
             getPreferenceScreen().removePreference(mPowerButtonLongPressAction);
         }
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (KEY_ADVANCED_REBOOT.equals(preference.getKey())) {
+            Settings.Secure.putInt(getContext().getContentResolver(),
+                    LMOSettings.Secure.ADVANCED_REBOOT, (Boolean) newValue ? 1 : 0);
+        }
+        return true;
     }
 
     private boolean hasAssistant() {

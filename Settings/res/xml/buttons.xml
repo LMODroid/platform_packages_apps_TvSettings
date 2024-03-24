@@ -19,7 +19,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/system_buttons">
 
-    <com.libremobileos.support.preferences.SecureSettingSwitchPreference
+    <com.android.tv.settings.widget.SwitchWithSoundPreference
         android:key="advanced_reboot"
         android:order="0"
         android:title="@string/advanced_restart_title"
