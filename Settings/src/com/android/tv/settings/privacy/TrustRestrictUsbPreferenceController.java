@@ -23,8 +23,6 @@ import android.hardware.usb.IUsbManager;
 import android.hardware.usb.UsbManager;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import vendor.lineage.trust.V1_0.IUsbRestrict;
-
 import java.util.NoSuchElementException;
 
 public class TrustRestrictUsbPreferenceController extends AbstractPreferenceController {
@@ -32,7 +30,6 @@ public class TrustRestrictUsbPreferenceController extends AbstractPreferenceCont
     private Context mContext;
     private String mKey;
 
-    private IUsbRestrict mUsbRestrictor = null;
     private boolean mIsUsb1_3 = false;
 
     public TrustRestrictUsbPreferenceController(Context context, String key) {
@@ -40,12 +37,6 @@ public class TrustRestrictUsbPreferenceController extends AbstractPreferenceCont
 
         mContext = context;
         mKey = key;
-
-        try {
-            mUsbRestrictor = IUsbRestrict.getService();
-        } catch (NoSuchElementException | RemoteException e) {
-            // ignore, the hal is not available
-        }
 
         IUsbManager usbMgr = IUsbManager.Stub.asInterface(ServiceManager.getService(
                 Context.USB_SERVICE));
@@ -66,6 +57,6 @@ public class TrustRestrictUsbPreferenceController extends AbstractPreferenceCont
 
     @Override
     public boolean isAvailable() {
-        return (mIsUsb1_3 || mUsbRestrictor != null);
+        return mIsUsb1_3;
     }
 }
