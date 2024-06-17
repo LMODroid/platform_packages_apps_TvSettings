@@ -19,25 +19,23 @@ package com.android.tv.settings.connectivity.security;
 import android.content.Context;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
-import android.text.TextUtils;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.leanback.widget.GuidedAction;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.android.tv.settings.library.network.AccessPoint;
 import com.android.tv.settings.R;
+import com.android.tv.settings.connectivity.WifiConfigHelper;
 import com.android.tv.settings.connectivity.setup.AdvancedOptionsFlowInfo;
 import com.android.tv.settings.connectivity.setup.UserChoiceInfo;
+import com.android.tv.settings.library.network.AccessPoint;
+import com.android.wifitrackerlib.WifiEntry;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /** Helper class to handle Wi-Fi security */
 public class WifiSecurityHelper {
-
-    private static final String TAG = "WifiSecurityConfigInfo";
-
     public static List<GuidedAction> getSecurityTypes(Context context) {
         WifiManager wifiManager = context.getSystemService(WifiManager.class);
         List<GuidedAction> securityTypes = new ArrayList<>();
@@ -68,16 +66,6 @@ public class WifiSecurityHelper {
         return securityTypes;
     }
 
-    public static List<GuidedAction> getActionsList(FragmentActivity context,
-            @UserChoiceInfo.PAGE int page) {
-        switch (page) {
-            case UserChoiceInfo.SECURITY:
-                return getSecurityTypes(context);
-            default:
-                return null;
-        }
-    }
-
     public static String getSsid(FragmentActivity context) {
         UserChoiceInfo userChoiceInfo = ViewModelProviders.of(context).get(UserChoiceInfo.class);
         String savedSsid = userChoiceInfo.getPageSummary(UserChoiceInfo.SSID);
@@ -96,64 +84,46 @@ public class WifiSecurityHelper {
         AdvancedOptionsFlowInfo advancedOptionsFlowInfo = ViewModelProviders.of(context).get(
                 AdvancedOptionsFlowInfo.class);
         WifiConfiguration config = userChoiceInfo.getWifiConfiguration();
-
-        if (TextUtils.isEmpty(config.SSID)) {
-            // If the user adds a network manually, assume that it is hidden.
-            config.hiddenSSID = true;
-        }
-
-        if (userChoiceInfo.getPageSummary(UserChoiceInfo.SSID) != null) {
+        String ssid = userChoiceInfo.getPageSummary(UserChoiceInfo.SSID);
+        if (ssid != null) {
             config.SSID = AccessPoint.convertToQuotedString(
                     userChoiceInfo.getPageSummary(UserChoiceInfo.SSID));
         }
-        int accessPointSecurity = getSecurity(context);
+        Integer security = userChoiceInfo.getChoice(UserChoiceInfo.SECURITY);
+        if (security != null) {
+            WifiConfigHelper.setConfigKeyManagementBySecurity(config, security);
+        }
+
         String password = userChoiceInfo.getPageSummary(UserChoiceInfo.PASSWORD);
-        int length = password != null ? password.length() : 0;
+        int passwordLength = password != null ? password.length() : 0;
 
-        switch (accessPointSecurity) {
-            case AccessPoint.SECURITY_NONE:
-                config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.NONE);
-                break;
-
-            case AccessPoint.SECURITY_WEP:
-                config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.NONE);
-                config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
-                config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.SHARED);
-                // WEP-40, WEP-104, and 256-bit WEP (WEP-232?)
-                if ((length == 10 || length == 26 || length == 58)
-                        && password.matches("[0-9A-Fa-f]*")) {
-                    config.wepKeys[0] = password;
-                } else if (length != 0) {
-                    config.wepKeys[0] = '"' + password + '"';
-                }
-                break;
-
-            case AccessPoint.SECURITY_PSK:
-                config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
-                if (length != 0) {
+        if (passwordLength > 0)  {
+            switch (getSecurity(context)) {
+                case WifiEntry.SECURITY_WEP:
+                    // WEP-40, WEP-104, and 256-bit WEP (WEP-232?)
+                    if ((passwordLength == 10 || passwordLength == 26 || passwordLength == 58)
+                            && password.matches("[0-9A-Fa-f]*")) {
+                        config.wepKeys[0] = password;
+                    } else {
+                        config.wepKeys[0] = '"' + password + '"';
+                    }
+                    break;
+                case WifiEntry.SECURITY_PSK:
                     if (password.matches("[0-9A-Fa-f]{64}")) {
                         config.preSharedKey = password;
                     } else {
                         config.preSharedKey = '"' + password + '"';
                     }
-                }
-                break;
-
-            case AccessPoint.SECURITY_SAE:
-                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_SAE);
-                if (length != 0) {
+                    break;
+                case WifiEntry.SECURITY_SAE:
                     config.preSharedKey = '"' + password + '"';
-                }
-                break;
-            case AccessPoint.SECURITY_OWE:
-                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_OWE);
-                break;
-
-            default:
-                return null;
+                    break;
+            }
         }
 
-        config.setIpConfiguration(advancedOptionsFlowInfo.getIpConfiguration());
+        if (advancedOptionsFlowInfo.getIpConfiguration() != null) {
+            config.setIpConfiguration(advancedOptionsFlowInfo.getIpConfiguration());
+        }
         return config;
     }
 }

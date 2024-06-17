@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Googleove pravne informacije"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Podaci o licenci nisu dostupni"</string>
     <string name="about_model" msgid="9164284529291439296">"Model"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Način rada uređaja"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Demo način za trgovine"</string>
     <string name="about_version" msgid="6223547403835399861">"Verzija OS-a Android TV-a"</string>
     <string name="about_serial" msgid="3432319328808745459">"Serijski broj"</string>
     <string name="about_build" msgid="8467840394761634575">"Međuverzija OS-a Android TV-a"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Internetska veza"</string>
     <string name="connected" msgid="4981532275162345997">"Povezano"</string>
     <string name="not_connected" msgid="475810896484271663">"Nije povezano"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Nema interneta"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Spremljeno"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Pogrešna zaporka"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Zaporka Wi-Fi mreže je prekratka"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Potrebna je prijava"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Ostale opcije"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Pokaži sve"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Prikaži manje"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Prilagodi ograničenja"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Trenutak…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Promjena PIN-a"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Želite li izraditi ograničeni profil?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Već izrađeno"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Preskoči"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Izradi PIN"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Želite li se prebaciti na ograničeni profil?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Nema ograničenog profila"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Već je uneseno"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Aplikacija može pristupiti vašim računima. Upravlja aplikacija <xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Unesite PIN da biste gledali ovaj kanal"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Mikrofoni za snimanje"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Pokretanje snimanja zvuka nije uspjelo."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Snimanje zvuka nije uspjelo."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Štednja podatkovnog prometa"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Automatski prilagodi kvalitetu videozapisa radi uštede mobilnih podataka"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Potrošnja podatakovnog prometa i upozorenja"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"S internetom se možete povezati putem Wi-Fija, etherneta ili žarišne točke telefona."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Učiniti vidljivim drugim Bluetooth uređajima?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Aplikacija želi učiniti vaš TV vidljivim drugim Bluetooth uređajima na <xliff:g id="TIMEOUT">%1$d</xliff:g> s."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Poništi"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Kôd za uparivanje etherneta"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Energetski načini"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Poboljšajte energetsku učinkovitost kad se TV ne upotrebljava"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Te postavke utječu na uređaj kada se ne upotrebljava"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Omogućuje:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Napominjemo da taj način može povećati potrošnju energije na uređaju."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Potrošnja energije može se povećati s obzirom na broj značajki TV-a koje omogućite."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Omogućite <xliff:g id="ENERGYMODENAME">%s</xliff:g>"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Pronađi moj daljinski upravljač"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Reproducirajte zvuk da biste locirali daljinski upravljač za Google TV ako ste ga zametnuli"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Pritisnite gumb sa stražnje strane Google TV-a za reprodukciju zvuka na daljinskom upravljaču u trajanju od 30 sekundi. To funkcionira samo s podržanim daljinskim upravljačima Google TV-a.\n\nDa biste isključili zvuk, pritisnite bilo koji gumb na daljinskom upravljaču."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Na Google TV-u se nalazi gumb koji možete pritisnuti da biste reproducirali zvuk na daljinskom upravljaču u trajanju od 30 sekundi. To funkcionira samo s podržanim daljinskim upravljačima Google TV-a.\n\nDa biste isključili zvuk, pritisnite bilo koji gumb na daljinskom upravljaču."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Kada je omogućena značajka Pronađi moj daljinski upravljač, možete reproducirati zvuk da biste locirali daljinski upravljač za Google TV ako ste ga zametnuli."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Reproduciraj zvuk"</string>
 </resources>

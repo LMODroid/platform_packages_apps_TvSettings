@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Ezomthetho ze-Google"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Idatha yelayisense ayitholakali"</string>
     <string name="about_model" msgid="9164284529291439296">"Imodeli"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Imodi yedivayisi"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"I-demo Yesitolo"</string>
     <string name="about_version" msgid="6223547403835399861">"Inguqulo ye-Android TV OS"</string>
     <string name="about_serial" msgid="3432319328808745459">"Inombolo yomkhiqizo"</string>
     <string name="about_build" msgid="8467840394761634575">"Umakhiwo we-Android TV OS"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Uxhumano lwe-intanethi"</string>
     <string name="connected" msgid="4981532275162345997">"Ixhunyiwe"</string>
     <string name="not_connected" msgid="475810896484271663">"Akuxhunyiwe"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Ayikho i-Inthanethi"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Ilondoloziwe"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Iphasiwedi engalungile"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Iphasiwedi ye-Wi-Fi ifushane kakhulu"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Kudingeka ukungena ngemvume"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Okunye okukhethwa kukho"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Buka konke"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Bona okumbalwa"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Yenza ngokwezifiso imikhawulo"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Isikhathashana nje..."</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Guqula iphinikhodi"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Sungula iphrofayela ekhawulelwe?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Isunguliwe Kakade"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Yeqa"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Sungula Iphinikhodi"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Ngena kuphrofayela ekhawulelwe?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Ayikho iphrofayela ekhawulelwe?"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Ifakiwe kakade"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Lolu hlelo lokusebenza lungafinyelela kuma-akhawunti wakho. Ilawulwe yi-<xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Faka i-PIN ukuze ubuke lesi siteshi"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Amamakrofoni arekhodiwe"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Yehlulekile ukuqalisa ukurekhoda umsindo."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Ukurekhoda komsindo kwehlulekile."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Iseva yedatha"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Lungisa ngokuzenzakalela ikhwalithi yevidiyo ukuze usebenzise idatha encane yeselula"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Ukusetshenziswa kwedatha nezexwayiso"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Ungaxhuma ku-inthanethi nge-Wi-Fi, i-Ethernet, noma i-hotspot yefoni yakho."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Kwenze kubonakale kwamanye amadivayisi we-Bluetooth?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"I-app ifuna ukwenza iTV yakho ibonakale kwamanye amadivayisi e-Bluetooth kumasekhondi angu-<xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Setha kabusha"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Ikhodi yokubhangqa ye-Ethernet"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Amamodi Amandla"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Thuthukisa ukusebenza kahle kwamandla uma i-TV ingasebenzi"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Lawa masethingi athinta idivayisi uma ingasetshenziswa"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Inika amandla:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Qaphela ukuthi le modi ingase ikhulise ukusetshenziswa kwamandla kwedivayisi."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Ukusetshenziswa kwamandla kungase kukhuphuke ngenani lezakhi ze-TV ozinika amandla."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Nika amandla okuthi \"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\""</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Thola irimothi yami"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Dlala umsindo ukuze uthole irimothi yakho ye-Google TV uma ibekwe kabi"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Cindezela inkinobho engemuva kwe-Google TV yakho ukuze udlale umsindo kurimothi yakho imizuzwana engu-30. Lokhu kusebenza kuphela ngamarimothi asekelwayo e-Google TV.\n\nUkuze umise umsindo, cindezela noma iyiphi inkinobho kurimothi yakho."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Kunenkinobho ku-Google TV yakho ongayicindezela ukuze udlale umsindo kurimothi yakho imizuzwana engu-30. Lokhu kusebenza kuphela ngezilawuli-kude ezisekelwayo ze-Google TV.\n\nUkuze umise umsindo, cindezela noma iyiphi inkinobho kurimothi yakho."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Uma okuthi Thola irimothi yami kunikwe amandla, ungadlala umsindo ukuze uthole irimothi yakho ye-Google TV uma ibekwe kabi."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Dlala umsindo"</string>
 </resources>

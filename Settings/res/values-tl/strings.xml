@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google legal"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Hindi available ang data ng lisensya"</string>
     <string name="about_model" msgid="9164284529291439296">"Modelo"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Device Mode"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Demo sa Tindahan"</string>
     <string name="about_version" msgid="6223547403835399861">"Bersyon ng Android TV OS"</string>
     <string name="about_serial" msgid="3432319328808745459">"Serial number"</string>
     <string name="about_build" msgid="8467840394761634575">"Build ng Android TV OS"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Koneksyon sa internet"</string>
     <string name="connected" msgid="4981532275162345997">"Nakakonekta"</string>
     <string name="not_connected" msgid="475810896484271663">"Hindi nakakonekta"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Walang Internet"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Na-save"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Maling password"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Masyadong maikli ang password ng Wi-Fi"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Kailangang mag-sign in"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Iba pang pagpipilian"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Tingnan lahat"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Tumingin ng mas kaunti"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"I-customize ang mga paghihigpit"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Sandali lang…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Palitan ang pin"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Gumawa ng restricted profile?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Nagawa Na"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Laktawan"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Gumawa ng PIN"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Pumasok sa restricted profile?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Walang restricted profile"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Nailagay na"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Maa-access ng app na ito ang iyong mga account. Kinokontrol ng <xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Ilagay ang PIN upang mapanood ang channel na ito"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"(Mga) recorded microphone"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Hindi nasimulan ang pag-record ng audio."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Hindi na-record ang audio."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Data Saver"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Awtomatikong isaayos ang kalidad ng video para sa mas kaunting mobile data"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Paggamit ng data at mga alerto"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Puwede kang kumonekta sa internet gamit ang Wi-Fi, Ethernet, o hotspot ng iyong telepono."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Gawing nakikita sa iba pang Bluetooth device?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Gusto ng isang app na gawing nakikita ng iba pang Bluetooth device ang iyong TV sa loob ng <xliff:g id="TIMEOUT">%1$d</xliff:g> (na) segundo."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"I-reset"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Code ng pagpapares ng Ethernet"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Mga Energy Mode"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Pahusayin ang efficiency ng kuryente kapag hindi ginagamit ang TV"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Naaapektuhan ng mga setting na ito ang device kapag hindi ginagamit"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Ine-enable ang:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Tandaang posibleng mapataas ng mode na ito ang paggamit ng kuryente ng device."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Puwedeng tumaas ang pagkonsumo ng kuryente sa dami ng mga feature ng TV na ie-enable mo."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"I-enable ang \"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\""</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Hanapin ang remote ko"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Mag-play ng tunog para mahanap ang remote ng iyong Google TV kung nawawala ito"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Pindutin ang button sa likod ng iyong Google TV para mag-play ng tunog sa iyong remote sa loob ng 30 segundo. Gumagana lang ito sa mga sinusuportahang remote control ng Google TV.\n\nPara itigil ang tunog, pumindot ng kahit anong button sa iyong remote."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"May button sa iyong Google TV na mapipindot mo para mag-play ng tunog sa iyong remote nang 30 segundo. Gumagana lang ito sa mga sinusuportahang remote control ng Google TV.\n\nPara itigil ang tunog, pumindot ng kahit anong button sa iyong remote."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Kapag naka-enable ang Hanapin ang remote ko, puwede kang mag-play ng tunog para mahanap ang iyong Google TV remote kung nawawala ito."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"I-play ang tunog"</string>
 </resources>

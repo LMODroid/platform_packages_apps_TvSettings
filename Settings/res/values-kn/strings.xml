@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google ಕಾನೂನು"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"ಪರವಾನಗಿ ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲ"</string>
     <string name="about_model" msgid="9164284529291439296">"ಮಾದರಿ"</string>
+    <string name="device_mode" msgid="7258350575590118152">"ಸಾಧನ ಮೋಡ್‌"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"ಸ್ಟೋರ್ ಡೆಮೋ"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV OS ಆವೃತ್ತಿ"</string>
     <string name="about_serial" msgid="3432319328808745459">"ಕ್ರಮ ಸಂಖ್ಯೆ"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV OS ಬಿಲ್ಡ್"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ"</string>
     <string name="connected" msgid="4981532275162345997">"ಸಂಪರ್ಕಗೊಂಡಿದೆ"</string>
     <string name="not_connected" msgid="475810896484271663">"ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"ಇಂಟರ್ನೆಟ್ ಇಲ್ಲ"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"ಸೇವ್ ಮಾಡಲಾಗಿದೆ"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"ತಪ್ಪಾದ ಪಾಸ್‌ವರ್ಡ್‌"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"ವೈ-ಫೈ ಪಾಸ್‌ವರ್ಡ್ ತುಂಬಾ ಚಿಕ್ಕದಾಗಿದೆ"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"ಸೈನ್-ಇನ್ ಅಗತ್ಯವಿದೆ"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"ಇತರ ಆಯ್ಕೆಗಳು"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"ಎಲ್ಲವನ್ನೂ ನೋಡಿ"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"ಸ್ವಲ್ಪ ವೀಕ್ಷಿಸಿ"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"ನಿರ್ಬಂಧಗಳನ್ನು ವೈಯಕ್ತೀಕರಿಸಿ"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"ಒಂದು ಕ್ಷಣ…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"ಪಿನ್‌ ಬದಲಾಯಿಸಿ"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"ನಿರ್ಬಂಧಿತ ಪ್ರೊಫೈಲ್ ರಚಿಸಬೇಕೆ?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"ಈಗಾಗಲೇ ರಚಿಸಲಾಗಿದೆ"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"ಸ್ಕಿಪ್ ಮಾಡಿ"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"ಪಿನ್ ಅನ್ನು ರಚಿಸಿ"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"ನಿರ್ಬಂಧಿತ ಪ್ರೊಫೈಲ್ ನಮೂದಿಸಬೇಕೆ?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"ಯಾವುದೇ ನಿರ್ಬಂಧಿತ ಪ್ರೊಫೈಲ್ ಇಲ್ಲ"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"ಈಗಾಗಲೇ ನಮೂದಿಸಲಾಗಿದೆ"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"ಈ ಅಪ್ಲಿಕೇಶನ್ ನಿಮ್ಮ ಖಾತೆಗಳನ್ನು ಪ್ರವೇಶಿಸಬಹುದು. <xliff:g id="APP">%1$s</xliff:g> ಮೂಲಕ ನಿಯಂತ್ರಿಸಲಾಗಿದೆ"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"ಈ ಚಾನಲ್ ವೀಕ್ಷಿಸಲು PIN ನಮೂದಿಸಿ"</string>
@@ -917,7 +931,7 @@
     <string name="wifi_setup_description" msgid="6843574399437584520">"ಮುಂದುವರಿಸಲು <xliff:g id="WIFI_SUBMIT_ICON">%1$s</xliff:g> ಆಯ್ಕೆ ಮಾಡಿ."</string>
     <string name="label_done_key" msgid="8576286462300373440">"ಮುಗಿದಿದೆ"</string>
     <string name="wifi_setup_connection_success" msgid="3301901673876973474">"ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕಗೊಳಿಸಲಾಗಿದೆ"</string>
-    <string name="wifi_setup_save_success" msgid="6862510218032734919">"ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ"</string>
+    <string name="wifi_setup_save_success" msgid="6862510218032734919">"ಯಶಸ್ವಿಯಾಗಿ ಸೇವ್ ಮಾಡಲಾಗಿದೆ"</string>
     <string name="device_apps_app_management_version" msgid="2119174719194899740">"ಆವೃತ್ತಿ <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
     <string name="device_apps_app_management_open" msgid="4249743535677261897">"ತೆರೆ"</string>
     <string name="device_apps_app_management_force_stop" msgid="4454221309989640309">"ಫೋರ್ಸ್ ಸ್ಟಾಪ್"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"ರೆಕಾರ್ಡ್ ಮಾಡಲಾದ ಮೈಕ್ರೊಫೋನ್(ಗಳು)"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"ಆಡಿಯೋ ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸುವಾಗ ವಿಫಲವಾಗಿದೆ"</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"ಆಡಿಯೋ ರೆಕಾರ್ಡಿಂಗ್ ವಿಫಲವಾಗಿದೆ"</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"ಡೇಟಾ ಸೇವರ್"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"ಕಡಿಮೆ ಮೊಬೈಲ್ ಡೇಟಾ ಬಳಸಲು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ವೀಡಿಯೊ ಗುಣಮಟ್ಟವನ್ನು ಹೊಂದಿಸಿ"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"ಡೇಟಾ ಬಳಕೆ ಮತ್ತು ಅಲರ್ಟ್‌ಗಳು"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"ವೈ-ಫೈ, ಇಥರ್ನೆಟ್ ಅಥವಾ ನಿಮ್ಮ ಫೋನ್‌ನ ಹಾಟ್‌ಸ್ಪಾಟ್ ಮೂಲಕ ನೀವು ಇಂಟರ್ನೆಟ್‌ಗೆ ಕನೆಕ್ಟ್ ಮಾಡಬಹುದು."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"ಇತರ ಬ್ಲೂಟೂತ್ ಸಾಧನಗಳಿಗೆ ಗೋಚರಿಸುವಂತೆ ಮಾಡಬಹುದೇ?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"<xliff:g id="TIMEOUT">%1$d</xliff:g> ಸೆಕೆಂಡ್‌ಗಳವರೆಗೆ ಇತರ ಬ್ಲೂಟೂತ್‌‌ ಸಾಧನಗಳಿಗೆ ನಿಮ್ಮ ಟಿವಿ ಗೋಚರಿಸುವಂತೆ ಮಾಡಲು ಆ್ಯಪ್ ಬಯಸುತ್ತದೆ."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"ಮರುಹೊಂದಿಸಿ"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"ಇಥರ್ನೆಟ್ ಜೋಡಣೆ ಕೋಡ್‌"</string>
     <string name="energy_modes" msgid="1331693860386361744">"ವಿದ್ಯುತ್ ಮೋಡ್‌ಗಳು"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"ಟಿವಿ ಬಳಕೆಯಲ್ಲಿ ಇಲ್ಲದಿದ್ದಾಗ ವಿದ್ಯುತ್ ದಕ್ಷತೆಯನ್ನು ಸುಧಾರಿಸಿ"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"ಬಳಕೆಯಲ್ಲಿಲ್ಲದಿದ್ದಾಗ ಈ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಸಾಧನದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತವೆ"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"ಇವುಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"ಈ ಮೋಡ್, ಸಾಧನದ ವಿದ್ಯುತ್ ಬಳಕೆಯನ್ನು ಹೆಚ್ಚಿಸಬಹುದು ಎಂಬುದನ್ನು ಗಮನಿಸಿ."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"ನೀವು ಸಕ್ರಿಯಗೊಳಿಸುವ ಟಿವಿ ಫೀಚರ್‌ಗಳ ಸಂಖ್ಯೆಯ ಮೂಲಕ ವಿದ್ಯುತ್ ಬಳಕೆಯು ಹೆಚ್ಚಾಗಬಹುದು."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"\"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\" ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"ನನ್ನ ರಿಮೋಟ್ ಅನ್ನು ಹುಡುಕಿ"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"ನಿಮ್ಮ Google TV ರಿಮೋಟ್ ಕಳೆದುಹೋದರೆ ಅದನ್ನು ಪತ್ತೆಹಚ್ಚಲು ಸೌಂಡ್ ಅನ್ನು ಪ್ಲೇ ಮಾಡಿ"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"30 ಸೆಕೆಂಡ್‌ಗಳ ಕಾಲ ನಿಮ್ಮ ರಿಮೋಟ್‌ನಲ್ಲಿ ಸೌಂಡ್ ಅನ್ನು ಪ್ಲೇ ಮಾಡಲು ನಿಮ್ಮ Google TV ಯ ಹಿಂಭಾಗದಲ್ಲಿರುವ ಬಟನ್ ಅನ್ನು ಒತ್ತಿರಿ. ಇದು ಬೆಂಬಲಿತ Google TV ರಿಮೋಟ್ ಕಂಟ್ರೋಲ್‌ಗಳಲ್ಲಿ ಮಾತ್ರ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.\n\nಸೌಂಡ್ ಅನ್ನು ನಿಲ್ಲಿಸಲು, ನಿಮ್ಮ ರಿಮೋಟ್‌ನಲ್ಲಿರುವ ಯಾವುದೇ ಬಟನ್ ಅನ್ನು ಒತ್ತಿರಿ."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"ನಿಮ್ಮ Google TV ಯಲ್ಲಿ 30 ಸೆಕೆಂಡ್‌ಗಳ ಕಾಲ ನಿಮ್ಮ ರಿಮೋಟ್‌ನಲ್ಲಿ ಸೌಂಡ್ ಅನ್ನು ಪ್ಲೇ ಮಾಡಲು ನೀವು ಪುಶ್ ಮಾಡಬಹುದಾದ ಬಟನ್ ಇದೆ. ಇದು ಬೆಂಬಲಿತ Google TV ರಿಮೋಟ್ ಕಂಟ್ರೋಲ್‌ಗಳಲ್ಲಿ ಮಾತ್ರ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.\n\nಸೌಂಡ್ ಅನ್ನು ನಿಲ್ಲಿಸಲು, ನಿಮ್ಮ ರಿಮೋಟ್‌ನಲ್ಲಿರುವ ಯಾವುದೇ ಬಟನ್ ಅನ್ನು ಒತ್ತಿ."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"ನನ್ನ ರಿಮೋಟ್ ಅನ್ನು ಹುಡುಕಿ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, ನಿಮ್ಮ Google TV ರಿಮೋಟ್ ಕಳೆದುಹೋದರೆ ಅದನ್ನು ಪತ್ತೆಹಚ್ಚಲು ನೀವು ಸೌಂಡ್ ಅನ್ನು ಪ್ಲೇ ಮಾಡಬಹುದು."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"ಸೌಂಡ್ ಅನ್ನು ಪ್ಲೇ ಮಾಡಿ"</string>
 </resources>

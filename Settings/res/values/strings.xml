@@ -634,6 +634,8 @@
     <string name="accessory_change_name">Change name</string>
     <!-- Title of dialog for renaming the bluetooth accessory [CHAR LIMIT=50] -->
     <string name="accessory_change_name_title">Enter a new name for this accessory</string>
+    <!-- Package to send menu state changes to and names of parameters -->
+    <string name="accessory_menu_state_broadcast_package" translatable="false"/>
 
     <!-- Remote and Accessories -->
     <skip />
@@ -972,6 +974,10 @@
     <string name="about_license_activity_unavailable">License data is unavailable</string>
     <!-- Preference which shows model. [CHAR LIMIT=50] -->
     <string name="about_model">Model</string>
+    <!-- Preference which shows the current device mode. [CHAR LIMIT=100] -->
+    <string name="device_mode">Device Mode</string>
+    <!-- Description of the current usage of the device indicating it is in a demo mode. [CHAR LIMIT=100] -->
+    <string name="store_demo_mode">Store Demo</string>
     <!-- Preference which shows version. [CHAR LIMIT=50] -->
     <string name="about_version">Android TV OS version</string>
     <!-- Preference which shows serial number. [CHAR LIMIT=50] -->
@@ -1142,6 +1148,16 @@
     <string name="connected">Connected</string>
     <!-- Not connected [CHAR LIMIT=50] -->
     <string name="not_connected">Not connected</string>
+    <!-- No internet access [CHAR LIMIT=50] -->
+    <string name="wifi_no_internet">No Internet</string>
+    <!-- Saved network [CHAR LIMIT=50] -->
+    <string name="wifi_saved">Saved</string>
+    <!-- Network with bad password [CHAR LIMIT=50] -->
+    <string name="wifi_bad_password">Wrong password</string>
+    <!-- Network with short password [CHAR LIMIT=NONE] -->
+    <string name="wifi_short_password">Wi-Fi password is too short</string>
+    <!-- Network with captive portal [CHAR LIMIT=50] -->
+    <string name="wifi_captive_portal">Sign-in required</string>
 
     <!-- Wifi setting headers [CHAR LIMIT=50] -->
     <string name="wifi_setting_header_other_options">Other options</string>
@@ -2629,18 +2645,6 @@
     <!-- Notification that audio recording failed. [CHAR LIMIT=100] -->
     <string name="show_audio_recording_failed"> Audio recording failed.</string>
 
-    <!-- Title of the preference displaying data saver setting. [CHAR LIMIT=50] -->
-    <string name="title_data_saver">Data Saver</string>
-
-    <!-- Summary of the preference displaying data saver setting. [CHAR LIMIT=80] -->
-    <string name="summary_data_saver">Automatically adjust video quality to use less mobile data</string>
-
-    <!-- Title of the preference displaying data usages and alerts setting. [CHAR LIMIT=50] -->
-    <string name="title_data_alert">Data usage and alerts</string>
-
-    <!-- Header info to educate users that they can connect to the internet via Wi-Fi, Ethernet, and phone's hotspot. [CHAR LIMIT=NONE] -->
-    <string name="data_saver_header_info">You can connect to the internet with Wi-Fi, Ethernet, or your phone\'s hotspot."</string>
-
     <!-- Title of dialog shown to the user whether to allow an app to enable discovery mode. [CHAR LIMIT=100] -->
     <string name="bluetooth_ask_discovery_title">Make visible to other Bluetooth devices?</string>
     <!-- Message of dialog shown to the user whether to allow an app to enable discovery mode. [CHAR LIMIT=NONE] -->
@@ -2683,6 +2687,8 @@
     <string name="advanced_color_format_slice_uri" translatable="false"/>
     <!-- Slice uri for Dolby Vision Mode in Advanced display settings -->
     <string name="advanced_dolby_vision_mode_slice_uri" translatable="false"/>
+    <!-- Slice uri for extended audio settings in Display & Sound settings -->
+    <string name="audio_ext_uri" translatable="false"/>
 
     <!-- Slice uri for general information -->
     <string name="general_info_slice_uri" translatable="false"/>
@@ -2806,6 +2812,7 @@
     <string name="basic_mode_exit_package" translatable="false" />
     <string name="basic_mode_exit_component" translatable="false" />
     <string name="basic_mode_exit_data" translatable="false" />
+    <string name="basic_mode_exit_internet" translatable="false" />
     <string name="basic_mode_suggestion_category_title" translatable="false" />
     <string name="basic_mode_exit_preference_title" translatable="false" />
     <string name="basic_mode_exit_preference_subtitle" translatable="false" />
@@ -2855,11 +2862,11 @@
     <!-- Title for energy modes preference -->
     <string name="energy_modes">Energy Modes</string>
     <!-- Title for energy mode selection confirmation dialog -->
-    <string name="energy_modes_summary">Improve energy efficiency when TV is not in use</string>
+    <string name="energy_modes_summary">These settings affect the device when not in use</string>
     <!-- Header for list of features enabled in the selected energy mode -->
     <string name="energy_mode_enables">Enables:</string>
     <!-- Warning that selecting a higher energy mode may increase power consumption -->
-    <string name="energy_mode_eco_hint">Note that this mode may increase the power consumption of the device.</string>
+    <string name="energy_mode_eco_hint">Power consumption may increase with the number of TV features you enable.</string>
     <!-- Title for energy mode selection confirmation dialog -->
     <string name="energy_modes_confirmation_title">Enable \"<xliff:g id="energyModeName" example="Essential network features">%s</xliff:g>\"</string>
 
@@ -2867,7 +2874,7 @@
     <string name="settings_find_my_remote_title">Find my remote</string>
     <!-- Description for find my remote preference -->
     <string name="settings_find_my_remote_description">Play a sound to locate your Google TV remote if it\'s misplaced</string>
-    <string name="find_my_remote_slice_description">Press the button at the back of your Google TV to play a sound on your remote for 30 seconds. This only works with supported Google TV remote controls.\n\nTo stop the sound, press any button on your remote.</string>
+    <string name="find_my_remote_slice_description">There is a button on your Google TV that you can push to play a sound on your remote for 30 seconds. This only works with supported Google TV remote controls.\n\nTo stop the sound, press any button on your remote.</string>
     <string name="find_my_remote_integration_title" translatable="false">@string/settings_find_my_remote_title</string>
     <string name="find_my_remote_integration_hint">When Find my remote is enabled, you can play a sound to locate your Google TV remote if it\'s misplaced.</string>
     <string name="find_my_remote_play_sound">Play sound</string>

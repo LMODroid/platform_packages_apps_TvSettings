@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Teisinė „Google“ informacija"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Licencijos duomenys negalimi"</string>
     <string name="about_model" msgid="9164284529291439296">"Modelis"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Įrenginio režimas"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Parduotuvės demonstracinė versija"</string>
     <string name="about_version" msgid="6223547403835399861">"„Android TV“ OS versija"</string>
     <string name="about_serial" msgid="3432319328808745459">"Serijos numeris"</string>
     <string name="about_build" msgid="8467840394761634575">"„Android TV“ OS versija"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Interneto ryšys"</string>
     <string name="connected" msgid="4981532275162345997">"Prisijungta"</string>
     <string name="not_connected" msgid="475810896484271663">"Neprisijungta"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Nėra interneto ryšio"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Išsaugota"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Netinkamas slaptažodis"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"„Wi-Fi“ slaptažodis per trumpas."</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Būtina prisijungti"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Kitos parinktys"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Žr. viską"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Žr. mažiau"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Tinkinti apribojimus"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Palaukite…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Keisti PIN kodą"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Kurti ribotą profilį?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Jau sukurta"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Praleisti"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Sukurti PIN kodą"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Įjungti ribotą profilį?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Nėra riboto profilio"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Jau įvesta"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Ši programa gali pasiekti jūsų paskyras. Valdo „<xliff:g id="APP">%1$s</xliff:g>“"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Įveskite PIN kodą, kad galėtumėte žiūrėti kanalą"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Įrašymo mikrofonas (-ai)"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Nepavyko pradėti garso įrašo įrašymo."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Nepavyko įrašyti garso įrašo."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Duomenų taupymo priemonė"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Automat. koreg. vaizdo įr. kokybę, kad būtų sunaud. mažiau mob. ryšio duomenų"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Duomenų naudojimas ir įspėjimai"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Prie interneto galite prisijungti naudodami „Wi-Fi“, eternetą ar telefono viešosios interneto prieigos tašką."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Leisti aptikti kitiems „Bluetooth“ įrenginiams?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Programa nori nustatyti, kad televizorių <xliff:g id="TIMEOUT">%1$d</xliff:g> sek. galėtų aptikti kiti „Bluetooth“ įrenginiai."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Nustatymas iš naujo"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Eterneto susiejimo kodas"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Energijos režimai"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Efektyvesnis energijos vartojimas nenaudojant televizoriaus"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Šie nustatymai turi įtakos nenaudojamam įrenginiui"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Įgalinama:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Atminkite, kad šiuo režimu gali būti vartojama daugiau įrenginio energijos."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Energijos suvartojimas gali padidėti atsižvelgiant į įgalintų TV funkcijų skaičių."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Įgalinti „<xliff:g id="ENERGYMODENAME">%s</xliff:g>“"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Rasti nuotolinio valdymo pultelį"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Garso leidimas norint rasti netinkamoje vietoje padėtą „Google TV“ nuotolinio valdymo pultelį"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Paspauskite mygtuką „Google TV“ įrenginio užpakalinėje dalyje, kad leistumėte garsą nuotolinio valdymo pultelyje trisdešimt sekundžių. Tai veikia tik su palaikomais „Google TV“ nuotolinio valdymo pulteliais.\n\nJei norite sustabdyti garsą, paspauskite bet kurį nuotolinio valdymo pultelio mygtuką."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"„Google TV“ yra mygtukas, kurį galite paspausti, kad paleistumėte nuotolinio valdymo pultelio garsą trisdešimt sekundžių. Tai veikia tik su palaikomais „Google TV“ nuotolinio valdymo pulteliais.\n\nJei norite sustabdyti garsą, paspauskite bet kurį nuotolinio valdymo pultelio mygtuką."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Kai funkcija „Rasti nuotolinio valdymo pultelį“ įgalinta, galite leisti garsą norėdami rasti netinkamoje vietoje padėtą „Google TV“ nuotolinio valdymo pultelį"</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Leisti garsą"</string>
 </resources>

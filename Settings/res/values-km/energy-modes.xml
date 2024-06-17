@@ -16,26 +16,25 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="energy_mode_low_title" msgid="1975446673545235501">"មុខងារថាមពលទាប"</string>
-    <string name="energy_mode_low_subtitle" msgid="2138250509057251435">"មានមុខងារបណ្ដាញសំខាន់ៗ"</string>
-    <string name="energy_mode_low_info" msgid="8586799718140263220">"បិទការតភ្ជាប់បណ្ដាញ នៅពេលមិនប្រើទូរទស្សន៍ (មុខងារ​សម្ងំ)។"</string>
+    <string name="energy_mode_low_title" msgid="5700567801191430606">"ទាប"</string>
+    <string name="energy_mode_low_subtitle" msgid="7660632849388740009">"សម្ងំ"</string>
+    <string name="energy_mode_low_info" msgid="3931173640626998821">"សម្ងំ — ការតភ្ជាប់​បណ្ដាញ​ត្រូវបានបិទ នៅពេលដែល​ទូរទស្សន៍​មិនស្ថិត​ក្នុងការប្រើប្រាស់"</string>
   <string-array name="energy_mode_low_features">
-    <item msgid="4976202876230149030">"ការដំឡើងកំណែ និងមុខងារសំខាន់ខ្លាំង"</item>
+    <item msgid="4002284890471636101">"[Insert feature 1]"</item>
+    <item msgid="7072772341455731040">"[Insert feature 2]"</item>
   </string-array>
     <string name="energy_mode_low_eco_hint" msgid="2421460758847643655"></string>
-    <string name="energy_mode_moderate_title" msgid="8306916492188176732">"មុខងារថាមពលដែលបានបង្កើនប្រសិទ្ធភាព"</string>
-    <string name="energy_mode_moderate_subtitle" msgid="7478438819421632774">"មានមុខងារបណ្ដាញដែលបានណែនាំ"</string>
-    <string name="energy_mode_moderate_info" msgid="7254958508156484301">"អនុញ្ញាតឱ្យមុខងារដាស់ទូរទស្សន៍នៅលើបណ្តាញ (សម្ងំភ្ជាប់)។"</string>
-    <string name="energy_mode_moderate_all_low_features" msgid="2417504172139004649">"មុខងារសំខាន់ៗទាំងអស់"</string>
+    <string name="energy_mode_moderate_title" msgid="8612259261851051150">"បានបង្កើន​ប្រសិទ្ធភាព"</string>
+    <string name="energy_mode_moderate_subtitle" msgid="5565533500130453270">"សម្ងំ​ភ្ជាប់"</string>
+    <string name="energy_mode_moderate_info" msgid="3188005033276283994">"សម្ងំ​ភ្ជាប់ — បើក​មុខងារ ដើម្បីដាស់​ទូរទស្សន៍​តាមរយៈ​បណ្ដាញ"</string>
   <string-array name="energy_mode_moderate_features">
     <item msgid="2654586107956150296">"[បញ្ចូលមុខងារទី 1]"</item>
     <item msgid="8724721267222341891">"[បញ្ចូលមុខងារទី 2]"</item>
   </string-array>
     <string name="energy_mode_moderate_eco_hint" msgid="252189162446856286"></string>
-    <string name="energy_mode_high_title" msgid="6636328986387241066">"មុខងារថាមពលដែលបានបង្កើន"</string>
-    <string name="energy_mode_high_subtitle" msgid="8710109098343358567">"មានមុខងារបណ្ដាញបន្ថែម"</string>
-    <string name="energy_mode_high_info" msgid="7089288229870320944">"អនុញ្ញាត​មុខងារ​បន្ថែម​ សូម្បី​នៅពេលមិនកំពុងប្រើ​ទូរទស្សន៍​ក៏ដោយ។"</string>
-    <string name="energy_mode_moderate_all_moderate_features" msgid="1518972636963419872">"មុខងារដែលបានណែនាំ​ទាំងអស់"</string>
+    <string name="energy_mode_high_title" msgid="7596672058005896920">"បានបង្កើន"</string>
+    <string name="energy_mode_high_subtitle" msgid="5994284096495805422">"ភ្ជាប់​ជានិច្ច"</string>
+    <string name="energy_mode_high_info" msgid="8805447042714350186">"ភ្ជាប់​ជានិច្ច — បើក​មុខងារ​បណ្ដាញ នៅពេលដែល​ទូរទស្សន៍​មិនស្ថិត​ក្នុងការប្រើប្រាស់"</string>
   <string-array name="energy_mode_high_features">
     <item msgid="3018897868803319747">"[បញ្ចូលមុខងារទី 1]"</item>
     <item msgid="170760143032597722">"[បញ្ចូលមុខងារទី 2]"</item>

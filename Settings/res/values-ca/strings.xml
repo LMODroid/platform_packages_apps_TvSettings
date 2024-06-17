@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Informació legal de Google"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Les dades sobre llicències no estan disponibles"</string>
     <string name="about_model" msgid="9164284529291439296">"Model"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Mode de dispositiu"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Demostració de botiga"</string>
     <string name="about_version" msgid="6223547403835399861">"Versió del sistema operatiu d\'Android TV"</string>
     <string name="about_serial" msgid="3432319328808745459">"Número de sèrie"</string>
     <string name="about_build" msgid="8467840394761634575">"Compilació del sistema operatiu d\'Android TV"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Connexió a Internet"</string>
     <string name="connected" msgid="4981532275162345997">"Connectat"</string>
     <string name="not_connected" msgid="475810896484271663">"No connectat"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Sense connexió a Internet"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Desada"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Contrasenya incorrecta"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"La contrasenya de la Wi‑Fi és massa curta"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Cal iniciar la sessió"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Altres opcions"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Mostra-ho tot"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Mostra\'n menys"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Personalitza les restriccions"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Un moment…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Canvi de PIN"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Vols crear un perfil restringit?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Ja s\'ha creat"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Omet"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Crea un PIN"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Entrar al perfil restringit?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"No hi ha cap perfil restringit"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Ja s\'hi ha accedit"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Aquesta aplicació pot accedir als teus comptes. Controlada per <xliff:g id="APP">%1$s</xliff:g>."</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Introdueix el PIN per veure aquest canal"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Micròfons de la gravació"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"No s\'ha pogut començar a gravar àudio."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"No s\'ha pogut gravar àudio."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Estalvi de dades"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Ajusta la qualitat del vídeo automàticament per utilitzar menys dades mòbils"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Alertes i ús de dades"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Pots connectar-te a Internet per Wi‑Fi, Ethernet o mitjançant el punt d\'accés Wi‑Fi del teu telèfon."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Vols que sigui visible per a altres dispositius Bluetooth?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Una aplicació vol que el televisor sigui visible per a la resta de dispositius Bluetooth durant <xliff:g id="TIMEOUT">%1$d</xliff:g> segons."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Restableix"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Codi de sincronització d\'Ethernet"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Modes d\'energia"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Millora l\'eficiència energètica quan el televisor no es fa servir"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Aquestes opcions de configuració afecten el dispositiu quan no s\'està utilitzant"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Activa:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Tingues en compte que aquest mode pot augmentar el consum d\'energia del dispositiu."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"El consum d\'energia pot augmentar segons el nombre de funcions del televisor que activis."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Activa <xliff:g id="ENERGYMODENAME">%s</xliff:g>"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Troba el meu comandament"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Reprodueix un so per localitzar el teu comandament de Google TV si no el trobes"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Prem el botó de la part posterior del teu dispositiu Google TV per reproduir un so al comandament durant 30 segons. Això només funciona amb els comandaments de Google TV.\n\nPer aturar el so, prem qualsevol botó al comandament."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Pots prémer un botó que hi ha al dispositiu Google TV per reproduir un so al comandament durant 30 segons. Això només funciona amb els comandaments de Google TV.\n\nPer aturar el so, prem qualsevol botó al comandament."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Quan la funció Troba el meu comandament està activada, pots reproduir un so per localitzar el comandament de Google TV si no el trobes."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Reprodueix un so"</string>
 </resources>

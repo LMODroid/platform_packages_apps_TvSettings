@@ -16,7 +16,6 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-
 android_library {
 
     name: "TvSettingsAPI",
@@ -26,24 +25,26 @@ android_library {
 
     platform_apis: true,
     static_libs: [
-            "androidx-constraintlayout_constraintlayout",
-            "androidx.recyclerview_recyclerview",
-            "androidx.preference_preference",
-            "androidx.appcompat_appcompat",
-            "androidx.legacy_legacy-preference-v14",
-            "androidx.leanback_leanback-preference",
-            "androidx.leanback_leanback",
-            "androidx.lifecycle_lifecycle-extensions",
-            "androidx.lifecycle_lifecycle-common-java8",
-            "androidx.annotation_annotation",
-            "zxing-core-1.7",
-            "WifiTrackerLib",
-        ],
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.recyclerview_recyclerview",
+        "androidx.preference_preference",
+        "androidx.appcompat_appcompat",
+        "androidx.legacy_legacy-preference-v14",
+        "androidx.leanback_leanback-preference",
+        "androidx.leanback_leanback",
+        "androidx.lifecycle_lifecycle-extensions",
+        "androidx.lifecycle_lifecycle-common-java8",
+        "androidx.annotation_annotation",
+        "zxing-core-1.7",
+        "WifiTrackerLib",
+    ],
 
     errorprone: {
         enabled: false,
     },
 
     min_sdk_version: "29",
+    lint: {
+        baseline_filename: "lint-baseline.xml",
+    },
 }
-

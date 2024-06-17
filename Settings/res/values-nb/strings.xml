@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Informasjon fra Google"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Lisensdata er utilgjengelige"</string>
     <string name="about_model" msgid="9164284529291439296">"Modell"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Enhetsmodus"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Butikkdemo"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV OS-versjon"</string>
     <string name="about_serial" msgid="3432319328808745459">"Serienummer"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV OS-delversjon"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Internett-forbindelse"</string>
     <string name="connected" msgid="4981532275162345997">"Tilkoblet"</string>
     <string name="not_connected" msgid="475810896484271663">"Ikke tilkoblet"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Ingen internettilkobling"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Lagret"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Feil passord"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Wifi-passordet er for kort"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Du må logge på"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Andre alternativer"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Se alle"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Se færre"</string>
@@ -852,7 +859,7 @@
     <string name="autofill_none" msgid="1615056985649424207">"Ingen"</string>
     <string name="autofill_confirmation_message" msgid="3840267789160192558">"&lt;b&gt;Stoler du på dennne appen?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; &lt;xliff:g id=app_name example=Passordtjeneste&gt;%1$s&lt;/xliff:g&gt; bruker det som er på skjermen, til å fastslå hva som kan fylles ut automatisk."</string>
     <string name="computing_size" msgid="8623916230485437579">"Beregner ..."</string>
-    <string name="title_select_wifi_network" msgid="935820896444071617">"Velg Wifi-nettverk"</string>
+    <string name="title_select_wifi_network" msgid="935820896444071617">"Velg wifi-nettverk"</string>
     <string name="accessories_wifi_display_rename_device" msgid="8803397194143132061">"Gi nytt navn"</string>
     <string name="accessories_wifi_display_enable" msgid="2385467074170316302">"Wifi-skjerm"</string>
     <string name="accessories_wifi_display_pin_required" msgid="5434960694140426664">"PIN-kode kreves"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Tilpass begrensninger"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Et øyeblikk …"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Endre PIN-kode"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Opprette en begrenset profil?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Allerede opprettet"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Hopp over"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Opprett en PIN-kode"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Åpne den begrensede profilen?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Ingen begrenset profil"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Allerede åpnet"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Denne appen har tilgang til kontoene dine. Kontrollert av <xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Skriv inn PIN-koden for å se på denne kanalen"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Mikrofon(er) brukt til opptak"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Kunne ikke starte lydopptaket."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Lydopptaket mislyktes."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Datasparing"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Juster videokvalitet automatisk for å bruke mindre mobildata"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Databruk og -varsler"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Du kan koble til internett med wifi, Ethernet eller telefonens wifi-sone."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Vil du gjøre enheten synlig for andre Bluetooth-enheter?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"En app ber om å gjøre nettbrettet ditt synlig for andre Bluetooth-enheter i <xliff:g id="TIMEOUT">%1$d</xliff:g> sekunder."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Tilbakestill"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Tilkoblingskode for Ethernet"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Strømmoduser"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Gjør strømeffektiviteten bedre når TV-en ikke er i bruk"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Disse innstillingene påvirker enheten når den ikke er i bruk"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Aktiverer følgende:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Vær oppmerksom på at denne modusen kan øke strømforbruket på enheten."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Strømforbruket kan øke basert på hvor mange TV-funksjoner du aktiverer."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Slå på «<xliff:g id="ENERGYMODENAME">%s</xliff:g>»"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Finn fjernkontrollen min"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Spill av en lyd for å finne Google TV-fjernkontrollen hvis du ikke finner den"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Trykk på knappen på baksiden av Google TV for å spille av en lyd på fjernkontrollen i 30 sekunder. Dette fungerer bare med støttede Google TV-fjernkontroller.\n\nFor å stoppe lyden, trykk på en knapp på fjernkontrollen."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Google TV har en knapp du kan trykke på for å spille av en lyd på fjernkontrollen i 30 sekunder. Dette fungerer bare med støttede Google TV-fjernkontroller.\n\nFor å stoppe lyden, trykk på en knapp på fjernkontrollen."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Når Finn fjernkontrollen min er slått på, kan du spille av en lyd for å finne Google TV-fjernkontrollen din hvis du ikke finner den."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Spill av lyd"</string>
 </resources>

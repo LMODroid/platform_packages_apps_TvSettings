@@ -30,6 +30,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 import com.android.tv.settings.R;
+import com.android.tv.settings.connectivity.NetworkChangeStateManager;
 import com.android.tv.settings.connectivity.WifiConfigHelper;
 import com.android.tv.settings.connectivity.util.State;
 import com.android.tv.settings.connectivity.util.StateMachine;
@@ -53,6 +54,7 @@ public class KnownNetworkState implements State {
         FragmentChangeListener listener = (FragmentChangeListener) mActivity;
         if (listener != null) {
             listener.onFragmentChange(mFragment, true);
+            NetworkChangeStateManager.getInstance().setIsNetworkStateKnown(true);
         }
     }
 
@@ -129,6 +131,7 @@ public class KnownNetworkState implements State {
                     int networkId = mUserChoiceInfo.getWifiConfiguration().networkId;
                     ((WifiManager) getActivity().getApplicationContext().getSystemService(
                             Context.WIFI_SERVICE)).forget(networkId, null);
+                    NetworkChangeStateManager.getInstance().setIsNetworkStateKnown(false);
                 } else {
                     EnforcedAdmin admin = RestrictedLockUtils.getProfileOrDeviceOwner(getActivity(),
                             UserHandle.of(UserHandle.myUserId()));

@@ -51,7 +51,6 @@ public class UserChoiceInfo extends ViewModel {
     private HashMap<Integer, Integer> mChoiceSummary = new HashMap<>();
     private WifiConfiguration mWifiConfiguration = new WifiConfiguration();
     private int mWifiSecurity;
-    private ScanResult mChosenNetwork;
     private String mConnectedNetwork;
     private boolean mIsPasswordHidden = true;
     private ConnectionFailedStatus mConnectionFailedStatus;
@@ -118,16 +117,6 @@ public class UserChoiceInfo extends ViewModel {
     /**
      * Get {@link ScanResult} of the chosen network.
      */
-    public ScanResult getChosenNetwork() {
-        return mChosenNetwork;
-    }
-
-    /**
-     * Set {@link ScanResult} of the chosen network.
-     */
-    public void setChosenNetwork(ScanResult result) {
-        mChosenNetwork = result;
-    }
 
     /**
      * Get {@link WifiConfiguration}
@@ -220,8 +209,6 @@ public class UserChoiceInfo extends ViewModel {
         mDataSummary = new HashMap<>();
         mWifiConfiguration = new WifiConfiguration();
         mWifiSecurity = 0;
-        mChosenNetwork = null;
-        mChosenNetwork = null;
         mIsPasswordHidden = true;
     }
 

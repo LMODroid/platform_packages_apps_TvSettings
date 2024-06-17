@@ -181,11 +181,12 @@ public class LanguagePickerFragment extends SettingsPreferenceFragment {
             Preference pref = getPreferenceScreen().getPreference(i);
             LocaleStore.LocaleInfo localeInfo = (LocaleStore.LocaleInfo)
                     pref.getExtras().getSerializable(KEY_LOCALE_INFO);
-                if (localeInfo.getLocale() != null
-                        && localeInfo.getLocale().getLanguage().equals(
-                                currentLocale.getLanguage())) {
+                final Locale locale = localeInfo.getLocale();
+                if (locale != null
+                        && locale.getLanguage().equals(currentLocale.getLanguage())
+                        && locale.getScript().equals(currentLocale.getScript())) {
                     if (DEBUG) {
-                        Log.d(TAG, "Scroll to active locale: " + localeInfo.getLocale());
+                        Log.d(TAG, "Scroll to active locale: " + locale);
                     }
                     mHandler.post(() -> scrollToPreference(pref));
                 }

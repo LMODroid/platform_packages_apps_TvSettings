@@ -35,6 +35,7 @@ import android.util.Log;
 import com.android.tv.settings.library.network.AccessPoint;
 import com.android.tv.settings.R;
 import com.android.tv.settings.connectivity.util.WifiSecurityUtil;
+import com.android.wifitrackerlib.WifiEntry;
 
 import java.util.List;
 import java.util.regex.Matcher;
@@ -90,23 +91,32 @@ public final class WifiConfigHelper {
      */
     public static void setConfigKeyManagementBySecurity(
             WifiConfiguration config, int security) {
-        config.allowedKeyManagement.clear();
-        config.allowedAuthAlgorithms.clear();
         switch (security) {
-            case AccessPoint.SECURITY_NONE:
-                config.allowedKeyManagement.set(KeyMgmt.NONE);
+            case WifiEntry.SECURITY_NONE:
+                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_OPEN);
                 break;
-            case AccessPoint.SECURITY_WEP:
-                config.allowedKeyManagement.set(KeyMgmt.NONE);
-                config.allowedAuthAlgorithms.set(AuthAlgorithm.OPEN);
-                config.allowedAuthAlgorithms.set(AuthAlgorithm.SHARED);
+            case WifiEntry.SECURITY_WEP:
+                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_WEP);
                 break;
-            case AccessPoint.SECURITY_PSK:
-                config.allowedKeyManagement.set(KeyMgmt.WPA_PSK);
+            case WifiEntry.SECURITY_PSK:
+                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_PSK);
                 break;
-            case AccessPoint.SECURITY_EAP:
-                config.allowedKeyManagement.set(KeyMgmt.WPA_EAP);
-                config.allowedKeyManagement.set(KeyMgmt.IEEE8021X);
+            case WifiEntry.SECURITY_EAP:
+                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_EAP);
+                break;
+            case WifiEntry.SECURITY_EAP_WPA3_ENTERPRISE:
+                config.setSecurityParams(
+                        WifiConfiguration.SECURITY_TYPE_EAP_WPA3_ENTERPRISE);
+                break;
+            case WifiEntry.SECURITY_EAP_SUITE_B:
+                // allowedSuiteBCiphers will be set according to certificate type
+                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_EAP_SUITE_B);
+                break;
+            case WifiEntry.SECURITY_SAE:
+                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_SAE);
+                break;
+            case WifiEntry.SECURITY_OWE:
+                config.setSecurityParams(WifiConfiguration.SECURITY_TYPE_OWE);
                 break;
         }
     }
@@ -194,84 +204,13 @@ public final class WifiConfigHelper {
     }
 
     /**
-     * Did this config come out of the supplicant?  NOT "Is the config currently in the supplicant?"
-     */
-    public static boolean isNetworkSaved(WifiConfiguration config) {
-        return config != null && config.networkId > -1;
-    }
-
-    /**
      * Return the configured network that matches the ssid/security pair, or create one.
      */
-    public static WifiConfiguration getConfiguration(Context context, String ssid, int security) {
-        WifiConfiguration config = getFromConfiguredNetworks(context, ssid, security);
-
-        if (config == null) {
-            // No configured network found; populate a new one with the provided ssid / security.
-            config = new WifiConfiguration();
-            setConfigSsid(config, ssid);
-            setConfigKeyManagementBySecurity(config, security);
-        }
+    public static WifiConfiguration getConfiguration(String ssid, int security) {
+        WifiConfiguration config = new WifiConfiguration();
+        setConfigSsid(config, ssid);
+        setConfigKeyManagementBySecurity(config, security);
         return config;
-    }
-
-    /**
-     * Save a wifi configuration.
-     */
-    public static boolean saveConfiguration(Context context, WifiConfiguration config) {
-        if (config == null) {
-            return false;
-        }
-
-        WifiManager wifiMan = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
-        int networkId = wifiMan.addNetwork(config);
-        if (networkId == -1) {
-            if (DEBUG) Log.e(TAG, "failed to add network: " + config.toString());
-            return false;
-        }
-
-        if (!wifiMan.enableNetwork(networkId, false)) {
-            if (DEBUG) Log.e(TAG, "enable network failed: " + networkId + "; " + config.toString());
-            return false;
-        }
-
-        if (!wifiMan.saveConfiguration()) {
-            if (DEBUG) Log.e(TAG, "failed to save: " + config.toString());
-            return false;
-        }
-
-        if (DEBUG) Log.d(TAG, "saved network: " + config.toString());
-        return true;
-    }
-
-    /**
-     * @return A matching WifiConfiguration from the list of configured
-     * networks, or null if no matching network is found.
-     */
-    private static WifiConfiguration getFromConfiguredNetworks(Context context,
-            String ssid,
-            int security) {
-        WifiManager wifiMan = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
-        List<WifiConfiguration> configuredNetworks = wifiMan.getConfiguredNetworks();
-        if (configuredNetworks != null) {
-            for (WifiConfiguration configuredNetwork : configuredNetworks) {
-                if (configuredNetwork == null || configuredNetwork.SSID == null) {
-                    continue;  // Does this ever really happen?
-                }
-
-                // If the SSID and the security match, that's our network.
-                String configuredSsid = WifiInfo.sanitizeSsid(configuredNetwork.SSID);
-
-                if (TextUtils.equals(configuredSsid, ssid)) {
-                    int configuredSecurity = WifiSecurityUtil.getSecurity(configuredNetwork);
-                    if (configuredSecurity == security) {
-                        return configuredNetwork;
-                    }
-                }
-            }
-        }
-
-        return null;
     }
 
     /**

@@ -22,6 +22,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 
 import com.android.tv.settings.library.instrumentation.InstrumentedPreferenceFragment;
+import androidx.leanback.preference.LeanbackPreferenceFragmentCompat;
 
 /**
  * Child preference fragment should extend this class to make two panel settings functionality work,
@@ -29,8 +30,8 @@ import com.android.tv.settings.library.instrumentation.InstrumentedPreferenceFra
  */
 public abstract class SettingsPreferenceFragmentBase extends InstrumentedPreferenceFragment {
     @Override
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    public void onResume() {
+        super.onResume();
         if (getCallbackFragment() instanceof TwoPanelSettingsFragment) {
             TwoPanelSettingsFragment parentFragment =
                     (TwoPanelSettingsFragment) getCallbackFragment();
@@ -39,8 +40,8 @@ public abstract class SettingsPreferenceFragmentBase extends InstrumentedPrefere
     }
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
+    public void onPause() {
+        super.onPause();
         if (getCallbackFragment() instanceof TwoPanelSettingsFragment) {
             TwoPanelSettingsFragment parentFragment =
                     (TwoPanelSettingsFragment) getCallbackFragment();

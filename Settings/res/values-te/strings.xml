@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google చట్టపరమైన అంశాల విభాగం"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"లైసెన్స్ డేటా అందుబాటులో లేదు"</string>
     <string name="about_model" msgid="9164284529291439296">"నమూనా"</string>
+    <string name="device_mode" msgid="7258350575590118152">"పరికరం మోడ్"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Store డెమో"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV OS వెర్షన్"</string>
     <string name="about_serial" msgid="3432319328808745459">"సీరియల్ నంబర్"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV OS బిల్డ్"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"ఇంటర్నెట్ కనెక్షన్"</string>
     <string name="connected" msgid="4981532275162345997">"కనెక్ట్ చేయబడింది"</string>
     <string name="not_connected" msgid="475810896484271663">"కనెక్ట్ చేయబడలేదు"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"ఇంటర్నెట్ లేదు"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"సేవ్ చేయబడింది"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"పాస్‌వర్డ్ తప్పు"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Wi-Fi పాస్‌వర్డ్ చాలా చిన్నదిగా ఉంది"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"సైన్ ఇన్ అవసరం"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"ఇతర ఆప్షన్‌లు"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"అన్నీ చూడండి"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"తక్కువ చూడండి"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"పరిమితులను అనుకూలంగా మార్చండి"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"ఒక క్షణం…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"పిన్‌ను మార్చండి"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"పరిమిత ప్రొఫైల్ సృష్టించాలా?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"ఇప్పటికే క్రియేట్ చేయబడింది"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"స్కిప్ చేయండి"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"PINను క్రియేట్ చేయండి"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"పరిమిత ప్రొఫైల్ ఎంటర్ చేయాలా?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"పరిమితం చేయబడిన ప్రొఫైల్ లేదు"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"ఇప్పటికే ఎంటర్ చేయబడింది"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"ఈ యాప్‌ మీ ఖాతాలను యాక్సెస్‌ చేయగలదు. <xliff:g id="APP">%1$s</xliff:g> నియంత్రణలో ఉంటుంది"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"ఈ ఛానెల్‌ను చూడటానికి పిన్‌ని నమోదు చేయండి"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"రికార్డ్ చేయబడిన మైక్రోఫోన్(లు)"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"ఆడియో రికార్డింగ్‌ను ప్రారంభించడంలో విఫలమైంది."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"ఆడియో రికార్డింగ్ విఫలమైంది."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"డేటా సేవర్"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"తక్కువ మొబైల్ డేటాను ఉపయోగించడానికి వీడియో క్వాలిటీని ఆటోమేటిక్‌గా సర్దుబాటు చేయండి"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"డేటా వినియోగం మరియు హెచ్చరికలు"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"మీరు Wi-Fi, ఈథర్‌నెట్ లేదా మీ ఫోన్ హాట్‌స్పాట్ ద్వారా ఇంటర్నెట్‌కు కనక్ట్ కావచ్చు."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"ఇతర బ్లూటూత్ పరికరాలకు కనిపించేలా చేయాలా?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"యాప్ మీ TVను ఇతర బ్లూటూత్ పరికరాలకు <xliff:g id="TIMEOUT">%1$d</xliff:g> సెకన్ల పాటు కనిపించేలా చేయాలనుకుంటుంది."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"రీసెట్ చేయండి"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"ఈథర్‌నెట్ పెయిరింగ్ కోడ్"</string>
     <string name="energy_modes" msgid="1331693860386361744">"ఎనర్జీ మోడ్స్"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"టీవీ ఉపయోగంలో లేనప్పుడు శక్తి సామర్థ్యాన్ని మెరుగుపరచండి"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"ఉపయోగంలో లేనప్పుడు ఈ సెట్టింగ్‌లు పరికరాన్ని ప్రభావితం చేస్తాయి"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"ఎనేబుల్ చేయబడినవి:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"ఈ మోడ్ పరికరం తాలూకు విద్యుత్ వినియోగాన్ని పెంచుతుందని గమనించండి."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"మీరు ప్రారంభించే టీవీ ఫీచర్‌ల సంఖ్యతో విద్యుత్ వినియోగం పెరగవచ్చు."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"\"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\"ను ఎనేబుల్ చేయండి"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"నా రిమోట్‌ను కనుగొనండి"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"మీ Google TV రిమోట్ మిస్‌ప్లేస్ చేయబడితే దాన్ని గుర్తించడానికి సౌండ్ ప్లే చేయండి"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"మీ రిమోట్‌లో 30 సెకన్ల పాటు సౌండ్‌ను ప్లే చేయడానికి మీ Google TV వెనుక ఉన్న బటన్‌ను నొక్కండి. సపోర్ట్ చేసే Google TV రిమోట్ కంట్రోల్స్‌తో మాత్రమే ఇది పని చేస్తుంది.\n\nసౌండ్‌ను ఆపివేయడానికి, మీ రిమోట్‌లో ఉన్న ఏదైనా బటన్‌ను నొక్కండి."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"మీ రిమోట్‌లో 30 సెకన్ల పాటు ధ్వనిని ప్లే చేయడానికి మీ Google TVలో ఒక బటన్ ఉంటుంది. సపోర్ట్ చేసే Google TV రిమోట్ కంట్రోల్స్‌తో మాత్రమే ఇది పని చేస్తుంది.\n\nసౌండ్‌ను ఆపివేయడానికి, మీ రిమోట్‌లో ఏదైనా బటన్‌ను నొక్కండి."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"\'నా రిమోట్‌ను కనుగొనండి\' ఫీచర్‌ను ఎనేబుల్ చేసినప్పుడు, మీ Google TV రిమోట్ మిస్‌ప్లేస్ చేయబడితే దాన్ని గుర్తించడానికి మీరు సౌండ్‌ను ప్లే చేయవచ్చు."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"సౌండ్‌ను ప్లే చేయండి"</string>
 </resources>

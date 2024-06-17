@@ -39,7 +39,6 @@ import android.os.Handler;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.transition.Fade;
-import android.util.ArrayMap;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -78,7 +77,6 @@ import com.android.tv.twopanelsettings.slices.SliceSeekbarPreference;
 import com.android.tv.twopanelsettings.slices.SliceSwitchPreference;
 import com.android.tv.twopanelsettings.slices.SlicesConstants;
 
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -125,8 +123,6 @@ public abstract class TwoPanelSettingsFragment extends Fragment implements
     private Preference mFocusedPreference;
     private boolean mIsWaitingForUpdatingPreview = false;
     private AudioManager mAudioManager;
-    private final Map<VerticalGridView, OnChildViewHolderSelectedListenerTwoPanel>
-            mHasOnChildViewHolderSelectedListener = new ArrayMap<>();
 
     private static final String DELAY_MS = "delay_ms";
     private static final String CHECK_SCROLL_STATE = "check_scroll_state";
@@ -397,20 +393,10 @@ public abstract class TwoPanelSettingsFragment extends Fragment implements
                 (LeanbackPreferenceFragmentCompat) fragment;
         VerticalGridView listView = (VerticalGridView) leanbackPreferenceFragment.getListView();
         if (listView != null) {
-            if (isAddingListener) {
-                if (!mHasOnChildViewHolderSelectedListener.containsKey(listView)) {
-                    OnChildViewHolderSelectedListenerTwoPanel listener =
-                            new OnChildViewHolderSelectedListenerTwoPanel(mPrefPanelIdx);
-                    listView.addOnChildViewHolderSelectedListener(listener);
-                    mHasOnChildViewHolderSelectedListener.put(listView, listener);
-                }
-            } else {
-                if (mHasOnChildViewHolderSelectedListener.containsKey(listView)) {
-                    listView.removeOnChildViewHolderSelectedListener(
-                            mHasOnChildViewHolderSelectedListener.get(listView));
-                    mHasOnChildViewHolderSelectedListener.remove(listView);
-                }
-            }
+            listView.setOnChildViewHolderSelectedListener(
+                    isAddingListener
+                            ? new OnChildViewHolderSelectedListenerTwoPanel(mPrefPanelIdx)
+                            : null);
         }
     }
 

@@ -178,19 +178,10 @@ public class EnergyModesFragment extends SettingsPreferenceFragment {
 
             infoTitle.setText(mode.titleRes);
             infoSummary.setText(energyModesHelper.getSummary(mode));
-
-            boolean hasEcoHint = !TextUtils.isEmpty(getString(mode.ecoHintRes));
-            boolean hasEcoHintIcon = hasEcoHint && mode.ecoHintIconRes != 0;
-            ecoHint.setVisibility(hasEcoHint ? View.VISIBLE : View.GONE);
-            ecoHintIcon.setVisibility(hasEcoHintIcon ? View.VISIBLE : View.GONE);
-            ecoHint.setText(mode.ecoHintRes);
-            ecoHintIcon.setImageResource(mode.ecoHintIconRes);
-
-            if (mode.ecoHighlighted) {
-                titleIcon.setImageResource(R.drawable.ic_eco_leaf);
-            } else {
-                titleIcon.setImageResource(R.drawable.ic_info_outline_base);
-            }
+            //TODO(b/321811441): Hide hints until final copy is ready, if not we can remove views.
+            ecoHint.setVisibility(View.GONE);
+            ecoHintIcon.setVisibility(View.GONE);
+            titleIcon.setImageResource(mode.iconRes);
 
             return view;
         }

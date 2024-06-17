@@ -73,8 +73,10 @@ import com.android.tv.twopanelsettings.slices.SlicePreferencesUtil.Data;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * A screen presenting a slice in TV settings.
@@ -150,7 +152,6 @@ public class SliceFragment extends SettingsPreferenceFragment implements Observe
         this.setTitle(mScreenTitle);
         this.setSubtitle(mScreenSubtitle);
         this.setIcon(mScreenIcon);
-        this.getPreferenceScreen().removeAll();
 
         showProgressBar();
         if (!TextUtils.isEmpty(mUriString)) {
@@ -374,21 +375,18 @@ public class SliceFragment extends SettingsPreferenceFragment implements Observe
         // (c) Preference with key which does appear in the new list, but the preference has changed
         // ability to handle slices and needs to be replaced instead of re-used.
         int index = 0;
+        IdentityHashMap<Preference, Preference> newToOld = new IdentityHashMap<>();
         while (index < screen.getPreferenceCount()) {
             boolean needToRemoveCurrentPref = true;
             Preference oldPref = screen.getPreference(index);
-            if (oldPref != null && oldPref.getKey() != null) {
-                for (Preference newPref : newPrefs) {
-                    if (newPref.getKey() != null && newPref.getKey().equals(oldPref.getKey())
-                            && (newPref instanceof HasSliceUri)
-                            == (oldPref instanceof HasSliceUri)
-                            && (newPref instanceof EmbeddedSlicePreference)
-                            == (oldPref instanceof EmbeddedSlicePreference)) {
-                        needToRemoveCurrentPref = false;
-                        break;
-                    }
+            for (Preference newPref : newPrefs) {
+                if (isSamePreference(oldPref, newPref)) {
+                    needToRemoveCurrentPref = false;
+                    newToOld.put(newPref, oldPref);
+                    break;
                 }
             }
+
             if (needToRemoveCurrentPref) {
                 screen.removePreference(oldPref);
             } else {
@@ -407,61 +405,52 @@ public class SliceFragment extends SettingsPreferenceFragment implements Observe
         //Iterate the new preferences list and give each preference a correct order
         for (int i = 0; i < newPrefs.size(); i++) {
             Preference newPref = newPrefs.get(i);
-            boolean neededToAddNewPref = true;
             // If the newPref has a key and has a corresponding old preference, update the old
             // preference and give it a new order.
-            if (newPref.getKey() != null) {
-                for (int j = 0; j < screen.getPreferenceCount(); j++) {
-                    Preference oldPref = screen.getPreference(j);
-                    // EmbeddedSlicePreference has its own slice observer
-                    // (EmbeddedSlicePreferenceHelper). Should therefore not be updated by
-                    // slice observer in SliceFragment.
-                    // The order will however still need to be updated, as this can not be handled
-                    // by EmbeddedSlicePreferenceHelper.
-                    boolean allowUpdate = !(oldPref instanceof EmbeddedSlicePreference);
-                    boolean sameKey = oldPref.getKey() != null
-                            && oldPref.getKey().equals(newPref.getKey());
-                    if (sameKey) {
-                        if (allowUpdate) {
-                            oldPref.setIcon(newPref.getIcon());
-                            oldPref.setTitle(newPref.getTitle());
-                            oldPref.setSummary(newPref.getSummary());
-                            oldPref.setEnabled(newPref.isEnabled());
-                            oldPref.setSelectable(newPref.isSelectable());
-                            oldPref.setFragment(newPref.getFragment());
-                            oldPref.getExtras().putAll(newPref.getExtras());
-                            if ((oldPref instanceof HasSliceAction)
-                                    && (newPref instanceof HasSliceAction)) {
-                                ((HasSliceAction) oldPref)
-                                        .setSliceAction(
-                                                ((HasSliceAction) newPref).getSliceAction());
-                            }
-                            if ((oldPref instanceof HasSliceUri)
-                                    && (newPref instanceof HasSliceUri)) {
-                                ((HasSliceUri) oldPref)
-                                        .setUri(((HasSliceUri) newPref).getUri());
-                        }
-                        if ((oldPref instanceof HasCustomContentDescription)
-                                && (newPref instanceof HasCustomContentDescription)) {
-                            ((HasCustomContentDescription) oldPref).setContentDescription(
-                                    ((HasCustomContentDescription) newPref)
-                                            .getContentDescription());
-                            }
-                        }
 
-                        oldPref.setOrder(i);
-                        neededToAddNewPref = false;
-                        break;
-                    }
-                }
-            }
-            // If the newPref cannot find a corresponding old preference, or it does not have a key,
-            // add it to the screen with the correct order.
-            if (neededToAddNewPref) {
+            Preference oldPref = newToOld.get(newPref);
+            if (oldPref == null) {
                 newPref.setOrder(i);
                 screen.addPreference(newPref);
+                continue;
+            }
+
+            oldPref.setOrder(i);
+            if (oldPref instanceof EmbeddedSlicePreference) {
+                // EmbeddedSlicePreference has its own slice observer
+                // (EmbeddedSlicePreferenceHelper). Should therefore not be updated by
+                // slice observer in SliceFragment.
+                // The order will however still need to be updated, as this can not be handled
+                // by EmbeddedSlicePreferenceHelper.
+                continue;
+            }
+
+            oldPref.setIcon(newPref.getIcon());
+            oldPref.setTitle(newPref.getTitle());
+            oldPref.setSummary(newPref.getSummary());
+            oldPref.setEnabled(newPref.isEnabled());
+            oldPref.setSelectable(newPref.isSelectable());
+            oldPref.setFragment(newPref.getFragment());
+            oldPref.getExtras().putAll(newPref.getExtras());
+            if ((oldPref instanceof HasSliceAction)
+                    && (newPref instanceof HasSliceAction)) {
+                ((HasSliceAction) oldPref)
+                        .setSliceAction(
+                                ((HasSliceAction) newPref).getSliceAction());
+            }
+            if ((oldPref instanceof HasSliceUri)
+                    && (newPref instanceof HasSliceUri)) {
+                ((HasSliceUri) oldPref)
+                        .setUri(((HasSliceUri) newPref).getUri());
+            }
+            if ((oldPref instanceof HasCustomContentDescription)
+                    && (newPref instanceof HasCustomContentDescription)) {
+                ((HasCustomContentDescription) oldPref).setContentDescription(
+                        ((HasCustomContentDescription) newPref)
+                                .getContentDescription());
             }
         }
+
         //addPreference will reset the checked status of TwoStatePreference.
         //So we need to add them back
         for (int i = 0; i < screen.getPreferenceCount(); i++) {
@@ -484,6 +473,24 @@ public class SliceFragment extends SettingsPreferenceFragment implements Observe
                 removeAnimationClipping(child);
             }
         }
+    }
+
+    private static boolean isSamePreference(Preference oldPref, Preference newPref) {
+        if (oldPref == null || newPref == null) {
+            return false;
+        }
+
+        if (newPref instanceof HasSliceUri != oldPref instanceof HasSliceUri) {
+            return false;
+        }
+
+        if (newPref instanceof EmbeddedSlicePreference) {
+            return oldPref instanceof EmbeddedSlicePreference
+                    && Objects.equals(((EmbeddedSlicePreference) newPref).getUri(),
+                    ((EmbeddedSlicePreference) oldPref).getUri());
+        }
+
+        return newPref.getKey() != null && newPref.getKey().equals(oldPref.getKey());
     }
 
     @Override

@@ -58,8 +58,6 @@ public class NetworkState extends PreferenceControllerState implements
     private static final String KEY_ETHERNET_STATUS = "ethernet_status";
     private static final String KEY_ETHERNET_PROXY = "ethernet_proxy";
     private static final String KEY_ETHERNET_DHCP = "ethernet_dhcp";
-    private static final String KEY_DATA_SAVER_SLICE = "data_saver_slice";
-    private static final String KEY_DATA_ALERT_SLICE = "data_alert_slice";
     private static final String KEY_NETWORK_DIAGNOSTICS = "network_diagnostics";
     private static final String NETWORK_DIAGNOSTICS_ACTION =
             "com.android.tv.settings.network.NETWORK_DIAGNOSTICS";
@@ -112,8 +110,6 @@ public class NetworkState extends PreferenceControllerState implements
         mEthernetProxyPref = mPreferenceCompatManager.getOrCreatePrefCompat(KEY_ETHERNET_PROXY);
         mWifiNetworkCategoryPref = mPreferenceCompatManager.getOrCreatePrefCompat(KEY_WIFI_LIST);
         mWifiNetworkCategoryPref.setType(PreferenceCompat.TYPE_PREFERENCE_COLLAPSE_CATEGORY);
-        mDataSaverSlicePref = mPreferenceCompatManager.getOrCreatePrefCompat(KEY_DATA_SAVER_SLICE);
-        mDataAlertSlicePref = mPreferenceCompatManager.getOrCreatePrefCompat(KEY_DATA_ALERT_SLICE);
         mNetworkDiagnosticsPref = mPreferenceCompatManager.getOrCreatePrefCompat(
                 KEY_NETWORK_DIAGNOSTICS);
         Intent networkDiagnosticsIntent = makeNetworkDiagnosticsIntent();

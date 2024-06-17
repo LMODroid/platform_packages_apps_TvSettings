@@ -16,26 +16,25 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="energy_mode_low_title" msgid="1975446673545235501">"Način rada za nisku potrošnju energije"</string>
-    <string name="energy_mode_low_subtitle" msgid="2138250509057251435">"s bitnim mrežnima funkcijama"</string>
-    <string name="energy_mode_low_info" msgid="8586799718140263220">"Isključite mrežnu vezu kada se TV ne koristi (način rada mirovanja)."</string>
+    <string name="energy_mode_low_title" msgid="5700567801191430606">"Nisko"</string>
+    <string name="energy_mode_low_subtitle" msgid="7660632849388740009">"Mirovanje"</string>
+    <string name="energy_mode_low_info" msgid="3931173640626998821">"Mirovanje – mrežna veza je isključena kada se TV ne koristi"</string>
   <string-array name="energy_mode_low_features">
-    <item msgid="4976202876230149030">"Ključna ažuriranja i funkcije"</item>
+    <item msgid="4002284890471636101">"[Umetni 1. funkciju]"</item>
+    <item msgid="7072772341455731040">"[Umetni 2. funkciju]"</item>
   </string-array>
     <string name="energy_mode_low_eco_hint" msgid="2421460758847643655"></string>
-    <string name="energy_mode_moderate_title" msgid="8306916492188176732">"Način rada za optimiziranu potrošnju energije"</string>
-    <string name="energy_mode_moderate_subtitle" msgid="7478438819421632774">"s preporučenim mrežnim funkcijama"</string>
-    <string name="energy_mode_moderate_info" msgid="7254958508156484301">"Omogućava funkcije za aktiviranje TV-a putem mreže (mirovanje na mreži)."</string>
-    <string name="energy_mode_moderate_all_low_features" msgid="2417504172139004649">"Sve bitne funkcije"</string>
+    <string name="energy_mode_moderate_title" msgid="8612259261851051150">"Optimizirano"</string>
+    <string name="energy_mode_moderate_subtitle" msgid="5565533500130453270">"Mirovanje na mreži"</string>
+    <string name="energy_mode_moderate_info" msgid="3188005033276283994">"Mirovanje na mreži – omogućava funkcije radi aktiviranja TV-a putem mreže"</string>
   <string-array name="energy_mode_moderate_features">
     <item msgid="2654586107956150296">"[Umetni funkciju 1]"</item>
     <item msgid="8724721267222341891">"[Umetni funkciju 2]"</item>
   </string-array>
     <string name="energy_mode_moderate_eco_hint" msgid="252189162446856286"></string>
-    <string name="energy_mode_high_title" msgid="6636328986387241066">"Način rada za povećanu potrošnju energije"</string>
-    <string name="energy_mode_high_subtitle" msgid="8710109098343358567">"s dodatnim mrežnim funkcijama"</string>
-    <string name="energy_mode_high_info" msgid="7089288229870320944">"Omogućava dodatne funkcije čak i kada se TV ne koristi."</string>
-    <string name="energy_mode_moderate_all_moderate_features" msgid="1518972636963419872">"Sve preporučene funkcije"</string>
+    <string name="energy_mode_high_title" msgid="7596672058005896920">"Povećano"</string>
+    <string name="energy_mode_high_subtitle" msgid="5994284096495805422">"Uvijek povezano"</string>
+    <string name="energy_mode_high_info" msgid="8805447042714350186">"Uvijek povezano – omogućava mrežne funkcije kada se TV ne koristi"</string>
   <string-array name="energy_mode_high_features">
     <item msgid="3018897868803319747">"[Umetni funkciju 1]"</item>
     <item msgid="170760143032597722">"[Umetni funkciju 2]"</item>

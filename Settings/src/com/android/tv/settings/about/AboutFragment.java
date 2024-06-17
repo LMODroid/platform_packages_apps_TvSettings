@@ -96,6 +96,7 @@ public class AboutFragment extends SettingsPreferenceFragment {
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_DEVICE_NAME = "device_name";
+    private static final String KEY_DEVICE_MODE = "device_mode";
     private static final String KEY_TUTORIALS = "tutorials";
     private static final String KEY_RESET = "reset";
     private static final String KEY_RESET_OPTIONS = "reset_options";
@@ -265,6 +266,12 @@ public class AboutFragment extends SettingsPreferenceFragment {
             removePreference(findPreference(KEY_MANUAL));
         }
 
+        // Remove device mode if not in store demo mode.
+        if (!FlavorUtils.getFeatureFactory(getContext()).getBasicModeFeatureProvider()
+                .isStoreDemoMode(getContext())) {
+            removePreference(findPreference(KEY_DEVICE_MODE));
+        }
+
         // Remove regulatory information if none present.
         final Preference regulatoryPref = findPreference(KEY_REGULATORY_INFO);
         PreferenceUtils.resolveSystemActivityOrRemove(getActivity(), screen, regulatoryPref, 0);
@@ -417,6 +424,7 @@ public class AboutFragment extends SettingsPreferenceFragment {
             case KEY_DEVICE_NAME:
                 logEntrySelected(TvSettingsEnums.SYSTEM_ABOUT_DEVICE_NAME);
                 break;
+            case KEY_DEVICE_MODE:
             case KEY_RESET:
                 logEntrySelected(TvSettingsEnums.SYSTEM_ABOUT_FACTORY_RESET);
                 Intent factoryResetIntent = new Intent();

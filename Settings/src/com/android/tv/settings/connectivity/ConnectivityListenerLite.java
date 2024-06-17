@@ -81,6 +81,10 @@ public class ConnectivityListenerLite implements LifecycleObserver {
         mListener = null;
     }
 
+    public void setListener(Listener listener) {
+        this.mListener = listener;
+    }
+
     public interface Listener {
         void onConnectivityChange(ActiveNetworkProvider activeNetworkProvider);
     }

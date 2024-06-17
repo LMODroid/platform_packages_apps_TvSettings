@@ -21,9 +21,9 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
+import com.android.tv.settings.R;
 import com.android.tv.settings.library.network.AccessPoint;
 import com.android.tv.settings.library.network.AccessPoint.Speed;
-import com.android.tv.settings.R;
 
 public class AccessPointPreference extends Preference {
 
@@ -105,7 +105,6 @@ public class AccessPointPreference extends Preference {
     mBadgeCache = cache;
     mAccessPoint = accessPoint;
     mForSavedNetworks = forSavedNetworks;
-    mAccessPoint.setTag(this);
     mLevel = level;
     mDefaultIconResId = iconResId;
     mFrictionSld = frictionSld;

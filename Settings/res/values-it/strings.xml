@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Note legali Google"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Dati di licenza non disponibili"</string>
     <string name="about_model" msgid="9164284529291439296">"Modello"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Modalità dispositivo"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Demo in negozio"</string>
     <string name="about_version" msgid="6223547403835399861">"Versione sistema operativo Android TV"</string>
     <string name="about_serial" msgid="3432319328808745459">"Numero di serie"</string>
     <string name="about_build" msgid="8467840394761634575">"Build sistema operativo Android TV"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Connessione Internet"</string>
     <string name="connected" msgid="4981532275162345997">"Connesso"</string>
     <string name="not_connected" msgid="475810896484271663">"Non connesso"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Nessuna connessione a internet"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Salvata"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Password errata"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"La password del Wi-Fi è troppo corta"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Accesso obbligatorio"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Altre opzioni"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Mostra tutte"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Mostra meno"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Personalizza limitazioni"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Un attimo…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Modifica codice PIN"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Creare profilo con limitazioni?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Profilo già creato"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Salta"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Crea PIN"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Accedere al profilo con limitazioni?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Nessun profilo con limitazioni"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Hai già eseguito l\'accesso"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Questa app è controllata da <xliff:g id="APP">%1$s</xliff:g> e può accedere ai tuoi account."</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Inserisci PIN per guardare questo canale"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Microfoni registrati"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Impossibile avviare la registrazione dell\'audio."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Registrazione audio non riuscita."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Risparmio dati"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Regola automaticamente la qualità video per usare meno dati mobili"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Utilizzo dei dati e avvisi"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Puoi connetterti a Internet tramite una rete Wi-Fi, un cavo Ethernet o l\'hotspot del telefono."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Rendere visibile agli altri dispositivi Bluetooth?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Un\'app chiede di rendere la tua TV visibile ad altri dispositivi Bluetooth per <xliff:g id="TIMEOUT">%1$d</xliff:g> secondi."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Reimposta"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Codice di accoppiamento Ethernet"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Modalità di energia"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Migliora l\'efficienza energetica quando la TV non è in uso"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Queste impostazioni incidono sul dispositivo quando non è in uso"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Attiva:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Nota: questa modalità può aumentare il consumo di energia del dispositivo."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Il consumo energetico può aumentare in base al numero di funzionalità TV che attivi."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Attiva \"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\""</string>
-    <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Trova il mio telecomando"</string>
+    <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Trova il telecomando"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Riproduci un suono per trovare il tuo telecomando di Google TV se non sai dov\'è."</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Premi il pulsante sul retro di Google TV per riprodurre un suono per 30 secondi sul telecomando. Questa opzione è disponibile solo sui telecomandi di Google TV supportati.\n\nPer interrompere il suono, premi qualsiasi pulsante del telecomando."</string>
-    <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Quando l\'opzione Trova il mio telecomando è attivata, puoi riprodurre un suono per trovare il tuo telecomando di Google TV se non sai dov\'è."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Puoi premere un pulsante su Google TV che farà emettere un suono al telecomando per 30 secondi. Questa opzione è disponibile solo sui telecomandi di Google TV supportati.\n\nPer interrompere il suono, premi qualsiasi tasto del telecomando."</string>
+    <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Quando la funzionalità Trova il telecomando è attivata, puoi riprodurre un suono per trovare il tuo telecomando di Google TV se non sai dov\'è."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Riproduci suono"</string>
 </resources>

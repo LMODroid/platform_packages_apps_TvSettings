@@ -154,7 +154,8 @@ public class WifiDetailsFragment extends SettingsPreferenceFragment
 
         final boolean active = mAccessPoint.isActive();
 
-        mConnectionStatusPref.setSummary(active ? R.string.connected : R.string.not_connected);
+        mConnectionStatusPref.setSummary(
+                WifiUtils.getConnectionStatus(mAccessPoint.getWifiEntry()));
         mIpAddressPref.setVisible(active);
         mSignalStrengthPref.setVisible(active);
 

@@ -33,6 +33,7 @@ import android.text.TextUtils;
 import android.util.ArraySet;
 
 import com.android.tv.settings.R;
+import com.android.tv.settings.overlay.FlavorUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -94,13 +95,6 @@ public final class EnergyModesHelper {
         @Nullable
         public final EnergyMode baseMode;
 
-        /**
-         * ResId of String added to the top of the feature list shown in the UI to indicate
-         * accumulated features from the base mode (eg. "All essential features").
-         */
-        @StringRes
-        public final int baseModeFeaturesRes;
-
         public EnergyMode(@StringRes int identifierRes, boolean ecoHighlighted,
                 boolean enableLowPowerStandby, @BoolRes int enabledRes, @StringRes int titleRes,
                 @StringRes int subtitleRes, int colorRes, @DrawableRes int iconRes,
@@ -108,8 +102,7 @@ public final class EnergyModesHelper {
                 @DrawableRes int ecoHintIconRes, @ArrayRes int baseExemptPackagesRes,
                 @ArrayRes int vendorExemptPackagesRes, @IntegerRes int baseAllowedReasonsRes,
                 @IntegerRes int vendorAllowedReasonsRes, @ArrayRes int baseAllowedFeaturesRes,
-                @ArrayRes int vendorAllowedFeaturesRes, @Nullable EnergyMode baseMode,
-                @StringRes int baseModeFeaturesRes) {
+                @ArrayRes int vendorAllowedFeaturesRes, @Nullable EnergyMode baseMode) {
             this.ecoHighlighted = ecoHighlighted;
             this.enableLowPowerStandby = enableLowPowerStandby;
             this.enabledRes = enabledRes;
@@ -129,7 +122,6 @@ public final class EnergyModesHelper {
             this.baseAllowedFeaturesRes = baseAllowedFeaturesRes;
             this.vendorAllowedFeaturesRes = vendorAllowedFeaturesRes;
             this.baseMode = baseMode;
-            this.baseModeFeaturesRes = baseModeFeaturesRes;
         }
     }
 
@@ -152,7 +144,7 @@ public final class EnergyModesHelper {
             R.integer.energy_mode_low_vendorAllowedReasons,
             R.array.energy_mode_low_baseAllowedFeatures,
             R.array.energy_mode_low_vendorAllowedFeatures,
-            /* baseMode= */ null, /* baseModeFeaturesRes= */ 0);
+            /* baseMode= */ null);
 
     public static EnergyMode MODE_MODERATE_ENERGY = new EnergyMode(
             R.string.energy_mode_moderate_identifier,
@@ -173,8 +165,7 @@ public final class EnergyModesHelper {
             R.integer.energy_mode_moderate_vendorAllowedReasons,
             R.array.energy_mode_moderate_baseAllowedFeatures,
             R.array.energy_mode_moderate_vendorAllowedFeatures,
-            MODE_LOW_ENERGY,
-            R.string.energy_mode_moderate_all_low_features);
+            MODE_LOW_ENERGY);
 
     public static EnergyMode MODE_HIGH_ENERGY = new EnergyMode(
             R.string.energy_mode_high_identifier,
@@ -195,8 +186,7 @@ public final class EnergyModesHelper {
             R.integer.energy_mode_high_vendorAllowedReasons,
             R.array.energy_mode_high_baseAllowedFeatures,
             R.array.energy_mode_high_vendorAllowedFeatures,
-            MODE_MODERATE_ENERGY,
-            R.string.energy_mode_moderate_all_moderate_features);
+            MODE_MODERATE_ENERGY);
 
     public static EnergyMode MODE_UNRESTRICTED = new EnergyMode(
             R.string.energy_mode_unrestricted_identifier,
@@ -211,8 +201,7 @@ public final class EnergyModesHelper {
             R.array.energy_mode_high_features,
             R.string.energy_mode_high_eco_hint,
             R.drawable.ic_bolt,
-            0, 0, 0, 0, 0, 0, null,
-            R.string.energy_mode_moderate_all_moderate_features);
+            0, 0, 0, 0, 0, 0, null);
 
     public static EnergyMode[] ENERGY_MODES = new EnergyMode[] {
             MODE_LOW_ENERGY, MODE_MODERATE_ENERGY, MODE_HIGH_ENERGY, MODE_UNRESTRICTED };
@@ -227,6 +216,10 @@ public final class EnergyModesHelper {
      * If false, energy modes are not supported.
      */
     public static boolean isLowPowerStandbySupported(Context context) {
+        if (FlavorUtils.getFeatureFactory(context).getBasicModeFeatureProvider()
+                .isBasicMode(context)) {
+            return false; // Basic mode does no background processing during standby.
+        }
         final PowerManager powerManager = context.getSystemService(PowerManager.class);
         return powerManager.isLowPowerStandbySupported();
     }
@@ -335,15 +328,6 @@ public final class EnergyModesHelper {
         }
 
         StringBuilder featureList = new StringBuilder();
-
-        if (mode.baseModeFeaturesRes != 0) {
-            final String baseModeFeatures = mContext.getString(mode.baseModeFeaturesRes);
-            if (!TextUtils.isEmpty(baseModeFeatures)) {
-                featureList.append(LIST_ITEM_BULLET);
-                featureList.append(baseModeFeatures);
-                featureList.append("\n");
-            }
-        }
 
         for (int i = 0; i < features.length; i++) {
             featureList.append(LIST_ITEM_BULLET);

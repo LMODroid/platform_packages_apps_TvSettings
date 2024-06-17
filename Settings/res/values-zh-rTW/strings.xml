@@ -329,9 +329,9 @@
     <string name="enterprise_privacy_number_packages" msgid="6256222390430349008">"{count,plural, =1{# 個應用程式}other{# 個應用程式}}"</string>
     <string name="enterprise_privacy_input_method" msgid="5814752394251833058">"預設鍵盤"</string>
     <string name="enterprise_privacy_input_method_name" msgid="1088874503312671318">"已設為「<xliff:g id="APP_LABEL">%s</xliff:g>」"</string>
-    <string name="enterprise_privacy_always_on_vpn_device" msgid="8845550514448914237">"已開啟「永久連線的 VPN」"</string>
-    <string name="enterprise_privacy_always_on_vpn_personal" msgid="6996782365866442280">"已開啟你個人設定檔中的「永久連線的 VPN」"</string>
-    <string name="enterprise_privacy_always_on_vpn_work" msgid="3674119583050531071">"已開啟你工作資料夾中的「永久連線的 VPN」"</string>
+    <string name="enterprise_privacy_always_on_vpn_device" msgid="8845550514448914237">"已開啟「永久連線 VPN」"</string>
+    <string name="enterprise_privacy_always_on_vpn_personal" msgid="6996782365866442280">"已開啟你個人設定檔中的「永久連線 VPN」"</string>
+    <string name="enterprise_privacy_always_on_vpn_work" msgid="3674119583050531071">"已開啟你工作資料夾中的「永久連線 VPN」"</string>
     <string name="enterprise_privacy_global_http_proxy" msgid="2818848848337527780">"已設定全域 HTTP Proxy"</string>
     <string name="enterprise_privacy_ca_certs_device" msgid="975646846291012452">"信任的憑證"</string>
     <string name="enterprise_privacy_ca_certs_personal" msgid="7641368559306519707">"你的個人設定檔中安裝的信任的憑證"</string>
@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google 法律條款"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"無法提供授權資料"</string>
     <string name="about_model" msgid="9164284529291439296">"型號"</string>
+    <string name="device_mode" msgid="7258350575590118152">"裝置模式"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"商店展示模式"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV 作業系統版本"</string>
     <string name="about_serial" msgid="3432319328808745459">"序號"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV 作業系統版本"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"網際網路連線"</string>
     <string name="connected" msgid="4981532275162345997">"已連線"</string>
     <string name="not_connected" msgid="475810896484271663">"尚未連線"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"沒有網路連線"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"已儲存"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"密碼錯誤"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Wi-Fi 密碼太短"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"必須登入"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"其他選項"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"全部顯示"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"顯示較少"</string>
@@ -792,7 +799,7 @@
     <string name="system_profile_gpu_rendering" msgid="1113416260742329348">"剖析 GPU 轉譯"</string>
     <string name="system_enable_traces" msgid="108745519968154528">"啟用追蹤項目"</string>
     <string name="system_dont_keep_activities" msgid="4641165963339846161">"不要保留活動"</string>
-    <string name="system_background_process_limit" msgid="1985373407150771045">"背景處理程序限制"</string>
+    <string name="system_background_process_limit" msgid="1985373407150771045">"背景程序限制"</string>
     <string name="system_show_all_anrs" msgid="5353216640638263217">"顯示所有無回應程式"</string>
     <string name="system_desc_stay_awake" msgid="8485868071929937500">"停用休眠功能"</string>
     <string name="system_desc_hdcp_checking" msgid="1664068008848077241">"僅用於 DRM 內容"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"自訂限制"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"請稍候…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"變更 PIN 碼"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"要建立設有限制的個人資料嗎？"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"已經建立設有限制的個人資料"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"略過"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"設定 PIN 碼"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"要切換至設有限制的個人資料嗎？"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"找不到設有限制的個人資料"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"已經切換至設有限制的個人資料"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"這個應用程式可存取您的帳戶 (受到「<xliff:g id="APP">%1$s</xliff:g>」控制)。"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"輸入 PIN 即可觀看這個頻道"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"用於錄音的麥克風"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"無法開始錄音。"</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"錄音失敗。"</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"數據節省模式"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"自動調整影片畫質，藉此降低行動數據用量"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"數據用量和快訊"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"你可以透過 Wi-Fi、乙太網路或手機的無線基地台連上網際網路。"</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"要開放讓其他藍牙裝置偵測嗎？"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"應用程式要求開放 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒，讓其他藍牙裝置能偵測到你的電視。"</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"重設"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"乙太網路配對碼"</string>
     <string name="energy_modes" msgid="1331693860386361744">"耗電模式"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"在沒有人使用電視時改善耗電量"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"裝置在未使用時會受到這些設定影響"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"啟用以下功能："</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"請注意，這個模式可能會使裝置耗電量增加。"</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"視你啟用的電視功能數量而定，耗電量可能會增加。"</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"啟用「<xliff:g id="ENERGYMODENAME">%s</xliff:g>」"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"尋找我的遙控器"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"讓忘記放在何處的 Google TV 遙控器發出音效，以便找出裝置"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"按下 Google TV 裝置背面的按鈕即可讓遙控器播放音效 30 秒。這項功能僅適用於支援的 Google TV 遙控器。\n\n如要停止播放音效，請按下遙控器上的任一按鈕。"</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Google TV 有一個按鈕，按下即可讓遙控器播放音效 30 秒。這項功能僅適用於支援的 Google TV 遙控器。\n\n如要停止播放音效，請按下遙控器上的任一按鈕。"</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"啟用「尋找我的遙控器」後，你可以讓忘記放在何處的 Google TV 遙控器發出音效，以便找出裝置。"</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"播放音效"</string>
 </resources>

@@ -31,11 +31,12 @@
     <string name="energy_mode_low_identifier" translatable="false">low_energy_use</string>
     <color name="energy_mode_low_color">#137332</color>
     <drawable name="energy_mode_low_icon">@drawable/ic_eco_leaf</drawable>
-    <string name="energy_mode_low_title">Low energy mode</string>
-    <string name="energy_mode_low_subtitle">with essential network features</string>
-    <string name="energy_mode_low_info">Turn off network connection when the TV is not in use (standby mode).</string>
+    <string name="energy_mode_low_title">Low</string>
+    <string name="energy_mode_low_subtitle">Standby</string>
+    <string name="energy_mode_low_info">Standby — Network connection is off when the TV is not in use</string>
     <string-array name="energy_mode_low_features">
-        <item>Critical updates and functions</item>
+        <item>[Insert feature 1]</item>
+        <item>[Insert feature 2]</item>
     </string-array>
     <string name="energy_mode_low_eco_hint" />
 
@@ -53,10 +54,9 @@
     <string name="energy_mode_moderate_identifier" translatable="false">moderate_energy_use</string>
     <color name="energy_mode_moderate_color">#184EA6</color>
     <drawable name="energy_mode_moderate_icon">@drawable/ic_energy_mode_moderate</drawable>
-    <string name="energy_mode_moderate_title">Optimized energy mode</string>
-    <string name="energy_mode_moderate_subtitle">with recommended network features</string>
-    <string name="energy_mode_moderate_info">Allows features to wake the TV over the network (networked standby).</string>
-    <string name="energy_mode_moderate_all_low_features">All essential features</string>
+    <string name="energy_mode_moderate_title">Optimized</string>
+    <string name="energy_mode_moderate_subtitle">Networked Standby</string>
+    <string name="energy_mode_moderate_info">Networked standby — Enables features to wake up the TV over the network</string>
     <string-array name="energy_mode_moderate_features">
         <item>[Insert feature 1]</item>
         <item>[Insert feature 2]</item>
@@ -76,10 +76,9 @@
     <string name="energy_mode_high_identifier" translatable="false">high_energy_use</string>
     <color name="energy_mode_high_color">#EA8600</color>
     <drawable name="energy_mode_high_icon">@drawable/ic_energy_mode_high</drawable>
-    <string name="energy_mode_high_title">Increased energy mode</string>
-    <string name="energy_mode_high_subtitle">with additional network features</string>
-    <string name="energy_mode_high_info">Allows extra features even when the TV is not in use.</string>
-    <string name="energy_mode_moderate_all_moderate_features">All recommended features</string>
+    <string name="energy_mode_high_title">Increased</string>
+    <string name="energy_mode_high_subtitle">Always connected</string>
+    <string name="energy_mode_high_info">Always connected — Enables network features when TV is not in use</string>
     <string-array name="energy_mode_high_features">
         <item>[Insert feature 1]</item>
         <item>[Insert feature 2]</item>

@@ -120,13 +120,17 @@ public class ConnectedDevicesSliceProvider extends SliceProvider implements
     static final String KEY_BLUETOOTH_TOGGLE = "bluetooth_toggle";
     static final String KEY_PAIR_REMOTE = "pair_remote";
     static final String KEY_ACCESSORIES = "accessories";
+    static final String KEY_OFFICIAL_REMOTES_CATEGORY = "official_remotes_category";
+    // Preference key for the remote bundled with the device (Bluetooth based)
     static final String KEY_OFFICIAL_REMOTE = "official_remote";
+    // Preference key for the remote bundled with the device (IR based)
     static final String KEY_IR = "ir";
     static final String KEY_CONNECT = "connect";
     static final String KEY_DISCONNECT = "disconnect";
     static final String KEY_RENAME = "rename";
     static final String KEY_FORGET = "forget";
     static final String KEY_EXTRAS_DEVICE = "extra_devices";
+    static final String KEY_BLUETOOTH_DEVICE_INFO = "bluetooth_device_info";
     static final String KEY_FIND_MY_REMOTE_TOGGLE = "fmr_toggle";
     static final String KEY_TOGGLE_ACTIVE_AUDIO_OUTPUT = "toggle_active_audio_output";
 
@@ -261,7 +265,8 @@ public class ConnectedDevicesSliceProvider extends SliceProvider implements
         if (Flags.enableTvMediaOutputDialog()
                 && cachedDevice != null && !cachedDevice.isBusy()
                 && AccessoryUtils.isConnected(device) && cachedDevice.isConnected()
-                && AccessoryUtils.isBluetoothHeadset(device)) {
+                && (AccessoryUtils.isBluetoothHeadset(device)
+                || AccessoryUtils.hasAudioProfile(cachedDevice))) {
             boolean isActive = AccessoryUtils.isActiveAudioOutput(device);
 
             Intent intent = new Intent(ACTION_TOGGLE_CHANGED);
@@ -392,6 +397,7 @@ public class ConnectedDevicesSliceProvider extends SliceProvider implements
 
         // Update "bluetooth device info preference".
         RowBuilder infoPref = new RowBuilder()
+                .setKey(KEY_BLUETOOTH_DEVICE_INFO)
                 .setIcon(IconCompat.createWithResource(context, R.drawable.ic_baseline_info_24dp));
 
         infoPref.addInfoItem(getString(R.string.bluetooth_serial_number_label), deviceAddr);
@@ -528,6 +534,7 @@ public class ConnectedDevicesSliceProvider extends SliceProvider implements
         boolean isIrSettingsUriValid = isSliceProviderValid(irSettingsUri);
         if (isOfficialRemoteSettingsUriValid || isIrSettingsUriValid) {
             psb.addPreferenceCategory(new RowBuilder()
+                    .setKey(KEY_OFFICIAL_REMOTES_CATEGORY)
                     .setTitle(getString(R.string.bluetooth_official_remote_category)));
         }
         if (isIrSettingsUriValid) {

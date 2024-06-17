@@ -16,26 +16,25 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="energy_mode_low_title" msgid="1975446673545235501">"କମ ଏନର୍ଜି ମୋଡ"</string>
-    <string name="energy_mode_low_subtitle" msgid="2138250509057251435">"ଅତ୍ୟାବଶ୍ୟକ ନେଟୱାର୍କ ଫିଚର ସହ"</string>
-    <string name="energy_mode_low_info" msgid="8586799718140263220">"ଟିଭି ବ୍ୟବହାର କରାଯାଉନଥିବା ବେଳେ ନେଟୱାର୍କ କନେକ୍ସନକୁ ବନ୍ଦ କରନ୍ତୁ (ଷ୍ଟାଣ୍ଡବାଏ ମୋଡ)।"</string>
+    <string name="energy_mode_low_title" msgid="5700567801191430606">"କମ"</string>
+    <string name="energy_mode_low_subtitle" msgid="7660632849388740009">"ଷ୍ଟାଣ୍ଡବାଏ"</string>
+    <string name="energy_mode_low_info" msgid="3931173640626998821">"ଷ୍ଟାଣ୍ଡବାଏ — ଟିଭି ବ୍ୟବହାର ହେଉନଥିବା ସମୟରେ ନେଟୱାର୍କ କନେକ୍ସନ ବନ୍ଦ ଥାଏ"</string>
   <string-array name="energy_mode_low_features">
-    <item msgid="4976202876230149030">"ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଅପଡେଟ ଏବଂ ଫଙ୍କସନଗୁଡ଼ିକ"</item>
+    <item msgid="4002284890471636101">"[Insert feature 1]"</item>
+    <item msgid="7072772341455731040">"[Insert feature 2]"</item>
   </string-array>
     <string name="energy_mode_low_eco_hint" msgid="2421460758847643655"></string>
-    <string name="energy_mode_moderate_title" msgid="8306916492188176732">"ଅପ୍ଟିମାଇଜ କରାଯାଇଥିବା ଏନର୍ଜି ମୋଡ"</string>
-    <string name="energy_mode_moderate_subtitle" msgid="7478438819421632774">"ସୁପାରିଶ କରାଯାଇଥିବା ନେଟୱାର୍କ ଫିଚର ସହ"</string>
-    <string name="energy_mode_moderate_info" msgid="7254958508156484301">"ନେଟୱାର୍କ (ଷ୍ଟାଣ୍ଡବାଏ ମୋଡରେ ରଖାଯାଇଥିବା ନେଟୱାର୍କ) ମାଧ୍ୟମରେ ଟିଭିକୁ ସକ୍ରିୟ କରିବା ପାଇଁ ଫିଚରଗୁଡ଼ିକୁ ଅନୁମତି ଦିଏ।"</string>
-    <string name="energy_mode_moderate_all_low_features" msgid="2417504172139004649">"ସମସ୍ତ ଅତ୍ୟାବଶ୍ୟକ ଫିଚର"</string>
+    <string name="energy_mode_moderate_title" msgid="8612259261851051150">"ଅପ୍ଟିମାଇଜ କରାଯାଇଛି"</string>
+    <string name="energy_mode_moderate_subtitle" msgid="5565533500130453270">"ନେଟୱାର୍କ୍ଡ ଷ୍ଟାଣ୍ଡବାଏ"</string>
+    <string name="energy_mode_moderate_info" msgid="3188005033276283994">"ନେଟୱାର୍କ୍ଡ ଷ୍ଟାଣ୍ଡବାଏ — ନେଟୱାର୍କ ମାଧ୍ୟମରେ ଟିଭିକୁ ସକ୍ରିୟ କରିବା ପାଇଁ ଫିଚରଗୁଡ଼ିକୁ ସକ୍ଷମ କରେ"</string>
   <string-array name="energy_mode_moderate_features">
     <item msgid="2654586107956150296">"[Insert feature 1]"</item>
     <item msgid="8724721267222341891">"[Insert feature 2]"</item>
   </string-array>
     <string name="energy_mode_moderate_eco_hint" msgid="252189162446856286"></string>
-    <string name="energy_mode_high_title" msgid="6636328986387241066">"ଅଧିକ ଏନର୍ଜି ମୋଡ"</string>
-    <string name="energy_mode_high_subtitle" msgid="8710109098343358567">"ଅତିରିକ୍ତ ନେଟୱାର୍କ ଫିଚର ସହ"</string>
-    <string name="energy_mode_high_info" msgid="7089288229870320944">"ଟିଭି ବ୍ୟବହାର କରାଯାଉନଥିବା ବେଳେ ଅତିରିକ୍ତ ଫିଚରକୁ ଅନୁମତି ଦିଏ।"</string>
-    <string name="energy_mode_moderate_all_moderate_features" msgid="1518972636963419872">"ସମସ୍ତ ସୁପାରିଶ କରାଯାଇଥିବା ଫିଚର"</string>
+    <string name="energy_mode_high_title" msgid="7596672058005896920">"ବୃଦ୍ଧି କରାଯାଇଛି"</string>
+    <string name="energy_mode_high_subtitle" msgid="5994284096495805422">"ସର୍ବଦା କନେକ୍ଟ ହୋଇଥାଏ"</string>
+    <string name="energy_mode_high_info" msgid="8805447042714350186">"ସର୍ବଦା କନେକ୍ଟ ହୋଇଥାଏ — ଟିଭି ବ୍ୟବହାର ହେଉନଥିବା ସମୟରେ ନେଟୱାର୍କ ଫିଚରଗୁଡ଼ିକୁ ସକ୍ଷମ କରେ"</string>
   <string-array name="energy_mode_high_features">
     <item msgid="3018897868803319747">"[Insert feature 1]"</item>
     <item msgid="170760143032597722">"[Insert feature 2]"</item>

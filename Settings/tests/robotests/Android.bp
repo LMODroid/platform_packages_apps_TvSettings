@@ -3,6 +3,7 @@
 //############################################
 
 package {
+    default_team: "trendy_team_tv_os",
     // http://go/android-license-faq
     // A large-scale-change added 'default_applicable_licenses' to import
     // the below license kinds from "packages_apps_TvSettings_Settings_license":

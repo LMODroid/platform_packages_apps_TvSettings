@@ -5,7 +5,10 @@ package {
 android_library {
     name: "TvSliceLib",
 
-    srcs: ["builders/*.java", "SlicesConstants.java"],
+    srcs: [
+        "builders/*.java",
+        "SlicesConstants.java",
+    ],
 
     static_libs: [
         "androidx.slice_slice-builders",
@@ -20,4 +23,7 @@ android_library {
         "//apex_available:platform",
         "com.android.permission",
     ],
+    lint: {
+        baseline_filename: "lint-baseline.xml",
+    },
 }

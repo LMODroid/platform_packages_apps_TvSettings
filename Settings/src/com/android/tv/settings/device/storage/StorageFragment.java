@@ -235,9 +235,15 @@ public class StorageFragment extends SettingsPreferenceFragment {
                 Environment.DIRECTORY_DOWNLOADS);
 
         try {
-            mAvailablePref.setSize(mStorageManager.getAllocatableBytes(
-                    StorageManager.convert(mVolumeInfo.fsUuid)));
+            long availSize = mStorageManager.getAllocatableBytes(
+                    StorageManager.convert(mVolumeInfo.fsUuid));
+            if (availSize <= 0) {
+                availSize = details.availSize;
+            }
+            Log.i(TAG, "details availSize:" + availSize);
+            mAvailablePref.setSize(availSize);
         } catch (IOException | IllegalArgumentException e) {
+            Log.i(TAG, "details availSize:" + details.availSize);
             mAvailablePref.setSize(details.availSize);
         }
         mAppsUsagePref.setSize(details.appsSize.get(currentUser));

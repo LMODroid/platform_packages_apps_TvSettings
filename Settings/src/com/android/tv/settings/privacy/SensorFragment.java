@@ -89,8 +89,6 @@ public class SensorFragment extends SettingsPreferenceFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mSensorPrivacyManager.addSensorPrivacyListener(mToggle.sensor,
-                mPrivacyChangedListener);
         updateSensorPrivacyState();
     }
 
@@ -109,6 +107,19 @@ public class SensorFragment extends SettingsPreferenceFragment {
         updateSensorPrivacyState();
 
         setPreferenceScreen(screen);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mSensorPrivacyManager.addSensorPrivacyListener(mToggle.sensor,
+                mPrivacyChangedListener);
+    }
+
+    @Override
+    public void onStop() {
+        mSensorPrivacyManager.removeSensorPrivacyListener(mToggle.sensor, mPrivacyChangedListener);
+        super.onStop();
     }
 
     protected void addHardwareToggle(PreferenceScreen screen, Context themedContext) {
@@ -272,12 +283,6 @@ public class SensorFragment extends SettingsPreferenceFragment {
                 mToggle.permissionsGroupName);
         openPermissionController.setIntent(showSensorPermissions);
         screen.addPreference(openPermissionController);
-    }
-
-    @Override
-    public void onDestroyView() {
-        mSensorPrivacyManager.removeSensorPrivacyListener(mToggle.sensor, mPrivacyChangedListener);
-        super.onDestroyView();
     }
 
     @Override

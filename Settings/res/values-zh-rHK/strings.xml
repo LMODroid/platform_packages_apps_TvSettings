@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google 法律條款"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"無法提供授權資料"</string>
     <string name="about_model" msgid="9164284529291439296">"模型"</string>
+    <string name="device_mode" msgid="7258350575590118152">"裝置模式"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"商店示範模式"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV OS 版本"</string>
     <string name="about_serial" msgid="3432319328808745459">"序號"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV OS 版本"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"互聯網連線"</string>
     <string name="connected" msgid="4981532275162345997">"已連線"</string>
     <string name="not_connected" msgid="475810896484271663">"未連線"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"沒有互聯網連線"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"已儲存"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"密碼錯誤"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Wi-Fi 密碼太短"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"需要登入"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"其他選項"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"顯示全部"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"顯示較少"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"自訂限制"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"請稍候…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"變更 PIN 碼"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"要建立受限制的個人檔案嗎？"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"已建立"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"略過"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"建立 PIN"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"要輸入受限制的個人檔案嗎？"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"沒有受限制的個人檔案"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"已輸入"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"這個應用程式可以存取你的帳戶 (受到「<xliff:g id="APP">%1$s</xliff:g>」控制)。"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"輸入 PIN 即可觀看這個頻道"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"用於錄音的麥克風"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"無法開始錄音。"</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"錄音失敗。"</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"數據節省模式"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"自動調整影片畫質以使用節省流動數據"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"數據用量和通知"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"你可以經 Wi-Fi、以太網絡或手機的熱點連接互聯網。"</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"要向其他藍牙裝置顯示嗎？"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"應用程式要求將電視設為向其他藍牙裝置顯示 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒。"</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"重設"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"以太網絡配對碼"</string>
     <string name="energy_modes" msgid="1331693860386361744">"能源模式"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"改善電視閒置時的能源效率"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"這些設定會影響閒置中的裝置"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"啟用以下功能："</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"請注意，這個模式可能會增加裝置的耗電量。"</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"耗電量或會因你啟用的電視功能數量而增加。"</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"啟用「<xliff:g id="ENERGYMODENAME">%s</xliff:g>」"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"尋找遙控器"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"讓位置不明的 Google TV 遙控器播放音效，助你找到裝置"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"按一下 Google TV 背面的按鈕，即可令遙控器播放音效 30 秒。此功能只適用於支援的 Google TV 遙控器。\n\n如要停止播放音效，請按下遙控器上任何按鈕。"</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"你的 Google TV 設有按鈕，按下後會在遙控器播放音效 30 秒。此功能只適用於支援的 Google TV 遙控器。\n\n如要停止播放音效，請按下遙控器上任何按鈕。"</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"啟用「尋找遙控器」後，你可以令位置不明的 Google TV 遙控器播放音效，從而找出裝置。"</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"播放音效"</string>
 </resources>

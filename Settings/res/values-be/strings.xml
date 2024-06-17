@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Прававая інфармацыя Google"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Даныя ліцэнзіі недаступныя"</string>
     <string name="about_model" msgid="9164284529291439296">"Мадэль"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Рэжым прылады"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Дэмарэжым для крамы"</string>
     <string name="about_version" msgid="6223547403835399861">"Версія АС Android TV"</string>
     <string name="about_serial" msgid="3432319328808745459">"Серыйны нумар"</string>
     <string name="about_build" msgid="8467840394761634575">"Зборка АС Android TV"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Падключэнне да інтэрнэту"</string>
     <string name="connected" msgid="4981532275162345997">"Падключана"</string>
     <string name="not_connected" msgid="475810896484271663">"Няма падключэння"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Няма падключэння да інтэрнэту"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Захавана"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Няправільны пароль"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Пароль Wi-Fi занадта кароткі"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Неабходна выканаць уваход"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Іншыя параметры"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Праглядзець усё"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Паказаць менш"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Наладзіць абмежаванні"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Хвілінку…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Змяніць PIN-код"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Стварыць абмежаваны профіль?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Профіль ужо створаны"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Прапусціць"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Стварыць PIN-код"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Увайсці ў абмежаваны профіль?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Няма абмежаваных профіляў"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Уваход ужо выкананы"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Гэта праграма можа атрымліваць доступ да вашых уліковых запісаў. Пад кіраваннем <xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Увядзіце PIN-код, каб паглядзець гэты канал"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Мікрафон(ы) для запісу"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Не ўдалося запусціць запіс аўдыя."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Збой запісу аўдыя."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Эканомія трафіка"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Аўтаматычна рэгуляваць якасць відэа, каб эканоміць на мабільнай перадачы даных"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Выкарыстанне трафіка і абвесткі"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Вы можаце падключыцца да інтэрнэту з дапамогай Wi-Fi, Ethernet ці хот-спота тэлефона."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Зрабіць бачным для іншых прылад з Bluetooth?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Праграма запытвае дазвол на ўключэнне бачнасці вашага тэлевізара для іншых прылад з Bluetooth на <xliff:g id="TIMEOUT">%1$d</xliff:g> с."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Скінуць"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Код спалучэння ппраз Ethernet"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Рэжымы спажывання энергіі"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Павысіць эфектыўнасць спажывання энергіі, калі тэлевізар не выкарыстоўваецца"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Гэтыя налады ўплываюць на работу прылады, калі яна не выкарыстоўваецца"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Уключае:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Улічвайце, што гэты рэжым можа павялічыць спажыванне энергіі прыладай."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Пры ўключэнні большай колькасці функцый тэлевізара спажыванне энергіі можа павялічвацца."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Уключыць рэжым \"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\""</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Пошук пульта"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Каб знайсці згублены пульт Google TV, вы можаце прайграць на ім гукавы сігнал"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Націсніце кнопку на задняй панэлі Google TV, каб пульт прайграў 30-секундны гукавы сігнал. Функцыя працуе толькі на пультах Google TV, якія падтрымліваюцца.\n\nКаб выключыць сігнал, націсніце любую кнопку на пульце."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"На вашай прыладзе Google TV ёсць кнопка, якую можна націснуць, каб на працягу 30 секунд на пульце прайграваўся гук. Функцыя працуе толькі на пультах Google TV, якія падтрымліваюцца.\n\nКаб выключыць сігнал, націсніце любую кнопку на пульце."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Функцыя \"Пошук пульта\" дазваляе знайсці згублены пульт Google TV з дапамогай гукавога сігналу."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Прайграць гук"</string>
 </resources>

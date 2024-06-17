@@ -191,7 +191,7 @@ public class PreferredDynamicRangeFragment  extends SettingsPreferenceFragment {
 
     static void selectForceHdrConversion(DisplayManager displayManager) {
         Display display = displayManager.getDisplay(Display.DEFAULT_DISPLAY);
-        int systemPreferredType = displayManager.getHdrConversionModeSetting()
+        int systemPreferredType = displayManager.getHdrConversionMode()
                 .getPreferredHdrOutputType();
         if (!isHdrFormatSupported(display.getMode(), systemPreferredType)) {
             displayManager.setHdrConversionMode(

@@ -36,4 +36,16 @@ public interface BasicModeFeatureProvider {
      */
     void startBasicModeExitActivity(@NonNull Activity activity);
 
+    /**
+     * Attempt to start the Activity for blocking internet in basic mode.
+     *
+     * @param activity the Activity to start the basic mode exit Activity from
+     */
+    void startBasicModeInternetBlock(@NonNull Activity activity);
+
+    /**
+     * @return whether the device is in store demo mode.
+     */
+    boolean isStoreDemoMode(@NonNull Context context);
+
 }

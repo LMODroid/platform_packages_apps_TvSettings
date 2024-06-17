@@ -17,6 +17,8 @@
 package com.android.tv.settings.connectivity.setup;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -26,6 +28,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.android.tv.settings.R;
+import com.android.tv.settings.connectivity.NetworkChangeDetectionConfigs;
+import com.android.tv.settings.connectivity.NetworkChangeStateManager;
 import com.android.tv.settings.connectivity.util.State;
 import com.android.tv.settings.connectivity.util.StateMachine;
 
@@ -34,10 +38,14 @@ import com.android.tv.settings.connectivity.util.StateMachine;
  */
 public class SuccessState implements State {
     private final FragmentActivity mActivity;
+    private final SharedPreferences sharedPref;
+    private SharedPreferences.Editor mEditor;
     private Fragment mFragment;
 
     public SuccessState(FragmentActivity activity) {
         mActivity = activity;
+        sharedPref = mActivity.getApplicationContext().getSharedPreferences(
+                NetworkChangeDetectionConfigs.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
     }
 
     @Override
@@ -46,6 +54,21 @@ public class SuccessState implements State {
                 mActivity.getString(R.string.wifi_setup_connection_success));
         FragmentChangeListener listener = (FragmentChangeListener) mActivity;
         if (listener != null) {
+            NetworkChangeStateManager manager = NetworkChangeStateManager.getInstance();
+            if (!manager.getIsNetworkStateKnown()) {
+                int currentNetworkCount = sharedPref.getInt(
+                        NetworkChangeDetectionConfigs.PREFERENCE_KEY, 0);
+                mEditor = sharedPref.edit();
+                mEditor.putInt(NetworkChangeDetectionConfigs.PREFERENCE_KEY,
+                        currentNetworkCount + 1);
+                mEditor.commit();
+
+                // Notify NetworkChange observers of change to the sharedpreferences data.
+                mActivity.getApplicationContext().getContentResolver().notifyChange(
+                        NetworkChangeDetectionConfigs.CONTENT_URI, null);
+            }
+
+            manager.setIsNetworkStateKnown(false);
             listener.onFragmentChange(mFragment, true);
         }
     }

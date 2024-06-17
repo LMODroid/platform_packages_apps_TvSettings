@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google hüquqi"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Lisenziya datası əlçatan deyil"</string>
     <string name="about_model" msgid="9164284529291439296">"Model"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Cihaz rejimi"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Mağaza demosu"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV ƏS versiyası"</string>
     <string name="about_serial" msgid="3432319328808745459">"Seriya nömrəsi"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV ƏS buraxılışı"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"İnternet bağlantısı"</string>
     <string name="connected" msgid="4981532275162345997">"Qoşulu"</string>
     <string name="not_connected" msgid="475810896484271663">"Qoşulu deyil"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"İnternet yoxdur"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Yadda saxlandı"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Yanlış parol"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Wi-Fi parolu qısadır"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Giriş tələb olunur"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Digər seçimlər"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Hamısına baxın"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Daha azına baxın"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Məhdudiyyətləri fərdiləşdirin"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Bir saniyə..."</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Pini dəyişin"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Məhdud profil yaradılsın?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Yaradılıb"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Ötürün"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"PIN yaradın"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Məhdud profil daxil edilsin?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Məhdud profil yoxdur"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Daxil edilib"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Bu tətbiq hesablarınıza daxil ola bilər. <xliff:g id="APP">%1$s</xliff:g> tərəfindən idarə olunur."</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Bu kanalı izləmək üçün PİN kodu daxil edin"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Yazılmış mikrofon(lar)"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Audio yazmanı başlatmaq alınmadı."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Audio yazma alınmadı."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Trafikə qənaət"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Daha az mobil data istifadə etmək üçün video keyfiyyətini avtomatik tənzimləyin"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Data istifadəsi və siqnalları"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"İnternetə Wi-Fi, Ethernet və ya telefonun hotspotu ilə qoşula bilərsiniz."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Digər Bluetooth cihazlarına görünsün?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Tətbiq TV-nizi digər Bluetooth cihazları üçün <xliff:g id="TIMEOUT">%1$d</xliff:g> saniyə ərzində görünən etmək istəyir."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Sıfırlayın"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Ethernet qoşulma kodu"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Enerji rejimləri"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"TV istifadə edilmədikdə enerji səmərəliliyinin təkmilləşdirilməsi"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Bu ayarlar cihaz istifadə edilmədikdə ona təsir edə bilər"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Aktivləşdirir:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Bu rejim cihazın enerji sərfiyyatını artıra bilər."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Aktivləşdirdiyiniz TV funksiyalarının sayına görə enerji istehlakı arta bilər."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"\"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\" rejiminin aktivləşdirilməsi"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Pultumu tapın"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Google TV pultu itibsə, tapmaq üçün səs oxudun"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Pultda 30 saniyəlik səs oxutmaq üçün Google TV-nin arxasındakı düyməyə basın. Bu, yalnız dəstəklənən Google TV pultları ilə işləyir.\n\nSəsi dayandırmaq üçün pultun hər hansı düyməsinə basın."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Google TV-də 30 saniyə pultda səs oxutmaq üçün düymə var. Bu, yalnız dəstəklənən Google TV pultları ilə işləyir.\n\nSəsi dayandırmaq üçün pultun hər hansı düyməsinə basın."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Pultumu tapın funksiyası aktiv olduqda Google TV pultunu tapmaq üçün səs oxuda bilərsiniz."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Səs oxudun"</string>
 </resources>

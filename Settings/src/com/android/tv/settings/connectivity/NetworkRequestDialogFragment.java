@@ -201,16 +201,14 @@ public class NetworkRequestDialogFragment extends ObservableDialogFragment imple
             final AccessPoint selectedAccessPoint = accessPointList.get(which);
             WifiConfiguration wifiConfig = selectedAccessPoint.getConfig();
             if (wifiConfig == null) {
-                wifiConfig = WifiUtils.getWifiConfig(selectedAccessPoint, /* scanResult */
-                        null, /* password */ null);
+                wifiConfig = WifiConfigHelper.getConfiguration(
+                        selectedAccessPoint.getSsidStr(),
+                        selectedAccessPoint.getSecurity());
             }
 
-            if (wifiConfig != null) {
-                mUserSelectionCallback.select(wifiConfig);
-
-                mWaitingConnectCallback = true;
-                updateConnectButton(false);
-            }
+            mUserSelectionCallback.select(wifiConfig);
+            mWaitingConnectCallback = true;
+            updateConnectButton(false);
         }
     }
 

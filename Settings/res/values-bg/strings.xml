@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google – правен текст"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Данните за лиценза не са налице"</string>
     <string name="about_model" msgid="9164284529291439296">"Модел"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Режим на устройството"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Демонстрация в магазин"</string>
     <string name="about_version" msgid="6223547403835399861">"Версия на операционната система на Android TV"</string>
     <string name="about_serial" msgid="3432319328808745459">"Сериен номер"</string>
     <string name="about_build" msgid="8467840394761634575">"Компилация на операционната система на Android TV"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Връзка с интернет"</string>
     <string name="connected" msgid="4981532275162345997">"Установена е връзка"</string>
     <string name="not_connected" msgid="475810896484271663">"Няма връзка"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Няма интернет"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Запазено"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Грешна парола"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Паролата за Wi-Fi е твърде кратка"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Изисква се влизане в профил"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Други опции"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Показване на всички"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Преглед на по-малко"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Персонализиране на ограниченията"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Един момент…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Промяна на ПИН кода"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Създ. на огран. потр. профил?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Вече създадохте"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Пропускане"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Създаване на ПИН"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Вход в ограничен потр. профил?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Няма ограничен потр. профил"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Вече въведохте"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Това приложение може да осъществява достъп до профилите ви. Контролира се от <xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Въведете ПИН кода, за да гледате този канал"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Записани микрофони"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Стартирането на записването на аудио не бе успешно."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Записването на аудио не бе успешно."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Икономия на данни"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Автомат. коригиране на видеокачеството с цел използване на по-малко моб. данни"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Пренос на данни и сигнали"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Можете да се свържете с интернет посредством Wi-Fi, Ethernet или точката за достъп на телефона ви."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Да се направи ли видимо за други устройства с Bluetooth?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Приложение иска да направи телевизора ви видим за други устройства с Bluetooth за <xliff:g id="TIMEOUT">%1$d</xliff:g> секунди."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Нулиране"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Код за сдвояване с Ethernet"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Енергийни режими"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Подобряване на енергийната ефективност, когато телевизорът не се използва"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Тези настройки засягат устройството, когато не се използва"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Активира:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Имайте предвид, че този режим може да увеличи консумацията на енергия на устройството."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Разходът на енергия може да се увеличи в зависимост от броя на активираните функции на телевизора."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Активиране на „<xliff:g id="ENERGYMODENAME">%s</xliff:g>“"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Намиране на дистанционното ми управление"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Възпроизвеждане на звук, чрез който да намерите дистанционното си управление за Google TV"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Натиснете бутона на гърба на устройството си Google TV, за да се възпроизведе звук на дистанционното ви управление, който продължава 30 секунди. Това работи само с поддържани дистанционни управления за Google TV.\n\nЗа да спрете звука, натиснете произволен бутон на дистанционното си управление."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Устройството ви с Google TV има бутон, който можете да натиснете, за да се възпроизвежда звук на дистанционното ви управление в продължение на 30 секунди. Това работи само с поддържани дистанционни управления за Google TV.\n\nЗа да спрете звука, натиснете произволен бутон на дистанционното си управление."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Когато функцията „Намиране на дистанционното ми управление“ е активирана, може да се възпроизведе звук, за да откриете дистанционното управление на Google TV, ако не можете да го намерите."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Пускане на звук"</string>
 </resources>

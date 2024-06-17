@@ -239,7 +239,7 @@
     <string name="accessory_unpairing" msgid="2529195578082286563">"उपकरण पेयर विच्छेद गर्दै..."</string>
     <string name="accessory_connected" msgid="5229574480869175180">"जोडिएको"</string>
     <string name="accessory_change_name" msgid="6493717176878500683">"नाम परिवर्तन गर्नुहोस्"</string>
-    <string name="accessory_change_name_title" msgid="451188562035392238">"यस सहायक उपकरणको कुनै नयाँ नाम प्रविष्टि गर्नुहोस्"</string>
+    <string name="accessory_change_name_title" msgid="451188562035392238">"यस सहायक उपकरणको कुनै नयाँ नाम हाल्नुहोस्"</string>
     <string name="accessories_add_accessibility_title" msgid="1300294413423909579">"ब्लुटुथबाट सहायक उपकरणसँग जोडा बनाउने प्रक्रिया।"</string>
     <string name="accessories_add_title" msgid="7704824893011194433">"चीजहरूको लागि खोजिँदै छ..."</string>
     <string name="accessories_add_bluetooth_inst" msgid="2508151218328384366">"ब्लुटुथ चल्ने यन्त्रहरूसँग जोडा बनाउनुअघि ती यन्त्रहरूमा जोडा बनाउने मोड अन गरिएको छ भन्ने कुरा सुनिश्चित गर्नुहोस्।"</string>
@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google सम्बन्धी कानुनी जानकारी"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"लाइसेन्स डेटा उपलब्ध छैन"</string>
     <string name="about_model" msgid="9164284529291439296">"मोडेल"</string>
+    <string name="device_mode" msgid="7258350575590118152">"डिभाइस मोड"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"स्टोरको डेमो"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV को OS संस्करण"</string>
     <string name="about_serial" msgid="3432319328808745459">"क्रम संख्या"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV को OS बिल्ड"</string>
@@ -431,10 +433,15 @@
     <string name="mac_address_not_available" msgid="2992935344891853369">"उपलब्ध छैन"</string>
     <string name="mac_address_ephemeral_summary" msgid="3284374877361772531">"क्रमरहित MAC"</string>
     <string name="title_ip_address" msgid="705842159484772807">"IP एड्रेस"</string>
-    <string name="title_ssid" msgid="255328048344188682">"Wi-Fi नेटवर्कको नाम प्रविष्टि गर्नुहोस्"</string>
+    <string name="title_ssid" msgid="255328048344188682">"Wi-Fi नेटवर्कको नाम हाल्नुहोस्"</string>
     <string name="title_internet_connection" msgid="7502414094881828069">"इन्टरनेट जडान"</string>
     <string name="connected" msgid="4981532275162345997">"जोडिएको"</string>
     <string name="not_connected" msgid="475810896484271663">"जडित छैन"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"इन्टरनेट छैन"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"सेभ गरिएको"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"पासवर्ड गलत भयो"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Wi-Fi को पासवर्ड अत्यन्तै छोटो भयो"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"साइन इन गर्नु पर्ने हुन्छ"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"अन्य विकल्पहरू"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"सबै हेर्नुहोस्"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"अझ थोरै हेर्नुहोस्"</string>
@@ -871,7 +878,7 @@
     <string name="inputs_game" msgid="4762255172943107070">"खेल कन्सोल"</string>
     <string name="inputs_aux" msgid="5331442342029867329">"Aux"</string>
     <string name="inputs_custom_name" msgid="2649826613531559538">"अनुकूल नाम"</string>
-    <string name="inputs_custom_name_description_fmt" msgid="2879134265596928298">"<xliff:g id="INPUT">%1$s</xliff:g> इनपुटका लागि नाम प्रविष्टि गर्नुहोस् ।"</string>
+    <string name="inputs_custom_name_description_fmt" msgid="2879134265596928298">"<xliff:g id="INPUT">%1$s</xliff:g> इनपुटका लागि नाम हाल्नुहोस् ।"</string>
     <string name="inputs_hide" msgid="9223355763198742416">"लुकेको"</string>
     <string name="inputs_show" msgid="2937435050499142756">"यो इनपुट देखाउनुहोस्"</string>
     <string name="input_header_names" msgid="5903234218909970550">"नाम"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"प्रतिबन्धहरू आफू अनुकूल गर्नुहोस्"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"एकक्षण ..."</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"PIN परिवर्तन गर्नुहोस्"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"प्रतिबन्धित प्रोफाइल सिर्जना गर्ने हो?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"बनाइसकिएको छ"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"स्किप गर्नुहोस्"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"PIN सिर्जना गर्नुहोस्"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"प्रतिबन्धित प्रोफाइल हाल्ने हो?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"प्रतिबन्धित प्रोफाइल भेटिएन"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"हालिसकिएको छ"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"यस एपले तपाईंको खाताहरूमा पहुँच गर्न सक्छ। <xliff:g id="APP">%1$s</xliff:g> द्वारा नियन्त्रित।"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"यो च्यानल हेर्ने पिन प्रविष्टि गर्नुहोस्"</string>
@@ -992,7 +1006,7 @@
     <item msgid="6448060889026244632">"पारिवारिक कोठाको टिभी"</item>
     <item msgid="3336274213215419228">"सुत्ने कोठाको टिभी"</item>
   </string-array>
-    <string name="custom_room" msgid="6798144004583173563">"आफू अनुकूल नाम प्रविष्टि गर्नुहोस्…"</string>
+    <string name="custom_room" msgid="6798144004583173563">"आफू अनुकूल नाम हाल्नुहोस्…"</string>
     <string name="device_rename_title" msgid="9070021379000499270">"यस <xliff:g id="DEVICEMODEL">%1$s</xliff:g> को पुनः नामाकरण गर्नुहोस्"</string>
     <string name="device_rename_description" msgid="1973894029492915135">"यो <xliff:g id="DEVICEMODEL">%1$s</xliff:g> को हालको नाम \"<xliff:g id="DEVICENAME">%2$s</xliff:g>\" छ"</string>
     <string name="device_name_suggestion_title" msgid="3986220212759193742">"आफ्नो डिभाइसको नाम सेट गर्नुहोस्"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"रेकर्ड गर्न प्रयोग गरिएको माइक्रोफोन (हरू)"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"अडियो रेकर्ड गर्ने कार्य सुरु गर्न सकिएन।"</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"अडियो रेकर्ड गर्न सकिएन।"</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"डेटा सेभर"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"कम मोबाइल डेटा प्रयोग गर्न भिडियोको गुणस्तर स्वतः समायोजन गर्नुहोस्"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"डेटाको प्रयोग र सतर्कताहरू"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"तपाईं Wi-Fi, इथरनेट केबल वा आफ्नो फोनको हटस्पटमार्फत इन्टरनेटमा जोडिन सक्नुहुन्छ।"</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"अन्य ब्लुटुथ डिभाइसहरूले देख्न सक्ने बनाउने हो?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"यो एप <xliff:g id="TIMEOUT">%1$d</xliff:g> सेकेन्डका लागि तपाईंको टिभी अन्य ब्लुटुथ डिभाइसहरूले देख्न सक्ने बनाउन चाहन्छ।"</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"रिसेट गर्नुहोस्"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"इथरनेट कनेक्सन कोड"</string>
     <string name="energy_modes" msgid="1331693860386361744">"इनर्जी मोड"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"टिभी प्रयोग नगरिएका बेला ऊर्जाको खपतमा सुधार गर्नुहोस्"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"यी सेटिङ डिभाइस प्रयोग नगरेका बेलामा लागू हुन्छन्"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"निम्न सुविधाहरू सक्षम गर्छ:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"तपाईंले यो मोड प्रयोग गर्नुभयो भने तपाईंको डिभाइसले ऊर्जाको प्रयोग बढाउन सक्छ भन्ने कुरा याद राख्नुहोस्।"</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"तपाईं टिभीमा जति बढी सुविधाहरू अन गर्नुहुन्छ बिजुलीको खपत त्यति नै बढ्न सक्छ।"</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"\"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\" अन गर्नुहोस्"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"मेरो रिमोट भेट्टाइयोस्"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"आफ्नो Google TV रिमोट हराएका खण्डमा उक्त रिमोट भेट्टाउन कुनै साउन्ड प्ले गर्नुहोस्"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"रिमोटमा ३० सेकेन्डसम्म साउन्ड प्ले गर्न Google TV को पछाडिपट्टि रहेको बटन थिच्नुहोस्। यो Google TV का रिमोट कन्ट्रोलहरू प्रयोग गरी मात्र चलाउन मिल्छ।\n\nयो साउन्ड बन्द गर्न आफ्नो रिमोटको कुनै पनि बटन थिच्नुहोस्।"</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"तपाईं आफ्नो रिमोटमा ३० सेकेन्डसम्म साउन्ड बजाउन Google TV मा भएको बटन थिच्न सक्नुहुन्छ। यो Google TV का रिमोट कन्ट्रोलहरू प्रयोग गरी मात्र चलाउन मिल्छ।\n\nयो साउन्ड बन्द गर्न आफ्नो रिमोटको कुनै पनि बटन थिच्नुहोस्।"</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"\"मेरो रिमोट भेट्टाइयोस्\" अन गरिएका बेला तपाईंको Google TV रिमोट हराएका खण्डमा तपाईं उक्त रिमोट भेट्टाउन कुनै साउन्ड प्ले गर्न सक्नुहुन्छ।"</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"साउन्ड प्ले गर्नुहोस्"</string>
 </resources>

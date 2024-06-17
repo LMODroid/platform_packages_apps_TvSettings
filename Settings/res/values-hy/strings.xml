@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google-ի իրավական տեղեկություններ"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Արտոնագրի տվյալներն անհասանելի են"</string>
     <string name="about_model" msgid="9164284529291439296">"Մոդելը"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Սարքի ռեժիմը"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Խանութի դեմո"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV-ի օպերացիոն համակարգի տարբերակ"</string>
     <string name="about_serial" msgid="3432319328808745459">"Սերիական համարը"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV-ի օպերացիոն համակարգի կառուցում"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Ինտերնետ կապ"</string>
     <string name="connected" msgid="4981532275162345997">"Միացված է"</string>
     <string name="not_connected" msgid="475810896484271663">"Միացված չէ"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Ինտերնետ կապ չկա"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Պահված է"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Գաղտնաբառը սխալ է"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Wi-Fi-ի գաղտնաբառը չափազանց կարճ է"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Մուտք գործելը պարտադիր է"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Այլ ընտրանքներ"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Տեսնել բոլորը"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Տեսնել ավելի քիչ"</string>
@@ -592,7 +599,7 @@
     <string name="storage_wizard_forget_confirm_title" msgid="3709482471888830896">"Մոռանա՞լ սարքի հիշողությունը:"</string>
     <string name="storage_wizard_forget_confirm_description" msgid="5896860042525566767">"Եթե ընտրեք «Մոռանալ» տարբերակը, այս սարքում պարունակվող բոլոր տվյալներն ընդմիշտ չջնջվեն: Շարունակե՞լ:"</string>
     <string name="storage_wizard_forget_action" msgid="5609631662522950596">"Մոռանալ"</string>
-    <string name="storage_new_title" msgid="4768955281180255038">"USB սարքավարը միացված է"</string>
+    <string name="storage_new_title" msgid="4768955281180255038">"USB կրիչը միացված է"</string>
     <string name="storage_new_action_browse" msgid="3355241742574072658">"Դիտարկել"</string>
     <string name="storage_new_action_adopt" msgid="6809707961170895964">"Կարգավորել որպես սարքի հիշողություն"</string>
     <string name="storage_new_action_format_public" msgid="1964662216574764811">"Կարգավորել որպես շարժական կրիչ"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Հարմարացնել սահմանափակումները"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Մեկ րոպե..."</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Փոխել pin-ը"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Ստեղծե՞լ սահմանափակված պրոֆիլ"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Արդեն ստեղծված է"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Բաց թողնել"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Ստեղծել PIN կոդ"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Մտնե՞լ սահմանափակված պրոֆիլ"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Սահմանափակված պրոֆիլ չի գտնվել"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Արդեն մուտքագրված է"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Այս հավելվածը կարող է օգտվել ձեր հաշիվներից: Վերահսկվում է <xliff:g id="APP">%1$s</xliff:g> հավելվածի կողմից"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Այս կապուղին դիտելու համար մուտքագրեք PIN-ը"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Աուդիոն ձայնագրած խոսափող(ներ)ը"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Չհաջողվեց սկսել ձայնագրումը:"</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Չհաջողվեց ձայնագրել:"</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Թրաֆիկի տնտեսում"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Ավտոմատ կարգավորել տեսանյութի որակը՝ թրաֆիկը տնտեսելու համար"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Թրաֆիկի օգտագործում և ծանուցումներ"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Դուք կարող եք միանալ ինտերնետին Wi-Fi-ի, Ethernet-ի կամ հեռախոսի թեժ կետի միջոցով։"</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Տեսանելի դարձնե՞լ այլ Bluetooth սարքերի համար"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Հավելվածն ուզում է ձեր հեռուստացույցը <xliff:g id="TIMEOUT">%1$d</xliff:g> վայրկյանով տեսանելի դարձնել այլ Bluetooth սարքերի համար։"</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Վերակայել"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Ethernet-ի զուգակցման կոդ"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Էներգիայի սպառման ռեժիմներ"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Օպտիմալացնել էներգիայի սպառումը, երբ հեռուստացույցը չի օգտագործվում"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Այս գործառույթներն ազդում են սարքի վրա, երբ այն չի օգտագործվում"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Միացնում է՝"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Նկատի ունեցեք, որ այս ռեժիմը կարող է մեծացնել սարքի կողմից էներգիայի ծախսը։"</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Էներգիայի սպառումը կարող է ավելանալ՝ կախված նրանից, թե հեռուստացույցի քանի գործառույթ եք միացրել։"</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Միացնել «<xliff:g id="ENERGYMODENAME">%s</xliff:g>» ռեժիմը"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Գտնել իմ հեռակառավարիչը"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Եթե չեք գտնում ձեր Google TV հեռակառավարիչը, նվագարկեք ազդանշան՝ այն տեղորոշելու համար։"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Սեղմեք Google TV-ի հետևի կոճակը՝ հեռակառավարիչում 30 վայրկյան տևողությամբ ձայնային ազդանշան նվագարկելու համար։ Սա աշխատում է միայն Google TV-ի աջակցվող հեռակառավարիչների հետ։\n\nԱզդանշանը կանգնեցնելու համար սեղմեք հեռակառավարիչի ցանկացած կոճակ։"</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Ձեր Google TV սարքի վրա կա կոճակ, որը սեղմելու դեպքում հեռակառավարման վահանակում ազդանշան կհնչի 30 վայրկյան շարունակ։ Սա աշխատում է միայն Google TV-ի աջակցվող հեռակառավարիչների հետ։\n\nԱզդանշանը կանգնեցնելու համար սեղմեք հեռակառավարիչի ցանկացած կոճակ։"</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Երբ «Գտնել իմ հեռակառավարիչը» գործառույթը միացված է, դուք կարող եք նվագարկել ազդանշան՝ ձեր Google TV-ի հեռակառավարիչը գտնելու համար։"</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Նվագարկել ազդանշանը"</string>
 </resources>

@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"ផ្នែកច្បាប់ Google"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"មិន​មាន​ទិន្នន័យ​អាជ្ញាប័ណ្ណ​ទេ"</string>
     <string name="about_model" msgid="9164284529291439296">"ម៉ូដែល"</string>
+    <string name="device_mode" msgid="7258350575590118152">"មុខងារឧបករណ៍"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"គំរូបង្ហាញក្នុងហាង"</string>
     <string name="about_version" msgid="6223547403835399861">"កំណែប្រព័ន្ធ​ប្រតិបត្តិការ Android TV"</string>
     <string name="about_serial" msgid="3432319328808745459">"លេខ​សៀរៀល"</string>
     <string name="about_build" msgid="8467840394761634575">"កំណែបង្កើត​ប្រព័ន្ធប្រតិបត្តិការ Android TV"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"ការ​តភ្ជាប់​អ៊ីនធឺណិត"</string>
     <string name="connected" msgid="4981532275162345997">"បាន​ត​ភ្ជាប់"</string>
     <string name="not_connected" msgid="475810896484271663">"មិន​បាន​តភ្ជាប់"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"គ្មាន​អ៊ីនធឺណិត"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"បាន​រក្សាទុក"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"ពាក្យសម្ងាត់មិនត្រឹមត្រូវ"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"ពាក្យសម្ងាត់ Wi-Fi ខ្លីពេក"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"តម្រូវឱ្យ​ចូលគណនី"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"ជម្រើស​ផ្សេង​ៗ"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"​មើល​ទាំង​អស់"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"មើលតិចជាងមុន"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"ប្ដូរ​ការ​ដាក់​កម្រិត​តាម​តម្រូវ​ការ"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"មួយ​ភ្លែត…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"ប្ដូរ​កូដ pin"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"បង្កើតកម្រងព័ត៌មានដែលបានដាក់កំហិតឬ?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"បានបង្កើតរួចហើយ"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"រំលង"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"បង្កើតកូដ PIN"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"បញ្ចូលកម្រងព័ត៌មានដែលបានដាក់កំហិតឬ?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"គ្មានកម្រងព័ត៌មានដែលបានដាក់កំហិតទេ"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"បានបញ្ចូលរួចហើយ"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"កម្មវិធីនេះអាចចូលដំណើរការគណនីរបស់អ្នកបាន។ គ្រប់គ្រងដោយ <xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"បញ្ចូល​កូដ PIN ដើម្បី​មើល​ឆានែល​នេះ"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"មីក្រូហ្វូន​ដែល​បានថត"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"មិនអាច​ចាប់ផ្ដើម​ថតសំឡេង​បានទេ។"</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"ការថតសំឡេង​មិនបាន​សម្រេចទេ។"</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"មុខងារសន្សំសំចៃទិន្នន័យ"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"កែតម្រូវ​គុណភាពវីដេអូ​ដោយស្វ័យប្រវត្តិ ដើម្បីប្រើទិន្នន័យ​ទូរសព្ទចល័ត​តិចជាងមុន"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"ការប្រើប្រាស់​ទិន្នន័យ និងការជូនដំណឹង"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"អ្នកអាចភ្ជាប់​អ៊ីនធឺណិត​តាមរយៈ Wi-Fi, អ៊ីសឺរណិត ឬហតស៉្បតទូរសព្ទ​របស់អ្នក។"</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"ធ្វើឱ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញឬ?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"កម្មវិធីចង់ធ្វើឱ្យឧបករណ៍​ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញទូរទស្សន៍របស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%1$d</xliff:g> វិនាទី។"</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"កំណត់​ឡើងវិញ"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"កូដផ្គូផ្គងអ៊ីសឺរណិត"</string>
     <string name="energy_modes" msgid="1331693860386361744">"មុខងារថាមពល"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"បង្កើនប្រសិទ្ធភាពថាមពល នៅពេលមិនប្រើទូរទស្សន៍"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"ការកំណត់​ទាំងនេះ​ប៉ះពាល់ដល់​ឧបករណ៍ នៅពេល​ដែលមិន​ស្ថិតក្នុងការ​ប្រើប្រាស់"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"បើក៖"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"សូមកត់ចំណាំថា មុខងារនេះអាចបង្កើនការប្រើប្រាស់ថាមពលរបស់ឧបករណ៍។"</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"ការប្រើប្រាស់​ថាមពល​អាចកើនឡើង​ដោយសារ​ចំនួន​មុខងារ​ទូរទស្សន៍​ដែលអ្នកបើក។"</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"បើក \"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\""</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"ស្វែងរកឧបករណ៍​បញ្ជាពីចម្ងាយរបស់ខ្ញុំ"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"ចាក់សំឡេងណាមួយ ដើម្បីកំណត់ទីតាំងឧបករណ៍​បញ្ជាពីចម្ងាយសម្រាប់ Google TV របស់អ្នក ប្រសិនបើបាត់ឧបករណ៍នោះ"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"ចុចប៊ូតុងនៅផ្នែកខាងក្រោយនៃ Google TV របស់អ្នក ដើម្បីចាក់សំឡេងនៅលើឧបករណ៍​បញ្ជាពីចម្ងាយរយៈពេល 30 វិនាទី។ សកម្មភាពនេះដំណើរការតែជាមួយនឹងឧបករណ៍​​បញ្ជា​ Google TV ពី​ចម្ងាយដែលអាចប្រើបានប៉ុណ្ណោះ។\n\nដើម្បីបញ្ឈប់សំឡេង សូមចុចប៊ូតុងណាមួយលើឧបករណ៍​បញ្ជាពីចម្ងាយរបស់អ្នក។"</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"មានប៊ូតុង​នៅលើ Google TV របស់អ្នក​ដែលអ្នកអាច​ចុចដើម្បីចាក់​សំឡេង​នៅលើ​ឧបករណ៍​បញ្ជាពីចម្ងាយ​របស់អ្នក​រយៈពេល 30 វិនាទី។ សកម្មភាពនេះដំណើរការតែជាមួយនឹងឧបករណ៍​​បញ្ជា​ Google TV ពី​ចម្ងាយដែលអាចប្រើបានប៉ុណ្ណោះ។\n\nដើម្បីបញ្ឈប់សំឡេង សូមចុចប៊ូតុងណាមួយលើឧបករណ៍​បញ្ជាពីចម្ងាយរបស់អ្នក។"</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"នៅពេលបើក \"រកឧបករណ៍​បញ្ជាពីចម្ងាយរបស់ខ្ញុំ\" អ្នកអាចចាក់សំឡេងណាមួយ ដើម្បីកំណត់ទីតាំងឧបករណ៍​បញ្ជាពីចម្ងាយសម្រាប់ Google TV របស់អ្នក ប្រសិនបើបាត់ឧបករណ៍នោះ។"</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"ចាក់​សំឡេង"</string>
 </resources>

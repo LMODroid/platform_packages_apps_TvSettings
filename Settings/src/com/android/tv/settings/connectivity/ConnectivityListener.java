@@ -62,7 +62,7 @@ public class ConnectivityListener implements WifiTracker.WifiListener {
     private static final String TAG = "ConnectivityListener";
 
     private final Context mContext;
-    private final Listener mListener;
+    private Listener mListener;
 
     private WifiTracker mWifiTracker;
 
@@ -91,7 +91,6 @@ public class ConnectivityListener implements WifiTracker.WifiListener {
     private int mNetworkType;
     private String mWifiSsid;
     private int mWifiSignalStrength;
-    private final Handler mHandler = new Handler();
     private LinkProperties mLateLp = null;
     private final InterfaceStateListener mEthernetListener;
     private final ArrayMap<String, IpConfiguration> mAvailableInterfaces = new ArrayMap<>();
@@ -149,9 +148,9 @@ public class ConnectivityListener implements WifiTracker.WifiListener {
             telephonyManager.listen(mPhoneStateListener,
                     PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
         }
-        mConnectivityManager.registerDefaultNetworkCallback(mNetworkCallback, mHandler);
+        mConnectivityManager.registerDefaultNetworkCallback(mNetworkCallback, mUiHandler);
         if (mEthernetManager != null) {
-            mEthernetManager.addInterfaceStateListener(r -> mUiHandler.post(r),
+            mEthernetManager.addInterfaceStateListener(mContext.getMainExecutor(),
                     mEthernetListener);
         }
     }
@@ -466,6 +465,10 @@ public class ConnectivityListener implements WifiTracker.WifiListener {
         if (mListener != null) {
             mListener.onConnectivityChange();
         }
+    }
+
+    public void setListener(Listener listener) {
+        this.mListener = listener;
     }
 
     public interface Listener {

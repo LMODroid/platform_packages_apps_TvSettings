@@ -16,26 +16,25 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="energy_mode_low_title" msgid="1975446673545235501">"حالت کم‌انرژی"</string>
-    <string name="energy_mode_low_subtitle" msgid="2138250509057251435">"با ویژگی‌های ضروری شبکه"</string>
-    <string name="energy_mode_low_info" msgid="8586799718140263220">"وقتی از تلویزیون استفاده نمی‌شود (درحالت آماده‌به‌کار باشد) اتصال شبکه خاموش می‌شود."</string>
+    <string name="energy_mode_low_title" msgid="5700567801191430606">"کم"</string>
+    <string name="energy_mode_low_subtitle" msgid="7660632849388740009">"آماده‌به‌کار"</string>
+    <string name="energy_mode_low_info" msgid="3931173640626998821">"آماده‌به‌کار — هنگام عدم استفاده از تلویزیون، اتصال شبکه را خاموش می‌کند"</string>
   <string-array name="energy_mode_low_features">
-    <item msgid="4976202876230149030">"عملکردها و به‌روزرسانی‌های بسیار مهم"</item>
+    <item msgid="4002284890471636101">"[درج ویژگی ۱]"</item>
+    <item msgid="7072772341455731040">"[درج ویژگی ۲]"</item>
   </string-array>
     <string name="energy_mode_low_eco_hint" msgid="2421460758847643655"></string>
-    <string name="energy_mode_moderate_title" msgid="8306916492188176732">"حالت انرژی بهینه‌سازی‌شده"</string>
-    <string name="energy_mode_moderate_subtitle" msgid="7478438819421632774">"با ویژگی‌های توصیه‌شده شبکه"</string>
-    <string name="energy_mode_moderate_info" msgid="7254958508156484301">"ویژگی‌هایی را مجاز می‌کند که تلویزیون را ازطریق شبکه بیدار می‌کند (حالت آماده‌به‌کار شبکه‌ای)."</string>
-    <string name="energy_mode_moderate_all_low_features" msgid="2417504172139004649">"همه ویژگی‌های ضروری"</string>
+    <string name="energy_mode_moderate_title" msgid="8612259261851051150">"بهینه‌سازی‌شده"</string>
+    <string name="energy_mode_moderate_subtitle" msgid="5565533500130453270">"آماده‌به‌کار شبکه‌ای"</string>
+    <string name="energy_mode_moderate_info" msgid="3188005033276283994">"آماده‌به‌کار شبکه‌ای — ویژگی‌ها را برای بیدار کردن تلویزیون ازطریق شبکه فعال می‌کند"</string>
   <string-array name="energy_mode_moderate_features">
     <item msgid="2654586107956150296">"[درج ویژگی ۱]"</item>
     <item msgid="8724721267222341891">"[درج ویژگی ۲]"</item>
   </string-array>
     <string name="energy_mode_moderate_eco_hint" msgid="252189162446856286"></string>
-    <string name="energy_mode_high_title" msgid="6636328986387241066">"حالت انرژی افزایش‌یافته"</string>
-    <string name="energy_mode_high_subtitle" msgid="8710109098343358567">"با ویژگی‌های اضافی شبکه"</string>
-    <string name="energy_mode_high_info" msgid="7089288229870320944">"حتی وقتی از تلویزیون استفاده نمی‌شود، ویژگی‌های بیشتری را امکان‌پذیر می‌کند."</string>
-    <string name="energy_mode_moderate_all_moderate_features" msgid="1518972636963419872">"همه ویژگی‌های توصیه‌شده"</string>
+    <string name="energy_mode_high_title" msgid="7596672058005896920">"افزایش‌یافته"</string>
+    <string name="energy_mode_high_subtitle" msgid="5994284096495805422">"همیشه متصل"</string>
+    <string name="energy_mode_high_info" msgid="8805447042714350186">"همیشه متصل — ویژگی‌های شبکه را هنگام عدم استفاده از تلویزیون فعال می‌کند"</string>
   <string-array name="energy_mode_high_features">
     <item msgid="3018897868803319747">"[درج ویژگی ۱]"</item>
     <item msgid="170760143032597722">"[درج ویژگی ۲]"</item>

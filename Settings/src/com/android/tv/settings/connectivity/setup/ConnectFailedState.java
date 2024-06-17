@@ -27,6 +27,7 @@ import androidx.leanback.widget.GuidedAction;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.android.tv.settings.R;
+import com.android.tv.settings.connectivity.NetworkChangeStateManager;
 import com.android.tv.settings.connectivity.util.State;
 import com.android.tv.settings.connectivity.util.StateMachine;
 
@@ -48,6 +49,8 @@ public class ConnectFailedState implements State {
         mFragment = new ConnectFailedFragment();
         FragmentChangeListener listener = (FragmentChangeListener) mActivity;
         if (listener != null) {
+            NetworkChangeStateManager manager = NetworkChangeStateManager.getInstance();
+            manager.setIsNetworkStateKnown(false);
             listener.onFragmentChange(mFragment, true);
         }
     }

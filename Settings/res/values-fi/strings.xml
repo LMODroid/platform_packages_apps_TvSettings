@@ -219,7 +219,7 @@
     <string name="resolution_selection_with_mode_dialog_title" msgid="5011192408613100514">"Muutetaanko resoluutioksi %1$s?"</string>
     <string name="resolution_selection_dialog_desc" msgid="3667357611495669701">"Valitse OK, jos haluat, että %1$s on käytössä tästä lähtien."</string>
     <string name="resolution_selection_disabled_dolby_vision_dialog_desc" msgid="7952404018654828187">"%1$s ei tue Dolby Visionia. Se poistetaan käytöstä Näytön lisäasetuksista."</string>
-    <string name="resolution_hdr_description_info" msgid="2408761621976850238">"%1$s on tuettu tässä tilassa.\nParannettu HDMI pitää laittaa päälle joillain televisioilla, jotta saat käyttöön enemmän HDR-muotoja. Tarkista, tuetaanko tätä TV:n asetuksista."</string>
+    <string name="resolution_hdr_description_info" msgid="2408761621976850238">"Tämä tila tukee: %1$s\nParannettu HDMI pitää laittaa päälle joillain televisioilla, jotta saat käyttöön enemmän HDR-muotoja. Tarkista, tuetaanko tätä, TV:n asetuksista."</string>
     <string name="resolution_selection_dialog_cancel" msgid="3683616572317946129">"Peru"</string>
     <string name="resolution_selection_dialog_ok" msgid="3123351228545013492">"OK"</string>
     <string name="resolution_selection_hz" msgid="4425902505388495637">"Hz"</string>
@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Googlen lakiasiat"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Käyttölupatietoja ei ole saatavilla"</string>
     <string name="about_model" msgid="9164284529291439296">"Malli"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Laitetila"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Kaupan demo"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV ‑käyttöjärjestelmän versio"</string>
     <string name="about_serial" msgid="3432319328808745459">"Sarjanumero"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV ‑käyttöjärjestelmän koontiversio"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Internetyhteys"</string>
     <string name="connected" msgid="4981532275162345997">"Yhdistetty"</string>
     <string name="not_connected" msgid="475810896484271663">"Ei yhdistetty"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Ei internetyhteyttä"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Tallennettu"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Väärä salasana"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Wi-Fi-verkon salasana on liian lyhyt"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Kirjautuminen vaaditaan"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Muut vaihtoehdot"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Näytä kaikki"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Näytä vähemmän"</string>
@@ -625,7 +632,7 @@
   </string-array>
     <string name="sensor_toggle_description" msgid="7415801459994303159">"Kaikki sovellukset ja palvelut"</string>
     <string name="recently_accessed_by_category" msgid="6841705864715653428">"Käyttänyt äskettäin:"</string>
-    <string name="no_recent_sensor_accesses" msgid="3498112970658050800">"Ei viimeaikaista käyttöä"</string>
+    <string name="no_recent_sensor_accesses" msgid="3498112970658050800">"Ei viimeaikaista pääsyä"</string>
     <string name="recently_accessed_show_all" msgid="5234849189704717855">"Näytä kaikki"</string>
     <string name="microphone" msgid="7893752847683941214">"Mikrofoni"</string>
     <string name="mic_toggle_title" msgid="7193417007060235665">"Pääsy mikrofoniin"</string>
@@ -672,7 +679,7 @@
     <string name="accessibility_screen_readers_category_title" msgid="7742526514873922018">"Näytönlukuohjelmat"</string>
     <string name="accessibility_display_category_title" msgid="593444602101558017">"Näyttö"</string>
     <string name="accessibility_interaction_controls_category_title" msgid="5290687835178852745">"Laitteen käyttöapu"</string>
-    <string name="accessibility_audio_and_onscreen_text_category_title" msgid="113841605896486212">"Ääni ja näyttöteksti"</string>
+    <string name="accessibility_audio_and_onscreen_text_category_title" msgid="113841605896486212">"Audio ja näyttöteksti"</string>
     <string name="accessibility_experimental_category_title" msgid="3401773834179170206">"Kokeellinen"</string>
     <string name="accessibility_services_category_title" msgid="8813843874978910442">"Palvelut"</string>
     <string name="accessibility_service_settings" msgid="3251334786870932423">"Palveluasetukset"</string>
@@ -700,7 +707,7 @@
     <string name="accessibility_shortcut" msgid="5856158637840030531">"Saavutettavuustilan pikanäppäin"</string>
     <string name="accessibility_shortcut_enable" msgid="6603542432267329986">"Ota saavutettavuustilan pikanäppäin käyttöön"</string>
     <string name="accessibility_shortcut_service" msgid="2053250146891420311">"Pikanäppäinpalvelu"</string>
-    <string name="accessibility_shortcut_description" msgid="2050424178481510046">"Kun pikanäppäin on käytössä, voit käynnistää saavutettavuusominaisuuden pitämällä Takaisin- ja Alas-näppäimiä painettuina kolmen sekunnin ajan."</string>
+    <string name="accessibility_shortcut_description" msgid="2050424178481510046">"Kun pikanäppäin on päällä, voit käynnistää saavutettavuusominaisuuden pitämällä Takaisin- ja Alas-näppäimiä painettuina kolmen sekunnin ajan."</string>
     <string name="accessibility_captions" msgid="3411554568812306549">"Tekstitykset"</string>
     <string name="accessibility_captions_description" msgid="3827820027578548160">"Videon päällä näytettävän tekstityksen asetukset"</string>
     <string name="captions_display" msgid="2598662495450633375">"Näyttö"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Muokkaa rajoituksia"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Hetkinen…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Vaihda PIN-koodi"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Luodaanko rajoitettu profiili?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Luotu aiemmin"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Ohita"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Luo PIN-koodi"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Siirry rajoitettuun profiiliin"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Ei rajoitettua profiilia"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Lisätty aiemmin"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Tämä sovellus voi käyttää tilejäsi. Hallinnoija: <xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Anna PIN-koodi, jotta voit katsella tätä kanavaa"</string>
@@ -963,7 +977,7 @@
     <string name="device_energy_saver_sleep_timeout" msgid="1841900768718452039">"Ei-aktiivisena"</string>
     <string name="device_energy_saver_attentive_timeout" msgid="3649486668821348087">"Katseltaessa"</string>
     <string name="device_energy_saver_category_title" msgid="170076161677525986">"Laita automaattisesti pois päältä"</string>
-    <string name="device_energy_saver_sleep_timeout_dialog_title" msgid="6588352532253294558">"Laita pois päältä automaattisesti kun laite ei ole aktiivinen"</string>
+    <string name="device_energy_saver_sleep_timeout_dialog_title" msgid="6588352532253294558">"Laita pois päältä automaattisesti kun laite on ei-aktiivisena"</string>
     <string name="device_energy_saver_attentive_timeout_dialog_title" msgid="3273988875711109352">"Laita pois päältä automaattisesti katselun aikana"</string>
     <string name="device_energy_saver_validation_sleep" msgid="7490897287741107840">"\"Ei-aktiivisena\"-ajastimessa keston täytyy olla lyhyempi kuin \"Katseltaessa\"-ajastimessa"</string>
     <string name="device_energy_saver_validation_attentive" msgid="1461105528087097435">"\"Katseltaessa\"-ajastimessa keston täytyy olla pidempi kuin \"Ei-aktiivisena\"-ajastimessa"</string>
@@ -996,7 +1010,7 @@
     <string name="device_rename_title" msgid="9070021379000499270">"Anna uusi nimi laitteelle <xliff:g id="DEVICEMODEL">%1$s</xliff:g>"</string>
     <string name="device_rename_description" msgid="1973894029492915135">"<xliff:g id="DEVICEMODEL">%1$s</xliff:g> on tällä hetkellä nimeltään <xliff:g id="DEVICENAME">%2$s</xliff:g>"</string>
     <string name="device_name_suggestion_title" msgid="3986220212759193742">"Anna laitteelle nimi"</string>
-    <string name="device_name_suggestion_summary" msgid="4582691399302362938">"Käytä tätä nimeä kuvien, videoiden ja muun sisällön suoratoistoon puhelimella."</string>
+    <string name="device_name_suggestion_summary" msgid="4582691399302362938">"Käytä tätä nimeä kuvien, videoiden ja muun sisällön striimaamiseen puhelimella"</string>
     <string name="change_setting" msgid="7211706374208138343">"Vaihda"</string>
     <string name="keep_settings" msgid="703474489210093961">"Älä vaihda"</string>
     <string name="apps_permissions" msgid="7876407267050498394">"Luvat"</string>
@@ -1014,15 +1028,15 @@
     <string name="manage_keyboards" msgid="7983890675377321912">"Näppäimistöjen hallinnointi"</string>
     <string name="app_permission_summary_allowed" msgid="5359622119044147500">"Sallittu"</string>
     <string name="app_permission_summary_not_allowed" msgid="5131611341738385303">"Ei sallittu"</string>
-    <string name="usage_access" msgid="8402350645248312782">"Pääsyoikeus käyttötietoihin"</string>
-    <string name="usage_access_description" msgid="3276026988575551587">"Pääsyoikeus käyttötietoihin antaa sovellukselle luvan seurata, mitä muita sovelluksia käytät ja kuinka usein, sekä nähdä operaattorisi, kieliasetuksesi ja muita tietoja."</string>
+    <string name="usage_access" msgid="8402350645248312782">"Pääsy käyttötietoihin"</string>
+    <string name="usage_access_description" msgid="3276026988575551587">"Pääsy käyttötietoihin antaa sovellukselle luvan seurata, mitä muita sovelluksia käytät ja kuinka usein, sekä nähdä operaattorisi, kieliasetuksesi ja muita tietoja."</string>
     <string name="high_power_apps" msgid="5841073958519976562">"Virrankäytön optimointi"</string>
     <string name="high_power_apps_description" msgid="8651692364795060525">"Optimoi sovellusten virrankäyttö"</string>
     <string name="high_power_apps_empty" msgid="3084512758421482051">"Ei optimointia tarvitsevia sovelluksia"</string>
     <string name="high_power_on" msgid="3120162683093360951">"Ei optimoida"</string>
     <string name="high_power_off" msgid="3588854600942236231">"Virrankäyttöä optimoidaan"</string>
     <string name="high_power_system" msgid="6263052626979462255">"Virrankäytön optimointi ei käytettävissä"</string>
-    <string name="manage_notification_access_title" msgid="8659254371564990084">"Pääsyoikeus ilmoituksiin"</string>
+    <string name="manage_notification_access_title" msgid="8659254371564990084">"Pääsy ilmoituksiin"</string>
     <string name="no_notification_listeners" msgid="5119406452675724448">"Yksikään asennettu sovellus ei ole pyytänyt ilmoituksien käyttöoikeutta."</string>
     <string name="notification_listener_security_warning_summary" msgid="8602907284276088658">"Nämä sovellukset voivat lukea kaikki ilmoitukset ja niiden sisältämät henkilökohtaiset tiedot, kuten yhteystietojen nimet ja viestien sisällön. Ne voivat myös hylätä ilmoituksia ja käyttää niiden toimintopainikkeita."</string>
     <string name="default_notification_access_package_summary" msgid="1354775994781420222">"Järjestelmän edellytys"</string>
@@ -1033,7 +1047,7 @@
     <string name="permit_draw_overlay" msgid="5312730681030266735">"Salli näkyminen muiden päällä"</string>
     <string name="allow_overlay_description" msgid="5152329837278240259">"Anna sovelluksen näkyä muiden avoimien sovellusten päällä. Se voi häiritä muiden sovellusten käyttöä tai muuttaa niiden ulkoasua tai käyttäytymistä."</string>
     <string name="write_system_settings" msgid="4284654265954461890">"Järjestelmäasetusten muokkaus"</string>
-    <string name="write_settings_title" msgid="2361816483383105754">"Järjestelmäasetusten muokkaus"</string>
+    <string name="write_settings_title" msgid="2361816483383105754">"Voi muokata järjestelmäasetuksia"</string>
     <string name="write_settings_description" msgid="7382397926674265937">"Tämä käyttöoikeus antaa sovelluksen muokata järjestelmäasetuksia."</string>
     <string name="write_settings_on" msgid="71675710746513956">"Kyllä"</string>
     <string name="write_settings_off" msgid="6730113471695092167">"Ei"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Tallennetut mikrofonit"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Äänen tallennuksen aloittaminen epäonnistui."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Äänen tallennus epäonnistui."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Data Saver"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Säädä videoiden laatua automaattisesti mobiilidatan käytön vähentämiseksi"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Datan käyttö ja ilmoitukset"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Voit yhdistää verkkoon langattomasti, Ethernetillä tai puhelimesi hotspotilla."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Näytetäänkö laite muille Bluetooth-laitteille?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Sovellus haluaa määrittää, että TV:si on muiden Bluetooth-laitteiden löydettävissä <xliff:g id="TIMEOUT">%1$d</xliff:g> sekunnin ajan."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Nollaa"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Ethernetin yhdistämiskoodi"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Energiatilat"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Lisää energiatehokkuutta, kun TV ei ole käytössä"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Nämä asetukset vaikuttavat laitteeseen, kun se ei ole käytössä"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Ottaa käyttöön nämä:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Huomaa, että tämä tila voi lisätä laitteen virrankulutusta."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"Virrankulutus voi kasvaa käyttöönotettujen TV-ominaisuuksien myötä."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Ota <xliff:g id="ENERGYMODENAME">%s</xliff:g> käyttöön"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Etsi kaukosäädin"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Jos et löydä Google TV ‑kaukosäädintä, etsi se toistamalla äänimerkki"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Toista ääntä 30 sekunnin ajan painamalla Google TV ‑kaukosäätimen takaosassa olevaa painiketta. Tämä toimii vain tuetuilla Google TV ‑kaukosäätimillä.\n\nLopeta äänen toistaminen painamalla kaukosäätimestä mitä tahansa painiketta."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Google TV:ssä on painike, jota painamalla kaukosäädin toistaa äänen 30 sekunnin ajan. Tämä toimii vain tuetuilla Google TV ‑kaukosäätimillä.\n\nLopeta äänen toistaminen painamalla kaukosäätimestä mitä tahansa painiketta."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Kun Etsi kaukosäätimeni on käytössä, voit etsiä Google TV ‑kaukosäätimen toistamalla äänimerkin."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Toista äänimerkki"</string>
 </resources>

@@ -16,26 +16,25 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="energy_mode_low_title" msgid="1975446673545235501">"Էներգիայի ցածր սպառման ռեժիմ"</string>
-    <string name="energy_mode_low_subtitle" msgid="2138250509057251435">"ցանցի կարևոր գործառույթներով"</string>
-    <string name="energy_mode_low_info" msgid="8586799718140263220">"Անջատել կապը, երբ հեռուստացույցը չի օգտագործվում (սպասման ռեժիմ)։"</string>
+    <string name="energy_mode_low_title" msgid="5700567801191430606">"Ցածր"</string>
+    <string name="energy_mode_low_subtitle" msgid="7660632849388740009">"Սպասման ռեժիմ"</string>
+    <string name="energy_mode_low_info" msgid="3931173640626998821">"Սպասման ռեժիմ․ ցանցի հետ կապն անջատվում է, երբ հեռուստացույցը չի օգտագործվում"</string>
   <string-array name="energy_mode_low_features">
-    <item msgid="4976202876230149030">"Կարևոր թարմացումներ և գործառույթներ"</item>
+    <item msgid="4002284890471636101">"[Ներմուծել գործառույթ 1-ը]"</item>
+    <item msgid="7072772341455731040">"[Ներմուծել գործառույթ 2-ը]"</item>
   </string-array>
     <string name="energy_mode_low_eco_hint" msgid="2421460758847643655"></string>
-    <string name="energy_mode_moderate_title" msgid="8306916492188176732">"Էներգիայի օպտիմալ սպառման ռեժիմ"</string>
-    <string name="energy_mode_moderate_subtitle" msgid="7478438819421632774">"ցանցի խորհուրդ տրվող գործառույթներով"</string>
-    <string name="energy_mode_moderate_info" msgid="7254958508156484301">"Թույլ է տալիս միացնել գործառույթները, որոնք արթնացնում են հեռուստացույցը ցանցի միջոցով (ցանցային միացումով սպասման ռեժիմ)։"</string>
-    <string name="energy_mode_moderate_all_low_features" msgid="2417504172139004649">"Բոլոր կարևոր գործառույթները"</string>
+    <string name="energy_mode_moderate_title" msgid="8612259261851051150">"Օպտիմալացված"</string>
+    <string name="energy_mode_moderate_subtitle" msgid="5565533500130453270">"Ցանցային միացումով սպասման ռեժիմ"</string>
+    <string name="energy_mode_moderate_info" msgid="3188005033276283994">"Ցանցային միացումով սպասման ռեժիմ․ միացնում է գործառույթները, որոնք արթնացնում են հեռուստացույցը ցանցի միջոցով"</string>
   <string-array name="energy_mode_moderate_features">
     <item msgid="2654586107956150296">"[Ներմուծել գործառույթ 1-ը]"</item>
     <item msgid="8724721267222341891">"[Ներմուծել գործառույթ 2-ը]"</item>
   </string-array>
     <string name="energy_mode_moderate_eco_hint" msgid="252189162446856286"></string>
-    <string name="energy_mode_high_title" msgid="6636328986387241066">"Էներգիայի բարձր սպառման ռեժիմ"</string>
-    <string name="energy_mode_high_subtitle" msgid="8710109098343358567">"ցանցի լրացուցիչ գործառույթներով"</string>
-    <string name="energy_mode_high_info" msgid="7089288229870320944">"Թույլ է տալիս միացնել լրացուցիչ գործառույթները, անգամ երբ հեռուստացույցը չի օգտագործվում։"</string>
-    <string name="energy_mode_moderate_all_moderate_features" msgid="1518972636963419872">"Բոլոր առաջարկվող գործառույթները"</string>
+    <string name="energy_mode_high_title" msgid="7596672058005896920">"Բարձր"</string>
+    <string name="energy_mode_high_subtitle" msgid="5994284096495805422">"Միշտ միացած"</string>
+    <string name="energy_mode_high_info" msgid="8805447042714350186">"Միշտ միացած․ միացնում է ցանցային գործառույթները, երբ հեռուստացույցը չի օգտագործվում"</string>
   <string-array name="energy_mode_high_features">
     <item msgid="3018897868803319747">"[Ներմուծել գործառույթ 1-ը]"</item>
     <item msgid="170760143032597722">"[Ներմուծել գործառույթ 2-ը]"</item>

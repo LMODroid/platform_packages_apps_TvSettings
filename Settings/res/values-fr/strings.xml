@@ -368,12 +368,14 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Informations légales Google"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Informations de licence indisponibles."</string>
     <string name="about_model" msgid="9164284529291439296">"Modèle"</string>
+    <string name="device_mode" msgid="7258350575590118152">"Mode Appareil"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"Démo pour le magasin"</string>
     <string name="about_version" msgid="6223547403835399861">"Version d\'Android TV"</string>
     <string name="about_serial" msgid="3432319328808745459">"Numéro de série"</string>
     <string name="about_build" msgid="8467840394761634575">"Build Android TV"</string>
     <string name="show_dev_countdown" msgid="4064986225625409361">"{count,plural, =1{Plus que # étape pour devenir développeur}one{Plus que # étape pour devenir développeur}other{Plus que # étapes pour devenir développeur}}"</string>
     <string name="about_ads" msgid="7662896442040086522">"Annonces"</string>
-    <string name="ads_description" msgid="8081069475265061074">"Gérez paramètres annonces, modifiez identifiant publicitaire."</string>
+    <string name="ads_description" msgid="8081069475265061074">"Gérez les paramètres des annonces, modifiez votre identifiant publicitaire."</string>
     <string name="ads_content_description" msgid="1006489792324920289">"Annonces, Gérez les paramètres des annonces, modifiez par exemple votre identifiant publicitaire."</string>
     <string name="show_dev_on" msgid="612741433124106067">"Vous êtes désormais développeur !"</string>
     <string name="show_dev_already" msgid="1522591284776449818">"Inutile, vous êtes déjà développeur."</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"Connexion Internet"</string>
     <string name="connected" msgid="4981532275162345997">"Connecté"</string>
     <string name="not_connected" msgid="475810896484271663">"Non connecté"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"Aucun accès à Internet"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"Enregistré"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"Mot de passe incorrect"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"Le mot de passe Wi-Fi est trop court"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"Veuillez vous connecter"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"Autres options"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"Tout afficher"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"Moins"</string>
@@ -700,7 +707,7 @@
     <string name="accessibility_shortcut" msgid="5856158637840030531">"Raccourci d\'accessibilité"</string>
     <string name="accessibility_shortcut_enable" msgid="6603542432267329986">"Activer le raccourci d\'accessibilité"</string>
     <string name="accessibility_shortcut_service" msgid="2053250146891420311">"Service associé au raccourci"</string>
-    <string name="accessibility_shortcut_description" msgid="2050424178481510046">"Lorsque le raccourci est activé, vous pouvez appuyer sur le bouton \"Précédent\" et le bouton \"Volume -\" pendant trois secondes pour lancer une fonctionnalité d\'accessibilité."</string>
+    <string name="accessibility_shortcut_description" msgid="2050424178481510046">"Lorsque le raccourci est activé, vous pouvez appuyer sur le bouton Retour et le bouton Bas pendant trois secondes pour lancer une fonctionnalité d\'accessibilité."</string>
     <string name="accessibility_captions" msgid="3411554568812306549">"Sous-titres"</string>
     <string name="accessibility_captions_description" msgid="3827820027578548160">"Paramètres de superposition du texte des sous-titres sur la vidéo"</string>
     <string name="captions_display" msgid="2598662495450633375">"Afficher"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"Personnaliser les restrictions"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"Veuillez patienter…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"Modifier le code d\'accès"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"Créer un profil limité ?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"Déjà créé"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"Passer"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"Créer un code"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"Saisir le profil limité ?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"Aucun profil limité"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"Déjà saisi"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"Cette application peut accéder à vos comptes. Contrôlée par <xliff:g id="APP">%1$s</xliff:g>"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"Saisir le code d\'accès pour regarder cette chaîne"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"Micro(s) enregistré(s)"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"Échec du démarrage de l\'enregistrement audio."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"Échec de l\'enregistrement audio."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"Économiseur de données"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"Ajuster automatiquement la qualité vidéo pour utiliser moins de données mobiles"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"Consommation des données et alertes"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"Vous pouvez vous connecter à Internet via le Wi-Fi, Ethernet ou le point d\'accès du téléphone."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"Rendre visible pour les autres appareils Bluetooth ?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"Une appli nécessite que d\'autres appareils Bluetooth puissent détecter votre TV pendant <xliff:g id="TIMEOUT">%1$d</xliff:g> secondes."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"Réinitialiser"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"Code d\'association Ethernet"</string>
     <string name="energy_modes" msgid="1331693860386361744">"Modes d\'énergie"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"Améliorer l\'efficacité énergétique lorsque le téléviseur n\'est pas utilisé"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"Ces paramètres affectent l\'appareil lorsqu\'il n\'est pas utilisé"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"Fonctionnalités activées :"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"Notez que ce mode peut augmenter la consommation d\'énergie de l\'appareil."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"La consommation d\'énergie peut augmenter selon le nombre de fonctionnalités TV que vous activez."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"Activer \"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\""</string>
-    <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Localiser ma télécommande"</string>
+    <string name="settings_find_my_remote_title" msgid="4586368268611622848">"Trouver ma télécommande"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Émettre un son pour localiser votre télécommande Google TV si vous l\'avez égarée"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"Appuyez sur le bouton à l\'arrière de votre Google TV pour que votre télécommande émette un son pendant 30 secondes. Cela ne fonctionne que sur les télécommandes Google TV compatibles.\n\nPour arrêter le son, appuyez sur n\'importe quel bouton de la télécommande."</string>
-    <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Lorsque Localiser ma télécommande est activé, vous pouvez émettre un son pour localiser votre télécommande Google TV si vous l\'avez égarée."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"Votre Google TV comporte un bouton sur lequel appuyer pour que votre télécommande émette un son pendant 30 secondes. Cela ne fonctionne que sur les télécommandes Google TV compatibles.\n\nPour arrêter le son, appuyez sur n\'importe quel bouton de la télécommande."</string>
+    <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Lorsque \"Trouver ma télécommande\" est activé, vous pouvez émettre un son pour localiser votre télécommande Google TV si vous l\'avez égarée."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Émettre un son"</string>
 </resources>

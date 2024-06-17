@@ -368,6 +368,8 @@
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google से जुड़ी कानूनी जानकारी"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"लाइसेंस डेटा अनुपलब्ध है"</string>
     <string name="about_model" msgid="9164284529291439296">"मॉडल"</string>
+    <string name="device_mode" msgid="7258350575590118152">"डिवाइस मोड"</string>
+    <string name="store_demo_mode" msgid="4382231515659362796">"स्टोर डेमो"</string>
     <string name="about_version" msgid="6223547403835399861">"Android TV का ओएस वर्शन"</string>
     <string name="about_serial" msgid="3432319328808745459">"सीरियल नंबर"</string>
     <string name="about_build" msgid="8467840394761634575">"Android TV के ओएस बिल्ड का वर्शन"</string>
@@ -435,6 +437,11 @@
     <string name="title_internet_connection" msgid="7502414094881828069">"इंटरनेट कनेक्शन"</string>
     <string name="connected" msgid="4981532275162345997">"कनेक्ट है"</string>
     <string name="not_connected" msgid="475810896484271663">"कनेक्ट नहीं है"</string>
+    <string name="wifi_no_internet" msgid="27421689535934864">"इंटरनेट नहीं है"</string>
+    <string name="wifi_saved" msgid="4354792774811431829">"सेव किया गया"</string>
+    <string name="wifi_bad_password" msgid="8686375382346768922">"गलत पासवर्ड"</string>
+    <string name="wifi_short_password" msgid="7658809378390032385">"वाई-फ़ाई पासवर्ड बहुत छोटा है"</string>
+    <string name="wifi_captive_portal" msgid="8262150024660339529">"साइन-इन करने की ज़रूरत है"</string>
     <string name="wifi_setting_header_other_options" msgid="217382325707026836">"दूसरे विकल्प"</string>
     <string name="wifi_setting_see_all" msgid="5048103047976316675">"सभी देखें"</string>
     <string name="wifi_setting_see_fewer" msgid="8585364493300703467">"कम देखें"</string>
@@ -773,7 +780,7 @@
     <string name="system_usb_debugging" msgid="2158285492172755923">"USB डीबग करना"</string>
     <string name="system_allow_mock_locations" msgid="2483106887711851466">"कृत्रिम स्‍थानों को अनुमति दें"</string>
     <string name="system_select_debug_app" msgid="6200987902307533721">"डीबग ऐप्स  चुनें"</string>
-    <string name="system_wait_for_debugger" msgid="5715878008542589060">"डीबगर की प्रतीक्षा करें"</string>
+    <string name="system_wait_for_debugger" msgid="5715878008542589060">"डीबगर की इंतज़ार करें"</string>
     <string name="system_verify_apps_over_usb" msgid="7289212844195483932">"USB पर ऐप्स  सत्यापित करें"</string>
     <string name="system_desc_verify_apps_over_usb" msgid="7737988681480237094">"ADB/ADT के ज़रिए इंस्टॉल किए गए ऐप्लिकेशन नुकसानदेह व्यवहार के लिए जाँचें"</string>
     <string name="system_wifi_verbose_logging" msgid="3097788974146704831">"वाई-फ़ाई अत्यधिक शब्द प्रवेश"</string>
@@ -902,6 +909,13 @@
     <string name="restricted_profile_customize_restrictions" msgid="4723577877385636704">"प्रतिबंधों को कस्टमाइज़ करें"</string>
     <string name="restricted_profile_configure_apps_description_loading" msgid="3293508876131962699">"एक क्षण रुकें…"</string>
     <string name="restricted_profile_change_password_title" msgid="6961384850606763601">"पिन बदलें"</string>
+    <string name="restricted_profile_create_preference_screen" msgid="3263536648469645089">"प्रतिबंधित प्रोफ़ाइल बनाएं?"</string>
+    <string name="restricted_profile_already_created_placeholder" msgid="8619544048199836920">"पहले से बनी हुई है"</string>
+    <string name="restricted_profile_skip_action" msgid="4674562040162193593">"अभी नहीं"</string>
+    <string name="restricted_profile_create_pin_action" msgid="1883036507880250231">"पिन बनाएं"</string>
+    <string name="restricted_profile_enter_preference_screen" msgid="676246260867597333">"प्रतिबंधित प्रोफ़ाइल पर जाएं?"</string>
+    <string name="restricted_profile_enter_not_found_placeholder" msgid="2270969471829375976">"प्रतिबंधित प्रोफ़ाइल नहीं मिली"</string>
+    <string name="restricted_profile_enter_already_entered_placeholder" msgid="6178278708529027598">"पहले से मौजूद है"</string>
     <string name="restriction_description" msgid="2053112392083722259">"<xliff:g id="DESCRIPTION">%1$s</xliff:g>\n<xliff:g id="VALUE">%2$s</xliff:g>"</string>
     <string name="app_sees_restricted_accounts_and_controlled_by" msgid="1261056180558324892">"यह ऐप आपके खातों को ऐक्सेस कर सकता है. <xliff:g id="APP">%1$s</xliff:g> के द्वारा नियंत्रित है"</string>
     <string name="pin_enter_unlock_channel" msgid="243855138978654080">"यह चैनल देखने के लिए पिन डालें"</string>
@@ -1064,10 +1078,6 @@
     <string name="recorded_microphones_title" msgid="5466988146086215426">"रिकॉर्डिंग में इस्तेमाल माइक्रोफ़ोन"</string>
     <string name="show_audio_recording_start_failed" msgid="9131762831381326605">"ऑडियो की रिकॉर्डिंग शुरू नहीं हो पाई."</string>
     <string name="show_audio_recording_failed" msgid="8128216664039868681">"ऑडियो की रिकॉर्डिंग नहीं हो पाई."</string>
-    <string name="title_data_saver" msgid="7500278996154002792">"डेटा बचाने की सेटिंग"</string>
-    <string name="summary_data_saver" msgid="6793558728898207405">"मोबाइल डेटा बचाने के लिए, वीडियो क्वालिटी को अपने-आप एडजस्ट होने दें"</string>
-    <string name="title_data_alert" msgid="8262081890052682475">"डेटा खर्च और सूचनाएं"</string>
-    <string name="data_saver_header_info" msgid="2706725187498535785">"वाई-फ़ाई, ईथरनेट या फ़ोन के हॉटस्पॉट का इस्तेमाल करके, इंटरनेट से कनेक्ट किया जा सकता है."</string>
     <string name="bluetooth_ask_discovery_title" msgid="4955540555242269694">"क्या आपको अन्य ब्लूटूथ डिवाइसों को इसे दिखाना है?"</string>
     <string name="bluetooth_ask_discovery_message" msgid="8609666862877703398">"एक ऐप्लिकेशन आपके टीवी को <xliff:g id="TIMEOUT">%1$d</xliff:g> सेकंड के लिए अन्य ब्लूटूथ डिवाइसों को दिखाना चाहता है."</string>
     <string name="help_center_title" msgid="6109822142761302433"></string>
@@ -1123,13 +1133,13 @@
     <string name="reset_options_title" msgid="7632580482285108955">"रीसेट करें"</string>
     <string name="adb_pairing_device_dialog_ethernet_pairing_code_label" msgid="7551782499828944838">"ईथरनेट से जोड़ने का कोड"</string>
     <string name="energy_modes" msgid="1331693860386361744">"एनर्जी मोड"</string>
-    <string name="energy_modes_summary" msgid="7196407759836930799">"टीवी इस्तेमाल में नहीं होने पर, ऊर्जा की क्षमता में सुधार करता है"</string>
+    <string name="energy_modes_summary" msgid="2324906343309484649">"डिवाइस का इस्तेमाल न होने पर, ये सेटिंग डिवाइस पर असर डालती हैं"</string>
     <string name="energy_mode_enables" msgid="357960364751477627">"चालू करता है:"</string>
-    <string name="energy_mode_eco_hint" msgid="1461517905015359947">"ध्यान दें कि यह मोड डिवाइस की बिजली खपत बढ़ा सकता है."</string>
+    <string name="energy_mode_eco_hint" msgid="5280058011809503514">"टीवी की ज़्यादा सुविधाएं चालू होने पर बिजली की खपत बढ़ सकती है."</string>
     <string name="energy_modes_confirmation_title" msgid="4520280098781914825">"\"<xliff:g id="ENERGYMODENAME">%s</xliff:g>\" को चालू करें"</string>
     <string name="settings_find_my_remote_title" msgid="4586368268611622848">"मेरा रिमोट ढूंढें"</string>
     <string name="settings_find_my_remote_description" msgid="6606011378441585154">"Google TV रिमोट खो जाने पर, उसका पता लगाने के लिए साउंड चलाएं"</string>
-    <string name="find_my_remote_slice_description" msgid="7288029543560257872">"रिमोट पर 30 सेकंड तक साउंड चलाने के लिए, Google TV के पीछे मौजूद बटन को दबाएं. ऐसा सिर्फ़ सपोर्ट किए जाने वाले Google TV के रिमोट कंट्रोल पर किया जा सकता है.\n\nसाउंड बंद करने के लिए, रिमोट के किसी भी बटन को दबाएं."</string>
+    <string name="find_my_remote_slice_description" msgid="313598681990933215">"आपके Google TV पर एक ऐसा बटन होता है जिसे दबाने से रिमोट पर 30 सेकंड के लिए आवाज़ चलाई जा सकती है. ऐसा सिर्फ़ उन Google TV के रिमोट कंट्रोल पर किया जा सकता है जिन पर यह सुविधा काम करती है.\n\nसाउंड बंद करने के लिए, रिमोट के किसी भी बटन को दबाएं."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"अगर \'मेरा रिमोट ढूंढें\' सुविधा चालू है, तो Google TV रिमोट खो जाने पर उसका पता लगाने के लिए साउंड चलाया जा सकता है."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"साउंड चलाएं"</string>
 </resources>

@@ -16,10 +16,13 @@
 
 package com.android.tv.settings.basic;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
@@ -30,15 +33,30 @@ import androidx.annotation.NonNull;
 
 import com.android.tv.settings.util.ResourcesUtil;
 
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
+import java.util.Optional;
 
-/** Implementation of {@link BasicModeFeatureProvider}. */
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+/**
+ * Implementation of {@link BasicModeFeatureProvider}.
+ */
 public class BasicModeFeatureProviderImplX implements BasicModeFeatureProvider {
 
     private static final String TAG = "BasicModeFeatureX";
 
     // The string "offline_mode" is a static protocol and should not be changed in general.
     private static final String KEY_BASIC_MODE = "offline_mode";
+
+    private static final String OEM_AUTHORITY = "tvlauncher.config";
+    private static final String OEM_CONTRACT_SCHEME = "content";
+    private static final String OEM_CONFIG_PATH = "configuration";
+    private static final String DEVICE_MODE = "device-mode";
+    private static final String STORE_DEMO = "store_demo";
+    private static final String VALUE = "value";
 
     @Override
     public boolean isBasicMode(@NonNull Context context) {
@@ -65,19 +83,29 @@ public class BasicModeFeatureProviderImplX implements BasicModeFeatureProvider {
 
     @Override
     public void startBasicModeExitActivity(@NonNull Activity activity) {
+        final String basicModeExit = ResourcesUtil.getString(activity, "basic_mode_exit_data");
+        startBasicModeExitActivity(activity, basicModeExit);
+    }
+
+    @Override
+    public void startBasicModeInternetBlock(@NonNull Activity activity) {
+        final String basicModeExit = ResourcesUtil.getString(activity, "basic_mode_exit_internet");
+        startBasicModeExitActivity(activity, basicModeExit);
+    }
+
+    private void startBasicModeExitActivity(@NonNull Activity activity, String basicModeExitType) {
         final String basicModeExitPackage = ResourcesUtil.getString(activity,
                 "basic_mode_exit_package");
         final String basicModeExitComponent =
                 ResourcesUtil.getString(activity, "basic_mode_exit_component");
-        final String basicModeExitData = ResourcesUtil.getString(activity, "basic_mode_exit_data");
         if (TextUtils.isEmpty(basicModeExitPackage) || TextUtils.isEmpty(basicModeExitComponent)
-                || TextUtils.isEmpty(basicModeExitData)) {
+                || TextUtils.isEmpty(basicModeExitType)) {
             Log.e(TAG, "Basic mode exit activity undefined.");
             return;
         }
         ComponentName componentName =
                 new ComponentName(basicModeExitPackage, basicModeExitComponent);
-        Uri dataUri = Uri.parse(basicModeExitData);
+        Uri dataUri = Uri.parse(basicModeExitType);
         Intent intent = new Intent().setComponent(componentName).setData(dataUri);
         List<ResolveInfo> intentHandlingActivities =
                 activity.getPackageManager().queryIntentActivities(intent, 0);
@@ -94,5 +122,59 @@ public class BasicModeFeatureProviderImplX implements BasicModeFeatureProvider {
             }
         }
         Log.e(TAG, "Basic mode exit activity not found.");
+    }
+
+    @Override
+    public boolean isStoreDemoMode(@NonNull Context context) {
+        if (getCustomizationAppPackageName(context).isEmpty()) {
+            // There is no customizations apk for this device.
+            return false;
+        }
+        Uri oemUri =
+                new Uri.Builder()
+                        .scheme(OEM_CONTRACT_SCHEME)
+                        .authority(OEM_AUTHORITY)
+                        .path(OEM_CONFIG_PATH)
+                        .build();
+        try (InputStream inputStream =
+                     context.getContentResolver().openInputStream(oemUri)) {
+            if (inputStream == null) {
+                return false;
+            }
+            XmlPullParser parser = XmlPullParserFactory.newInstance().newPullParser();
+            parser.setInput(new InputStreamReader(inputStream, UTF_8));
+            int eventType = parser.getEventType();
+            while (eventType != XmlPullParser.END_DOCUMENT) {
+                if (eventType == XmlPullParser.START_TAG) {
+                    if (DEVICE_MODE.equals(parser.getName())) {
+                        Log.e(TAG, "Got is Store Demo: " + STORE_DEMO.equals(
+                                parser.getAttributeValue(null, VALUE)));
+                        return STORE_DEMO.equals(parser.getAttributeValue(null, VALUE));
+                    }
+                }
+                eventType = parser.next();
+            }
+            return false;
+        } catch (Exception e) {
+            // Fallback to default mode if we can't get a value.
+            Log.e(TAG, "Unable to determine store demo mode", e);
+            return false;
+        }
+    }
+
+    private Optional<String> getCustomizationAppPackageName(@NonNull Context context) {
+        return Optional.ofNullable(
+                        context
+                                .getPackageManager()
+                                .resolveContentProvider(
+                                        OEM_AUTHORITY, /* flags= */ 0))
+                .filter(providerInfo -> hasSystemAppFlags(providerInfo.applicationInfo))
+                .map(providerInfo -> providerInfo.applicationInfo.packageName);
+    }
+
+    private static boolean hasSystemAppFlags(ApplicationInfo info) {
+        return (info.flags & (ApplicationInfo.FLAG_UPDATED_SYSTEM_APP
+                | ApplicationInfo.FLAG_SYSTEM))
+                != 0;
     }
 }

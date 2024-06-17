@@ -32,8 +32,6 @@ import com.android.wifitrackerlib.WifiEntry;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-import java.util.Map;
-import java.util.WeakHashMap;
 
 public class AccessPoint implements Comparable<AccessPoint> {
     public static final int SECURITY_NONE = WifiEntry.SECURITY_NONE;
@@ -70,8 +68,6 @@ public class AccessPoint implements Comparable<AccessPoint> {
          */
         int VERY_FAST = 30;
     }
-
-    private static final Map<WifiEntry, Object> sTagMap = new WeakHashMap<>();
 
     private final WifiEntry mWifiEntry;
 
@@ -212,14 +208,6 @@ public class AccessPoint implements Comparable<AccessPoint> {
 
     public boolean isSaved() {
         return mWifiEntry.isSaved();
-    }
-
-    public Object getTag() {
-        return sTagMap.get(mWifiEntry);
-    }
-
-    public void setTag(Object tag) {
-        sTagMap.put(mWifiEntry, tag);
     }
 
     public void setListener(AccessPoint.AccessPointListener listener) {

@@ -72,6 +72,11 @@
         android:fragment="com.android.tv.twopanelsettings.slices.SliceFragment"
         custom:uri="@string/default_audio_output_settings_slice_uri"
         custom:isPreferenceVisible="false" />
+    <com.android.tv.twopanelsettings.slices.EmbeddedSlicePreference
+        android:key="audio_ext"
+        android:fragment="com.android.tv.twopanelsettings.slices.SliceFragment"
+        custom:uri="@string/audio_ext_uri"
+        custom:isPreferenceVisible="false" />
     <Preference
         android:key="advanced_sound_settings"
         android:title="@string/advanced_sound_settings_title"
